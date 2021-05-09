@@ -334,42 +334,6 @@ module.exports = function (grunt) {
                 spawn: false
             }
         },
-        /* FIXME (jasonsanjose): how to handle extension tests */
-        jasmine : {
-            src : 'undefined.js', /* trick the default runner to run without importing src files */
-            options : {
-                junit : {
-                    path: 'test/results',
-                    consolidate: true
-                },
-                specs : '<%= meta.specs %>',
-                /* Keep in sync with test/SpecRunner.html dependencies */
-                vendor : [
-                    // For reference to why this polyfill is needed see Issue #7951.
-                    // The need for this should go away once the version of phantomjs gets upgraded to 2.0
-                    'test/polyfills.js',
-
-                    'src/thirdparty/jquery-2.1.3.min.js',
-                    'src/thirdparty/less.min.js'
-                ],
-                helpers : [
-                    'test/spec/PhantomHelper.js'
-                ],
-                template : require('grunt-template-jasmine-requirejs'),
-                templateOptions: {
-                    requireConfig : {
-                        baseUrl: 'src',
-                        paths: {
-                            'test' : '../test',
-                            'perf' : '../test/perf',
-                            'spec' : '../test/spec',
-                            'text' : 'thirdparty/text/text',
-                            'i18n' : 'thirdparty/i18n/i18n'
-                        }
-                    }
-                }
-            }
-        },
         'jasmine_node': {
             projectRoot: 'src/extensibility/node/spec/'
         },
@@ -399,7 +363,7 @@ module.exports = function (grunt) {
     ]);
 
     // task: test
-    grunt.registerTask('test', ['eslint', 'jasmine', 'nls-check']);
+    grunt.registerTask('test', ['eslint', 'nls-check']);
 //    grunt.registerTask('test', ['eslint', 'jasmine', 'jasmine_node', 'nls-check']);
 
     // task: set-release

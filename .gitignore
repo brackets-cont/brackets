@@ -6,6 +6,8 @@ Thumbs.db
 # ignore node_modules created by grunt, but not more deeply-nested node_modules
 node_modules
 vendor
+/.grunt
+_SpecRunner.html
 /npm-debug.log
 
 # ignore node_modules inside src

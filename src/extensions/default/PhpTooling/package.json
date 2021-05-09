@@ -5,7 +5,7 @@
   "author": "niteskum",
   "main": "main.js",
   "scripts": {
-    "postinstall": "composer run-script --working-dir=vendor/felixfbecker/language-server parse-stubs"
+    "postinstall": "composer install && composer run-script --working-dir=vendor/felixfbecker/language-server parse-stubs"
   },
   "dependencies": {
     "execa": "1.0.0",
