@@ -1,13 +1,14 @@
-
-| :warning: On September 1, 2021, Adobe will end support for Brackets. If you would like to continue using, maintaining, and improving Brackets, you may fork the project on [GitHub](https://github.com/adobe/brackets). Through Adobe’s partnership with Microsoft, we encourage users to migrate to [Visual Studio Code](https://aka.ms/brackets-to-vscode), Microsoft’s free code editor built on open source.
-| ---
-
-
 Welcome to Brackets! [![Build Status](https://travis-ci.org/adobe/brackets.svg?branch=master)](https://travis-ci.org/adobe/brackets)
 -------------------
 
 Brackets is a modern open-source code editor for HTML, CSS
-and JavaScript that's *built* in HTML, CSS and JavaScript. 
+and JavaScript that's *built* in HTML, CSS and JavaScript.
+
+This is a fork of a [project](https://github.com/adobe/brackets) previously maintained by Adobe.
+We might change names in the future.
+
+A lot of work needs to be done to make this fork become independent. Feel free to open a PR!
+Want to help coordinating the project itself? Check the projects tab ([here](https://github.com/brackets-cont/brackets/projects/1?fullscreen=true)).
 
 What makes Brackets different from other web code editors?
 
