@@ -34,7 +34,7 @@ How to install and run Brackets
 -------------------------------
 #### Download
 
-Installers for the latest stable build for Mac, Windows and Linux (Debian/Ubuntu) can be [downloaded here](http://brackets.io/).
+Installers for the latest stable build for Mac, Windows and Linux (Debian/Ubuntu) can be [downloaded here](https://brackets-cont.github.io/).
 
 #### Usage
 
@@ -65,7 +65,7 @@ Helping Brackets
 #### I found a bug!
 
 If you found a repeatable bug, and [troubleshooting](https://github.com/adobe/brackets/wiki/Troubleshooting) 
-tips didn't help, then be sure to [search existing issues](https://github.com/adobe/brackets/issues) first.
+tips didn't help, then be sure to [search existing issues](https://github.com/brackets-cont/brackets/issues) first.
 Include steps to consistently reproduce the problem, actual vs. expected results, screenshots, and your OS and
 Brackets version number. Disable all extensions to verify the issue is a core Brackets bug.
 [Read more guidelines for filing good bugs.](https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue)
@@ -81,7 +81,7 @@ move it to the feature backlog for you.
 #### I want to help with the code!
 
 Awesome! _There are lots of ways you can help._ First read 
-[CONTRIBUTING.md](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md), 
+[CONTRIBUTING.md](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md), 
 then learn how to [pull the repo and hack on Brackets](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets).
 
 The text editor inside Brackets is based on 
@@ -94,7 +94,7 @@ Although Brackets is built in HTML/CSS/JS, it currently runs as a desktop
 application in a thin native shell, so that it can access your local files.
 (If you just try to open the index.html file in a browser, it won't work yet.)
 The native shell for Brackets lives in a separate repo, 
-[adobe/brackets-shell](https://github.com/adobe/brackets-shell/).
+[brackets-cont/brackets-shell](https://github.com/brackets-cont/brackets-shell/).
 
 
 I want to keep track of how Brackets is doing!
@@ -107,18 +107,19 @@ Not sure you needed the exclamation point there, but we like your enthusiasm.
 * In our [feature backlog](http://bit.ly/BracketsBacklog), the columns to the right
   (starting from "Development") list the features that we're currently working on.
   "Ready" shows what we'll be working on next.
-* Watch our [GitHub activity stream](https://github.com/adobe/brackets/pulse).
-* Watch our [Waffle Kanban board](https://waffle.io/adobe/brackets): Work items in [![Stories in Ready](https://badge.waffle.io/adobe/brackets.svg?label=ready&title=Ready)](http://waffle.io/adobe/brackets) are next. The entire development process is outlined in the [Developer Guide](https://github.com/adobe/brackets/wiki/Brackets-Developers-Guide).
+* Watch our [GitHub activity stream](https://github.com/brackets-cont/brackets/pulse).
+* The entire development process is outlined in the [Developer Guide](https://github.com/adobe/brackets/wiki/Brackets-Developers-Guide).
 
 #### Contact info
 
-* **E-mail:** [admin@brackets.io](mailto:admin@brackets.io)
+<!-- * **E-mail:** [admin@brackets.io](mailto:admin@brackets.io)
 * **Slack:** [Brackets on Slack](https://brackets.slack.com) (You can join by sending a mail to [admin@brackets.io](mailto:admin@brackets.io) with the subject line `slack registration request` specifying the email addresses you would like to register).
 * **Developers mailing list:** http://groups.google.com/group/brackets-dev
 * **Twitter:** [@brackets](https://twitter.com/brackets)
 * **Blog:** http://blog.brackets.io/
 * **IRC:** [#brackets on freenode](http://webchat.freenode.net/?channels=brackets)
-
+-->
+* **Matrix:** [@brackets-cont:matrix.org](https://matrix.to/#/#brackets-cont:matrix.org)
 ---
 
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/adobe/brackets/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
