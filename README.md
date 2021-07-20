@@ -19,7 +19,7 @@ context-specific code and tools inline.
 works directly with your browser to push code edits instantly and jump
 back and forth between your real source code and the browser view.
 * **Do it yourself.** Because Brackets is open source, and built with HTML, CSS
-and JavaScript, you can [help build](https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md) the best code editor for the web.
+and JavaScript, you can [help build](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md) the best code editor for the web.
 
 Brackets may have reached version 1, but we're not stopping there. We have many feature ideas on our
 [trello board](http://bit.ly/BracketsTrelloBoard) that we're anxious to add and other
@@ -122,4 +122,4 @@ Not sure you needed the exclamation point there, but we like your enthusiasm.
 * **Matrix:** [@brackets-cont:matrix.org](https://matrix.to/#/#brackets-cont:matrix.org)
 ---
 
-Please note that this project is released with a [Contributor Code of Conduct](https://github.com/adobe/brackets/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](https://github.com/brackets-cont/brackets/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
