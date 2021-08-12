@@ -27,7 +27,7 @@ innovative web development workflows that we're planning to build into Brackets.
 So take Brackets out for a spin and let us know how we can make it your favorite editor. 
 
 You can see some 
-[screenshots of Brackets](https://github.com/adobe/brackets/wiki/Brackets-Screenshots)
+[screenshots of Brackets](https://github.com/brackets-cont/brackets/wiki/Brackets-Screenshots)
 on the wiki, [intro videos](http://www.youtube.com/user/CodeBrackets) on YouTube, and news on the [Brackets blog](http://blog.brackets.io/).
 
 How to install and run Brackets
@@ -43,20 +43,20 @@ You can choose a different folder to edit using *File > Open Folder*.
 
 Most of Brackets should be pretty self-explanatory, but for information on how
 to use its unique features, like Quick Edit and Live Preview, please read
-[How to Use Brackets](http://github.com/adobe/brackets/wiki/How-to-Use-Brackets). 
-Also, see the [release notes](http://github.com/adobe/brackets/wiki/Release-Notes)
+[How to Use Brackets](http://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets). 
+Also, see the [release notes](http://github.com/brackets-cont/brackets/wiki/Release-Notes)
 for a list of new features and known issues in each build.
 
 In addition to the core features built into Brackets, there is a large and growing
 community of developers building extensions that add all sorts of useful functionality.
 See the [Brackets Extension Registry](https://registry.brackets.io/)
 for a list of available extensions. For installation instructions,
-see the [extensions wiki page](https://github.com/adobe/brackets/wiki/Brackets-Extensions).
+see the [extensions wiki page](https://github.com/brackets-cont/brackets/wiki/Brackets-Extensions).
 
 #### Need help?
 
 Having problems starting Brackets the first time, or not sure how to use Brackets?  Please 
-review [Troubleshooting](https://github.com/adobe/brackets/wiki/Troubleshooting), which helps 
+review [Troubleshooting](https://github.com/brackets-cont/brackets/wiki/Troubleshooting), which helps 
 you to fix common problems and find extra help if needed.
 
 Helping Brackets
@@ -64,11 +64,11 @@ Helping Brackets
 
 #### I found a bug!
 
-If you found a repeatable bug, and [troubleshooting](https://github.com/adobe/brackets/wiki/Troubleshooting) 
+If you found a repeatable bug, and [troubleshooting](https://github.com/brackets-cont/brackets/wiki/Troubleshooting) 
 tips didn't help, then be sure to [search existing issues](https://github.com/brackets-cont/brackets/issues) first.
 Include steps to consistently reproduce the problem, actual vs. expected results, screenshots, and your OS and
 Brackets version number. Disable all extensions to verify the issue is a core Brackets bug.
-[Read more guidelines for filing good bugs.](https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue)
+[Read more guidelines for filing good bugs.](https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue)
 
 
 #### I have a new suggestion, but don't know how to program!
@@ -82,12 +82,12 @@ move it to the feature backlog for you.
 
 Awesome! _There are lots of ways you can help._ First read 
 [CONTRIBUTING.md](https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md), 
-then learn how to [pull the repo and hack on Brackets](https://github.com/adobe/brackets/wiki/How-to-Hack-on-Brackets).
+then learn how to [pull the repo and hack on Brackets](https://github.com/brackets-cont/brackets/wiki/How-to-Hack-on-Brackets).
 
 The text editor inside Brackets is based on 
 [CodeMirror](http://github.com/codemirror/CodeMirror)&mdash;thanks to Marijn for
 taking our pull requests, implementing feature requests and fixing bugs! See 
-[Notes on CodeMirror](https://github.com/adobe/brackets/wiki/Notes-on-CodeMirror)
+[Notes on CodeMirror](https://github.com/brackets-cont/brackets/wiki/Notes-on-CodeMirror)
 for info on how we're using CodeMirror.
 
 Although Brackets is built in HTML/CSS/JS, it currently runs as a desktop 
@@ -108,7 +108,7 @@ Not sure you needed the exclamation point there, but we like your enthusiasm.
   (starting from "Development") list the features that we're currently working on.
   "Ready" shows what we'll be working on next.
 * Watch our [GitHub activity stream](https://github.com/brackets-cont/brackets/pulse).
-* The entire development process is outlined in the [Developer Guide](https://github.com/adobe/brackets/wiki/Brackets-Developers-Guide).
+* The entire development process is outlined in the [Developer Guide](https://github.com/brackets-cont/brackets/wiki/Brackets-Developers-Guide).
 
 #### Contact info
 
