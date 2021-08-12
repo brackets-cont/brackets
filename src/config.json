@@ -1,19 +1,19 @@
 {
     "config": {
         "app_title": "Brackets",
-        "app_name_about": "Brackets",
+        "app_name_about": "Brackets Continued",
         "about_icon": "styles/images/brackets_icon.svg",
-        "how_to_use_url": "https://github.com/adobe/brackets/wiki/How-to-Use-Brackets",
-        "support_url": "https://github.com/adobe/brackets/wiki/Troubleshooting",
-        "suggest_feature_url": "https://github.com/adobe/brackets/wiki/Suggest-a-Feature",
-        "get_involved_url": "https://github.com/adobe/brackets/blob/master/CONTRIBUTING.md",
-        "glob_help_url": "https://github.com/adobe/brackets/wiki/Using-File-Filters",
-        "release_notes_url": "https://github.com/adobe/brackets/wiki/Release-Notes",
+        "how_to_use_url": "https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets",
+        "support_url": "https://github.com/brackets-cont/brackets/wiki/Troubleshooting",
+        "suggest_feature_url": "https://github.com/brackets-cont/brackets/wiki/Suggest-a-Feature",
+        "get_involved_url": "https://github.com/brackets-cont/brackets/blob/master/CONTRIBUTING.md",
+        "glob_help_url": "https://github.com/brackets-cont/brackets/wiki/Using-File-Filters",
+        "release_notes_url": "https://github.com/brackets-cont/brackets/wiki/Release-Notes",
         "homepage_url": "http://brackets.io",
         "twitter_url": "https://twitter.com/brackets",
-        "troubleshoot_url": "https://github.com/adobe/brackets/wiki/Troubleshooting#wiki-livedev",
+        "troubleshoot_url": "https://github.com/brackets-cont/brackets/wiki/Troubleshooting#wiki-livedev",
         "twitter_name": "@brackets",
-        "contributors_url": "https://api.github.com/repos/adobe/brackets/contributors?per_page={0}&page={1}",
+        "contributors_url": "https://api.github.com/repos/brackets-cont/brackets/contributors?per_page={0}&page={1}",
         "extension_listing_url": "",
         "extension_registry": "https://s3.amazonaws.com/extend.brackets/registry.json",
         "extension_url": "https://s3.amazonaws.com/extend.brackets/{0}/{0}-{1}.zip",
@@ -30,11 +30,11 @@
     "apiVersion": "1.15.0",
     "homepage": "http://brackets.io",
     "issues": {
-        "url": "http://github.com/adobe/brackets/issues"
+        "url": "http://github.com/brackets-cont/brackets/issues"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/adobe/brackets.git",
+        "url": "https://github.com/brackets-cont/brackets.git",
         "branch": "",
         "SHA": ""
     },
@@ -96,7 +96,7 @@
     "licenses": [
         {
             "type": "MIT",
-            "url": "https://github.com/adobe/brackets/blob/master/LICENSE"
+            "url": "https://github.com/brackets-cont/brackets/blob/master/LICENSE"
         }
     ]
 }
