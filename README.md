@@ -121,7 +121,7 @@ Not sure you needed the exclamation point there, but we like your enthusiasm.
 -->
 * **Matrix:** [@brackets-cont:matrix.org](https://matrix.to/#/#brackets-cont:matrix.org)
 * **Discord:** [Brackets Discord Server](https://discord.gg/rBpTBPttca)
-* **Reddit:** [r/Brackets](https://old.reddit.com/r/brackets/)
+* **Reddit:** [r/Brackets](https://www.reddit.com/r/brackets/)
 ---
 
 Please note that this project is released with a [Contributor Code of Conduct](https://github.com/brackets-cont/brackets/blob/master/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.
