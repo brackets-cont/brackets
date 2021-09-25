@@ -11,13 +11,13 @@
         "glob_help_url"              : "https://github.com/brackets-cont/brackets/wiki/Using-File-Filters",
         "release_notes_url"          : "https://github.com/brackets-cont/brackets/wiki/Release-Notes",
         "homepage_url"               : "http://brackets.io",
-        "twitter_url"                : "https://twitter.com/brackets",
+        "twitter_url"                : "https://twitter.com/BracketsCont",
         "troubleshoot_url"           : "https://github.com/brackets-cont/brackets/wiki/Troubleshooting#wiki-livedev",
         "twitter_name"               : "@brackets",
         "contributors_url"           : "https://api.github.com/repos/brackets-cont/brackets/contributors?per_page={0}&page={1}",
         "extension_listing_url"      : "",
-        "extension_registry"         : "https://s3.amazonaws.com/extend.brackets/registry.json",
-        "extension_url"              : "https://s3.amazonaws.com/extend.brackets/{0}/{0}-{1}.zip",
+        "extension_registry"         : "http://registry.brackets.s3.amazonaws.com/registry.json",
+        "extension_url"              : "http://registry.brackets.s3.amazonaws.com/{0}-{1}.zip",
         "linting.enabled_by_default" : true,
         "build_timestamp"            : ""
     }
