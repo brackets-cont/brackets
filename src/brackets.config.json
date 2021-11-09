@@ -13,7 +13,7 @@
         "homepage_url"               : "http://brackets.io",
         "twitter_url"                : "https://twitter.com/BracketsCont",
         "troubleshoot_url"           : "https://github.com/brackets-cont/brackets/wiki/Troubleshooting#wiki-livedev",
-        "twitter_name"               : "@brackets",
+        "twitter_name"               : "@BracketsCont",
         "contributors_url"           : "https://api.github.com/repos/brackets-cont/brackets/contributors?per_page={0}&page={1}",
         "extension_listing_url"      : "",
         "extension_registry"         : "http://registry.brackets.s3.amazonaws.com/registry.json",
