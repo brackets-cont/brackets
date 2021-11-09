@@ -2,7 +2,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "felixfbecker/language-server": "^5.4",
-        "jetbrains/phpstorm-stubs": "dev-master#0eb16807e8406e775ef602974b104454fc7ffb5c"
+        "felixfbecker/language-server": "^5.4"
     }
 }
