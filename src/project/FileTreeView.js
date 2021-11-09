@@ -378,6 +378,8 @@ define(function (require, exports, module) {
             if (this.props.entry.get("rename")) {
                 return;
             }
+
+            this.selectNode(e);
         }
     };
 
@@ -569,11 +571,32 @@ define(function (require, exports, module) {
             e.stopPropagation();
             e.preventDefault();
         },
-
         /**
+         * select the current node in the file tree on mouse down event on files.
+         * This is to increase click responsiveness of file tree.
+         */
+         selectNode: function (e) {
+            if (e.button !== LEFT_MOUSE_BUTTON) {
+                return;
+            }
+
+            var language = LanguageManager.getLanguageForPath(this.myPath()),
+                doNotOpen = false;
+            if (language && language.isBinary() && "image" !== language.getId() &&
+                FileUtils.shouldOpenInExternalApplication(
+                    FileUtils.getFileExtension(this.myPath()).toLowerCase()
+                )
+            ) {
+                doNotOpen = true;
+            }
+            this.props.actions.setSelected(this.myPath(), doNotOpen);
+            render();
+        },
+         /**
          * When the user double clicks, we will select this file and add it to the working
          * set (via the `selectInWorkingSet` action.)
          */
+
         handleDoubleClick: function () {
             if (!this.props.entry.get("rename")) {
                 if (this.state.clickTimer !== null) {
@@ -835,6 +858,14 @@ define(function (require, exports, module) {
             event.stopPropagation();
             event.preventDefault();
         },
+        /**
+         * select the current node in the file tree
+         */
+         selectNode: function (e) {
+            // Do nothing for folders on keydown event. Only expand the file tree on click event
+            // to prevent jarring directory accordion expansion in ui.
+        },
+
 
         /**
          * Create the data object to pass to extensions.
