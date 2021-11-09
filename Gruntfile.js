@@ -399,7 +399,7 @@ module.exports = function (grunt) {
     ]);
 
     // task: test
-    grunt.registerTask('test', ['eslint', /*'jasmine',*/ 'nls-check']);
+    grunt.registerTask('test', ['eslint', 'jasmine', 'nls-check']);
 //    grunt.registerTask('test', ['eslint', 'jasmine', 'jasmine_node', 'nls-check']);
 
     // task: set-release
@@ -408,7 +408,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build-common', [
         'eslint:src',
-		// 'jasmine', TODO: FIX JASMINE in order to properly build
+        'jasmine',
         'clean',
         'less',
         'targethtml',
