@@ -1,7 +1,7 @@
 {
     "config": {
         "app_title": "Brackets",
-        "app_name_about": "Brackets Continued",
+        "app_name_about": "Brackets",
         "about_icon": "styles/images/brackets_icon.svg",
         "how_to_use_url": "https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets",
         "support_url": "https://github.com/brackets-cont/brackets/wiki/Troubleshooting",
