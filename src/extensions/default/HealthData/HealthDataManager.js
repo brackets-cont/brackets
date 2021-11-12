@@ -21,7 +21,7 @@
  *
  */
 
-/*global define, $, brackets, console, appshell , ga, window, document, localStorage*/
+/*global define, $, brackets, console, appshell , ga, window, document, localStorage, Map, setTimeout*/
 define(function (require, exports, module) {
     "use strict";
     var AppInit             = brackets.getModule("utils/AppInit"),
@@ -34,16 +34,22 @@ define(function (require, exports, module) {
         uuid                = require("thirdparty/uuid"),
         prefs               = PreferencesManager.getExtensionPrefs("healthData"),
         params              = new UrlParams(),
+        ONE_SECOND          = 1000,
         ONE_MINUTE          = 60 * 1000,
         ONE_DAY             = 24 * 60 * ONE_MINUTE,
         FIRST_LAUNCH_SEND_DELAY = 30 * ONE_MINUTE,
-        timeoutVar;
+        timeoutVar,
+        gaInitComplete = false,
+        sentAnalyticsDataMap = new Map();
 
     prefs.definePreference("healthDataTracking", "boolean", true, {
         description: Strings.DESCRIPTION_HEALTH_DATA_TRACKING
     });
 
     function _initGoogleAnalytics() {
+        if(gaInitComplete){
+            return;
+        }
         function init(i, s, o, g, r, a, m) {
             i.GoogleAnalyticsObject = r;
             i[r] = i[r] || function() {
@@ -68,10 +74,12 @@ define(function (require, exports, module) {
 
         ga('set', 'page', 'brackets');
         ga('send', 'pageview');
+        gaInitComplete = true;
 
     }
 
-    _initGoogleAnalytics();
+    // Dont load google analytics at startup to unblock require sync load.
+    window.setTimeout(_initGoogleAnalytics, ONE_SECOND);
 
     params.parse();
 
@@ -160,52 +168,10 @@ define(function (require, exports, module) {
     }
 
     /**
-     *@param{Object} eventParams contails Event Data
      * will return complete Analyics Data in Json Format
      */
-    function getAnalyticsData(eventParams) {
-        var userUuid = PreferencesManager.getViewState("UUID"),
-            olderUuid = PreferencesManager.getViewState("OlderUUID");
-
-        //Create default Values
-        var defaultEventParams = {
-            eventCategory: "pingData",
-            eventSubCategory: "",
-            eventType: "",
-            eventSubType: ""
-        };
-        //Override with default values if not present
-        if (!eventParams) {
-            eventParams = defaultEventParams;
-        } else {
-            var e;
-            for (e in defaultEventParams) {
-                if (defaultEventParams.hasOwnProperty(e) && !eventParams[e]) {
-                    eventParams[e] = defaultEventParams[e];
-                }
-            }
-        }
-
-        return {
-            project: brackets.config.serviceKey,
-            environment: brackets.config.environment,
-            time: new Date().toISOString(),
-            ingesttype: "dunamis",
-            data: {
-                "event.guid": uuid.v4(),
-                "event.user_guid": olderUuid || userUuid,
-                "event.dts_end": new Date().toISOString(),
-                "event.category": eventParams.eventCategory,
-                "event.subcategory": eventParams.eventSubCategory,
-                "event.type": eventParams.eventType,
-                "event.subtype": eventParams.eventSubType,
-                "event.user_agent": window.navigator.userAgent || "",
-                "event.language": brackets.app.language,
-                "source.name": brackets.metadata.version,
-                "source.platform": brackets.platform,
-                "source.version": brackets.metadata.version
-            }
-        };
+    function getAnalyticsData() {
+        return Array.from(sentAnalyticsDataMap.values());
     }
 
     /**
@@ -241,29 +207,23 @@ define(function (require, exports, module) {
         return result.promise();
     }
 
-    // Send Analytics data to Server
-    function sendAnalyticsDataToServer(eventParams) {
+    /**
+     * Send to google analytics
+     * @param{Object} event Object containing Data to be sent to Server
+     * {eventName, eventCategory, eventSubCategory, eventType, eventSubType}
+     * @returns {*}
+     */
+    function sendAnalyticsDataToServer(event) {
         var result = new $.Deferred();
+        if(!window.ga){
+            return result.reject();
+        }
 
-        var analyticsData = getAnalyticsData(eventParams);
-        $.ajax({
-            url: brackets.config.analyticsDataServerURL,
-            type: "POST",
-            data: JSON.stringify({events: [analyticsData]}),
-            headers: {
-                "Content-Type": "application/json",
-                "x-api-key": brackets.config.serviceKey
-            }
-        })
-            .done(function () {
-                result.resolve();
-            })
-            .fail(function (jqXHR, status, errorThrown) {
-                console.error("Error in sending Adobe Analytics Data. Response : " + jqXHR.responseText + ". Status : " + status + ". Error : " + errorThrown);
-                result.reject();
-            });
-
-        return result.promise();
+        sentAnalyticsDataMap.set(event.eventName, event);
+        // ga('send', 'event', ![eventCategory], ![eventAction], [eventLabel], [eventValue/int], [fieldsObject]);
+        // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
+        window.ga('send', 'event', event.eventCategory, event.eventSubCategory, event.eventType + (event.eventSubType||""));
+        return result.resolve();
     }
 
     /*
@@ -330,7 +290,8 @@ define(function (require, exports, module) {
      * The data will be sent to the server only after the notification dialog
      * for opt-out/in is closed.
      * @param{Object} event event object
-     * @param{Object} Eventparams Object Containg Data to be sent to Server
+     * @param{Object} Eventparams Object containing Data to be sent to Server
+     * {eventName, eventCategory, eventSubCategory, eventType, eventSubType}
      * @param{boolean} forceSend Flag for sending analytics data for testing purpose
      **/
     function checkAnalyticsDataSend(event, Eventparams, forceSend) {
