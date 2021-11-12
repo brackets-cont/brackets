@@ -57,7 +57,7 @@ define(function (require, exports, module) {
         }
         init(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-212757129-1', {
+        ga('create', brackets.config.googleAnalyticsID, {
             'storage': 'none',
             'clientId': localStorage.getItem('ga:clientId')
         });
