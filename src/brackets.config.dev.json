@@ -1,6 +1,7 @@
 {
     "healthDataServerURL"        : "https://healthdev.brackets.io/healthDataLog",
     "analyticsDataServerURL"     : "https://cc-api-data-stage.adobe.io/ingest",
+    "googleAnalyticsID"          : "UA-212757129-1",
     "serviceKey"                 : "brackets-service",
     "environment"                : "stage",
     "update_info_url"            : "https://s3.amazonaws.com/files.brackets.io/updates/prerelease/<locale>.json",
