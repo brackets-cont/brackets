@@ -32,6 +32,7 @@ define(function (require, exports, module) {
         Strings             = brackets.getModule("strings"),
         HealthDataUtils     = require("HealthDataUtils"),
         uuid                = require("thirdparty/uuid"),
+        SendToAnalytics     = require("SendToAnalytics"),
         prefs               = PreferencesManager.getExtensionPrefs("healthData"),
         params              = new UrlParams(),
         ONE_SECOND          = 1000,
@@ -181,24 +182,11 @@ define(function (require, exports, module) {
         var result = new $.Deferred();
 
         getHealthData().done(function (healthData) {
-
-            var url = brackets.config.healthDataServerURL,
-                data = JSON.stringify(healthData);
-
-            $.ajax({
-                url: url,
-                type: "POST",
-                data: data,
-                dataType: "text",
-                contentType: "text/plain"
-            })
-                .done(function () {
-                    result.resolve();
-                })
-                .fail(function (jqXHR, status, errorThrown) {
-                    console.error("Error in sending Health Data. Response : " + jqXHR.responseText + ". Status : " + status + ". Error : " + errorThrown);
-                    result.reject();
-                });
+            if(!window.ga){
+                return result.reject();
+            }
+            SendToAnalytics.sendHealthDataToGA(healthData);
+            result.resolve();
         })
             .fail(function () {
                 result.reject();
@@ -356,7 +344,7 @@ define(function (require, exports, module) {
     });
 
     AppInit.appReady(function () {
-        checkHealthDataSend();
+        checkHealthDataSend(true);
     });
 
     exports.getHealthData = getHealthData;
