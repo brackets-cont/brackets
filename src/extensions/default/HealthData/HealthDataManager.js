@@ -21,7 +21,7 @@
  *
  */
 
-/*global define, $, brackets, console, appshell */
+/*global define, $, brackets, console, appshell , ga, window, document, localStorage*/
 define(function (require, exports, module) {
     "use strict";
     var AppInit             = brackets.getModule("utils/AppInit"),
@@ -42,6 +42,36 @@ define(function (require, exports, module) {
     prefs.definePreference("healthDataTracking", "boolean", true, {
         description: Strings.DESCRIPTION_HEALTH_DATA_TRACKING
     });
+
+    function _initGoogleAnalytics() {
+        function init(i, s, o, g, r, a, m) {
+            i.GoogleAnalyticsObject = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments);
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
+        }
+        init(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-212757129-1', {
+            'storage': 'none',
+            'clientId': localStorage.getItem('ga:clientId')
+        });
+        ga(function(tracker) {
+            localStorage.setItem('ga:clientId', tracker.get('clientId'));
+        });
+        ga('set', 'checkProtocolTask', null);
+
+        ga('set', 'page', 'brackets');
+        ga('send', 'pageview');
+
+    }
+
+    _initGoogleAnalytics();
 
     params.parse();
 
