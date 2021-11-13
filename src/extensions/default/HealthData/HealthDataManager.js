@@ -336,7 +336,7 @@ define(function (require, exports, module) {
     });
 
     AppInit.appReady(function () {
-        checkHealthDataSend(true); // TODO change to false after test
+        checkHealthDataSend();
     });
 
     exports.getHealthData = getHealthData;
