@@ -245,19 +245,11 @@ define(function (require, exports, module) {
                 // Bump up nextHealthDataSendTime at the begining of chaining to avoid any chance of sending data again before 24 hours, // e.g. if the server request fails or the code below crashes
                 PreferencesManager.setViewState("nextHealthDataSendTime", currentTime + ONE_DAY);
                 sendHealthDataToServer().always(function() {
-                    sendAnalyticsDataToServer()
-                    .done(function () {
-                        // We have already sent the health data, so can clear all health data
-                        // Logged till now
-                        HealthLogger.clearHealthData();
-                        result.resolve();
-                    })
-                    .fail(function () {
-                        result.reject();
-                    })
-                    .always(function () {
-                        timeoutVar = setTimeout(checkHealthDataSend, ONE_DAY);
-                    });
+                    // We have already sent the health data, so can clear all health data
+                    // Logged till now
+                    HealthLogger.clearHealthData();
+                    result.resolve();
+                    timeoutVar = setTimeout(checkHealthDataSend, ONE_DAY);
                 });
             } else {
                 timeoutVar = setTimeout(checkHealthDataSend, nextTimeToSend - currentTime);
