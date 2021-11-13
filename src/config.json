@@ -19,10 +19,7 @@
         "extension_url"              : "http://registry.brackets.s3.amazonaws.com/{0}-{1}.zip",
         "linting.enabled_by_default": true,
         "build_timestamp": "",
-        "healthDataServerURL": "https://healthdev.brackets.io/healthDataLog",
-        "analyticsDataServerURL": "https://cc-api-data-stage.adobe.io/ingest",
         "googleAnalyticsID"     : "UA-212757129-1",
-        "serviceKey": "brackets-service",
         "environment": "stage",
         "update_info_url": "https://s3.amazonaws.com/files.brackets.io/updates/prerelease/<locale>.json"
     },
