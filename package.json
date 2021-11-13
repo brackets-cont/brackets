@@ -65,7 +65,11 @@
         "prepush": "npm run eslint",
         "postinstall": "grunt install",
         "test": "grunt test",
-        "eslint": "grunt eslint"
+        "testJasmine": "grunt jasmine",
+        "testNode": "grunt jasmine-node",
+        "eslint": "grunt eslint",
+        "build":  "grunt build",
+        "buildPreRelease": "grunt build-prerelease"
     },
     "licenses": [
         {
