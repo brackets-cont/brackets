@@ -26,13 +26,6 @@ define(function (require, exports, module) {
     "use strict";
     const DEFAULT = "default";
 
-    function _getAttrOrDefault(object, attr, defaultValue) {
-        if(object && object[attr]) {
-            return object[attr];
-        }
-        return defaultValue || DEFAULT;
-    }
-
     /**
      * send to google analytics
      * @param category string mandatory
@@ -76,13 +69,13 @@ define(function (require, exports, module) {
             NUM_PROJECTS_OPENED = "numProjectsOpened",
             CACHE_SIZE= "cacheSize",
             numProjects = 0,
-            projectDetails = _getAttrOrDefault(data, "ProjectDetails", {});
+            projectDetails = data["ProjectDetails"] || {};
         for(let projectName in projectDetails) {
             let project = projectDetails[projectName];
             numProjects++;
-            let numFiles = _getAttrOrDefault(project, NUM_FILES, 0);
+            let numFiles = project[NUM_FILES] || 0;
             _sendEvent(CATEGORY_PROJECT, NUM_FILES, null, numFiles);
-            let cacheSize = _getAttrOrDefault(project, CACHE_SIZE, 0);
+            let cacheSize = project[CACHE_SIZE] || 0;
             _sendEvent(CATEGORY_PROJECT, CACHE_SIZE, null, cacheSize);
         }
         _sendEvent(CATEGORY_PROJECT, NUM_PROJECTS_OPENED, null, numProjects);
@@ -93,7 +86,7 @@ define(function (require, exports, module) {
             ACTION_OPENED_FILES_EXT = "openedFileExt",
             ACTION_WORKINGSET_FILES_EXT = "workingSetFileExt",
             ACTION_OPENED_FILE_ENCODING = "openedFileEncoding",
-            fileStats = _getAttrOrDefault(data, "fileStats", {});
+            fileStats = data["fileStats"] || {};
         if(fileStats[ACTION_OPENED_FILES_EXT]){
             _sendMapValues(CATEGORY_FILE, ACTION_OPENED_FILES_EXT, fileStats[ACTION_OPENED_FILES_EXT]);
         }
@@ -116,11 +109,35 @@ define(function (require, exports, module) {
         _sendEvent(CATEGORY_SEARCH, ACTION_SEARCH_INSTANT, null, searchInstant);
     }
 
+    function _sendThemesMetrics(data) {
+        var CATEGORY_THEMES = "THEMES",
+            ACTION_CURRENT_THEME = "bracketsTheme";
+        _sendEvent(CATEGORY_THEMES, ACTION_CURRENT_THEME, data[ACTION_CURRENT_THEME]);
+    }
+
+    function _sendExtensionMetrics(data) {
+        var CATEGORY_EXTENSIONS = "EXTENSIONS",
+            CATEGORY_INSTALLED_EXTENSIONS = "installedExtensions",
+            NUM_EXTENSIONS_INSTALLED = "numExtensions",
+            ATTR_NAME = "name",
+            ATTR_VERSION = "version",
+            extensionStats = data["installedExtensions"] || [];
+        for(let i=0; i<extensionStats.length; i++) {
+            let extension = extensionStats[i],
+                name = extension[ATTR_NAME] || "-",
+                version = extension[ATTR_VERSION] || "-";
+            _sendEvent(CATEGORY_INSTALLED_EXTENSIONS, name, version);
+        }
+        _sendEvent(CATEGORY_EXTENSIONS, NUM_EXTENSIONS_INSTALLED, null, extensionStats.length);
+    }
+
     function sendHealthDataToGA(healthData) {
         _sendPlatformMetrics(healthData);
         _sendProjectMetrics(healthData);
         _sendFileMetrics(healthData);
         _sendSearchMetrics(healthData);
+        _sendThemesMetrics(healthData);
+        _sendExtensionMetrics(healthData);
     }
 
     exports.sendHealthDataToGA = sendHealthDataToGA;
