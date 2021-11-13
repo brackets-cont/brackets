@@ -105,10 +105,22 @@ define(function (require, exports, module) {
         }
     }
 
+    function _sendSearchMetrics(data) {
+        var CATEGORY_SEARCH = "searchDetails",
+            ACTION_SEARCH_NEW = "searchNew",
+            ACTION_SEARCH_INSTANT = "searchInstant",
+            searchDetails = data[CATEGORY_SEARCH] || {},
+            searchNew = searchDetails[ACTION_SEARCH_NEW] || 0,
+            searchInstant = searchDetails[ACTION_SEARCH_INSTANT] || 0;
+        _sendEvent(CATEGORY_SEARCH, ACTION_SEARCH_NEW, null, searchNew);
+        _sendEvent(CATEGORY_SEARCH, ACTION_SEARCH_INSTANT, null, searchInstant);
+    }
+
     function sendHealthDataToGA(healthData) {
         _sendPlatformMetrics(healthData);
         _sendProjectMetrics(healthData);
         _sendFileMetrics(healthData);
+        _sendSearchMetrics(healthData);
     }
 
     exports.sendHealthDataToGA = sendHealthDataToGA;
