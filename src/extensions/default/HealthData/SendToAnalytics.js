@@ -56,6 +56,12 @@ define(function (require, exports, module) {
         }
     }
 
+    function _sendMapValues(category, action, mapObject) {
+        for(let key in mapObject) {
+            _sendEvent(category, action, key, mapObject[key]);
+        }
+    }
+
     function _sendPlatformMetrics(data) {
         var CATEGORY_PLATFORM = "PLATFORM";
         _sendEvent(CATEGORY_PLATFORM, "os", data["os"]);
@@ -82,9 +88,27 @@ define(function (require, exports, module) {
         _sendEvent(CATEGORY_PROJECT, NUM_PROJECTS_OPENED, null, numProjects);
     }
 
+    function _sendFileMetrics(data) {
+        var CATEGORY_FILE = "FILE_STATS",
+            ACTION_OPENED_FILES_EXT = "openedFileExt",
+            ACTION_WORKINGSET_FILES_EXT = "workingSetFileExt",
+            ACTION_OPENED_FILE_ENCODING = "openedFileEncoding",
+            fileStats = _getAttrOrDefault(data, "fileStats", {});
+        if(fileStats[ACTION_OPENED_FILES_EXT]){
+            _sendMapValues(CATEGORY_FILE, ACTION_OPENED_FILES_EXT, fileStats[ACTION_OPENED_FILES_EXT]);
+        }
+        if(fileStats[ACTION_WORKINGSET_FILES_EXT]){
+            _sendMapValues(CATEGORY_FILE, ACTION_WORKINGSET_FILES_EXT, fileStats[ACTION_WORKINGSET_FILES_EXT]);
+        }
+        if(fileStats[ACTION_OPENED_FILE_ENCODING]){
+            _sendMapValues(CATEGORY_FILE, ACTION_OPENED_FILE_ENCODING, fileStats[ACTION_OPENED_FILE_ENCODING]);
+        }
+    }
+
     function sendHealthDataToGA(healthData) {
         _sendPlatformMetrics(healthData);
         _sendProjectMetrics(healthData);
+        _sendFileMetrics(healthData);
     }
 
     exports.sendHealthDataToGA = sendHealthDataToGA;
