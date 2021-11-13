@@ -24,7 +24,7 @@
 /*global define, ga*/
 define(function (require, exports, module) {
     "use strict";
-    const DEFAULT = "default";
+    const CATEGORY_PROJECT = "PROJECT";
 
     /**
      * send to google analytics
@@ -56,16 +56,26 @@ define(function (require, exports, module) {
     }
 
     function _sendPlatformMetrics(data) {
-        var CATEGORY_PLATFORM = "PLATFORM";
+        let CATEGORY_PLATFORM = "PLATFORM";
         _sendEvent(CATEGORY_PLATFORM, "os", data["os"]);
         _sendEvent(CATEGORY_PLATFORM, "osLanguage", data["osLanguage"]);
         _sendEvent(CATEGORY_PLATFORM, "bracketsLanguage", data["bracketsLanguage"]);
         _sendEvent(CATEGORY_PLATFORM, "bracketsVersion", data["bracketsVersion"]);
+        _sendEvent(CATEGORY_PLATFORM, "AppStartupTime", null, data["AppStartupTime"]);
+        _sendEvent(CATEGORY_PLATFORM, "ModuleDepsResolved", null, data["ModuleDepsResolved"]);
+    }
+
+    function _sendProjectLoadTimeMetrics(data) {
+        let ACTION_PROJECT_LOAD_TIME = "projectLoadTimes";
+        let projectLoadTimeStr = data[ACTION_PROJECT_LOAD_TIME] || ""; //  string with : seperated load times":32:21"
+        let loadTimes = projectLoadTimeStr.substring(1).split(":");
+        for(let i=0; i<loadTimes.length; i++){
+            _sendEvent(CATEGORY_PROJECT, "ACTION_PROJECT_LOAD_TIME", null, Number(loadTimes[i]));
+        }
     }
 
     function _sendProjectMetrics(data) {
-        var CATEGORY_PROJECT = "PROJECT",
-            NUM_FILES = "numFiles",
+        let NUM_FILES = "numFiles",
             NUM_PROJECTS_OPENED = "numProjectsOpened",
             CACHE_SIZE= "cacheSize",
             numProjects = 0,
@@ -79,10 +89,11 @@ define(function (require, exports, module) {
             _sendEvent(CATEGORY_PROJECT, CACHE_SIZE, null, cacheSize);
         }
         _sendEvent(CATEGORY_PROJECT, NUM_PROJECTS_OPENED, null, numProjects);
+        _sendProjectLoadTimeMetrics(data);
     }
 
     function _sendFileMetrics(data) {
-        var CATEGORY_FILE = "FILE_STATS",
+        let CATEGORY_FILE = "FILE_STATS",
             ACTION_OPENED_FILES_EXT = "openedFileExt",
             ACTION_WORKINGSET_FILES_EXT = "workingSetFileExt",
             ACTION_OPENED_FILE_ENCODING = "openedFileEncoding",
@@ -99,7 +110,7 @@ define(function (require, exports, module) {
     }
 
     function _sendSearchMetrics(data) {
-        var CATEGORY_SEARCH = "searchDetails",
+        let CATEGORY_SEARCH = "searchDetails",
             ACTION_SEARCH_NEW = "searchNew",
             ACTION_SEARCH_INSTANT = "searchInstant",
             searchDetails = data[CATEGORY_SEARCH] || {},
@@ -110,13 +121,13 @@ define(function (require, exports, module) {
     }
 
     function _sendThemesMetrics(data) {
-        var CATEGORY_THEMES = "THEMES",
+        let CATEGORY_THEMES = "THEMES",
             ACTION_CURRENT_THEME = "bracketsTheme";
         _sendEvent(CATEGORY_THEMES, ACTION_CURRENT_THEME, data[ACTION_CURRENT_THEME]);
     }
 
     function _sendExtensionMetrics(data) {
-        var CATEGORY_EXTENSIONS = "EXTENSIONS",
+        let CATEGORY_EXTENSIONS = "EXTENSIONS",
             CATEGORY_INSTALLED_EXTENSIONS = "installedExtensions",
             NUM_EXTENSIONS_INSTALLED = "numExtensions",
             ATTR_NAME = "name",
