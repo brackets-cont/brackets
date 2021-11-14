@@ -1,0 +1,49 @@
+name: Enforce CLA Signature
+# https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
+
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-cla-signature:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 100
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Setting temp directory
+        run: | 
+          mkdir ./.tmp
+      - name: Getting commit details
+        uses: wei/wget@v1
+        with:
+          args: -O ./.tmp/commitDetails.json ${{ toJSON(github.event.pull_request._links.commits.href) }}
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJSON(github) }}
+        run: | 
+          echo "$GITHUB_CONTEXT" > ./.tmp/github.json
+          cat ./.tmp/github.json
+          echo "commit details: "
+          cat ./.tmp/commitDetails.json
+      - name: CLA signature check
+        run: |
+          which git
+          if ! python ./.github/workflows/python/validate_cla_signature.py; then
+              echo "Please sign the Contributer Licence Agreement before contributing to this repository."
+              echo "You can sign the CLA here: http://brackets.io/contributor-license-agreement/"
+              exit 1
+          else
+              echo "all good"
+          fi
+      
