@@ -89,7 +89,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE": "{APP_NAME}는 아직 브라우저에서 실행되지 않습니다.",
-    "ERROR_IN_BROWSER": "{APP_NAME}는 HTML로 구축되어 있지만 데스크톱 응용 프로그램으로 실행하여 로컬 파일을 편집 할 수 있습니다. {APP_NAME}를 실행하기 위해 <b>github.com / adobe / brackets-shell</b> 저장소 응용 프로그램 셸을 사용하십시오.",
+    "ERROR_IN_BROWSER": "{APP_NAME}는 HTML로 구축되어 있지만 데스크톱 응용 프로그램으로 실행하여 로컬 파일을 편집 할 수 있습니다. {APP_NAME}를 실행하기 위해 <b>github.com / brackets-cont / brackets-shell</b> 저장소 응용 프로그램 셸을 사용하십시오.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE": "파일을 인덱스 하던 중에 에러가 발생했습니다.",
@@ -623,9 +623,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "상태 보고서 환경설정",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} 상태 보고서",
     "HEALTH_DATA_DO_TRACK"                      : "{APP_NAME} 사용 행태 정보를 익명으로 공유",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 Adobe에 주기적으로 전송합니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다.<br><br>고객의 데이터를 보거나 또는 데이터를 공유하지 않도록 하려면 <strong>도움말 > 상태 보고서</strong>를 선택하세요. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관한 자세한 정보.</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 brackets.io에 주기적으로 전송합니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다.<br><br>고객의 데이터를 보거나 또는 데이터를 공유하지 않도록 하려면 <strong>도움말 > 상태 보고서</strong>를 선택하세요. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관한 자세한 정보.</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} 상태 보고서",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 Adobe에 주기적으로 전송하고 있습니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다. 고객의 개인정보를 보호하면서 {APP_NAME} 커뮤니티에 어떤 이득을 주는지 <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관해 자세히 알아보세요</a>.</p><p><em>만약</em> 상태 보고서 전송이 가능한 상태라면 아래 미리보기 데이터는 고객의 다음 번 상태 보고서로 전송할 것입니다.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 brackets.io에 주기적으로 전송하고 있습니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다. 고객의 개인정보를 보호하면서 {APP_NAME} 커뮤니티에 어떤 이득을 주는지 <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관해 자세히 알아보세요</a>.</p><p><em>만약</em> 상태 보고서 전송이 가능한 상태라면 아래 미리보기 데이터는 고객의 다음 번 상태 보고서로 전송할 것입니다.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME": "시간",
