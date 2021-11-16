@@ -616,9 +616,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "狀況報告喜好設定",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} 狀況報告",
     "HEALTH_DATA_DO_TRACK"                      : "匿名分享我如何使用 {APP_NAME} 的資訊",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 Adobe，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<br><br>您可以在 <strong>說明 > 狀況報告</strong> 裡看到資料內容，或是設成不回報。<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 brackets.io，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<br><br>您可以在 <strong>說明 > 狀況報告</strong> 裡看到資料內容，或是設成不回報。<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} 狀況報告",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 Adobe，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>以及如何在不洩露您隱私的情況下幫助 {APP_NAME} 開發社群。</p><p><strong>在您同意的前提下</strong>，下次會送出的「狀況報告」資料內容預覽如下。</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 brackets.io，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>以及如何在不洩露您隱私的情況下幫助 {APP_NAME} 開發社群。</p><p><strong>在您同意的前提下</strong>，下次會送出的「狀況報告」資料內容預覽如下。</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "時間",
