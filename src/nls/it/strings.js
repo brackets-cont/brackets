@@ -89,7 +89,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Oops! {APP_NAME} non può essere ancora eseguita nel browser.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} è scritta in HTML, ma al momento viene eseguita come applicazione desktop per avere la possibilità di modificare file locali. Puoi usare la shell dal repository <b>github.com/adobe/brackets-shell</b> per eseguire {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} è scritta in HTML, ma al momento viene eseguita come applicazione desktop per avere la possibilità di modificare file locali. Puoi usare la shell dal repository <b>github.com/brackets-cont/brackets-shell</b> per eseguire {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Errore durante l’indicizzazione dei file",
@@ -445,7 +445,7 @@ define({
     "ABOUT_TEXT_LINE1"                  : "Release {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"        : "build timestamp: ",
     "ABOUT_TEXT_LINE3"                  : "Avvisi, termini e condizioni circa i software di terze parti raggiungibili all’indirizzo <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> incorporati come riferimento.",
-    "ABOUT_TEXT_LINE4"                  : "Documentazione e codice sorgente sono disponibili all’indirizzo <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                  : "Documentazione e codice sorgente sono disponibili all’indirizzo <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Fatto con \u2764 e JavaScript da:",
     "ABOUT_TEXT_LINE6"                     : "Molte persone (abbiamo qualche difficoltà a caricare questi dati ora).",
     "ABOUT_TEXT_MDN_DOCS"               : "I loghi di 'MDN Docs'e 'MDN' sono sotto licenza Creative Common Attribution, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -461,11 +461,11 @@ define({
     "BASEURL_ERROR_HASH_DISALLOWED"     : "L’URL di base non può contenere hash come \"{0}\".",
     "BASEURL_ERROR_INVALID_CHAR"        : "I caratteri speciali come '{0}' devono essere %-encodate.",
     "BASEURL_ERROR_UNKNOWN_ERROR"       : "Trovato un carattere sconosciuto durante l'analisi del URL di base",
-    
+
     // Strings for Pane.js
     "EMPTY_VIEW_HEADER"                 : "<em>Aprire un file mentre questo riquadro è attivo</em>",
     "FLIPVIEW_BTN_TOOLTIP"              : "Spostare questa vista nel riquadro {0}",
-   
+
     // Strings for themes-settings.html and themes-general.html
     "CURRENT_THEME"                        : "Tema attuale",
     "USE_THEME_SCROLLBARS"                 : "Utilizzare le barre di scorrimento a tema",
@@ -605,13 +605,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Apri {APP_NAME} sorgente",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "Scorciatoia da riga di comando di {APP_NAME}",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Si è verificato un errore durante la creazione della scorciatoia da riga di comando. Per favore, leggi la <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>guida della linea di comando</a> per la risoluzione dei problemi.<br/><br/>Motivo: ",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Si è verificato un errore durante la creazione della scorciatoia da riga di comando. Per favore, leggi la <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>guida della linea di comando</a> per la risoluzione dei problemi.<br/><br/>Motivo: ",
     "ERROR_CLTOOLS_RMFAILED"                    : "Impossibile rimuovere collegamento simbolico esistente {APP_NAME} a <code>/usr/local/bin.</code>",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Impossibile creare la cartella <code>/usr/local/bin</code>.",
     "ERROR_CLTOOLS_LNFAILED"                    : "Impossibile creare il collegamento simbolico <code>/usr/local/bin/brackets</code>.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Errore interno.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "La scorciatoia da riga di comando non è supportato su questo OS.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Successo! Ora si può facilmente avviare {APP_NAME} dalla riga di comando eseguendo: <code>brackets myFile.txt</code> per aprire un file o <code>brackets myFolder</code> per aprire un progetto.<br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Altre informazioni sulla riga di comando di {APP_NAME}</a>.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Successo! Ora si può facilmente avviare {APP_NAME} dalla riga di comando eseguendo: <code>brackets myFile.txt</code> per aprire un file o <code>brackets myFolder</code> per aprire un progetto.<br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Altre informazioni sulla riga di comando di {APP_NAME}</a>.",
 
     "LANGUAGE_TITLE"                            : "Cambia la lingua",
     "LANGUAGE_MESSAGE"                          : "Lingua:",
@@ -623,9 +623,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Preferenze Health Data",
     "HEALTH_FIRST_POPUP_TITLE"                  : "Brackets Health Report",
     "HEALTH_DATA_DO_TRACK"                      : "Sì, mi piacerebbe condividere informazioni su come uso Brackets.",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Al fine di migliorare Brackets stiamo implementando un nuovo Health Report che invia <strong>anonimo</strong> dati a Adobe su come usi Brackets. Questo rapporto aiuterà il gruppo di sviluppo e gli sviluppatori di estensioni sulle caratteristiche prioritarie, bug, problemi di usabilità e reperibilità.<br><br>È possibile visualizzare i dati inviati così come cambiare la vostra preferenza in qualsiasi momento visitando <strong>Help->Health Data Report</strong>. Ulteriori informazioni su Brackets Health Report e sullo stato <a href='https://github.com/adobe/brackets/wiki/Health-Data'>nella pagina wiki</a>.",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Al fine di migliorare Brackets stiamo implementando un nuovo Health Report che invia <strong>anonimo</strong> dati a Adobe su come usi Brackets. Questo rapporto aiuterà il gruppo di sviluppo e gli sviluppatori di estensioni sulle caratteristiche prioritarie, bug, problemi di usabilità e reperibilità.<br><br>È possibile visualizzare i dati inviati così come cambiare la vostra preferenza in qualsiasi momento visitando <strong>Help->Health Data Report</strong>. Ulteriori informazioni su Brackets Health Report e sullo stato <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>nella pagina wiki</a>.",
     "HEALTH_DATA_PREVIEW"                       : "Anteprima Health Data",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Al fine di migliorare {APP_NAME}, periodicamente invieremo limitate statistiche <strong>anonime</strong> a Adobe su come usi {APP_NAME}. Queste informazioni aiutano ad assegnare una priorità ad alcune caratteristiche, a trovare i bug e a individuare problemi di usabilità. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Clicca qui per saperne di più su {APP_NAME} Health Report</a> e su come si avvantaggia la comunità di {APP_NAME} mantenendo la tua privacy protetta.</p><p>Ecco un'anteprima dei dati che saranno inviati nella tua prossima Health Report (<em>se</em> abilitato):</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Al fine di migliorare {APP_NAME}, periodicamente invieremo limitate statistiche <strong>anonime</strong> a Adobe su come usi {APP_NAME}. Queste informazioni aiutano ad assegnare una priorità ad alcune caratteristiche, a trovare i bug e a individuare problemi di usabilità. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Clicca qui per saperne di più su {APP_NAME} Health Report</a> e su come si avvantaggia la comunità di {APP_NAME} mantenendo la tua privacy protetta.</p><p>Ecco un'anteprima dei dati che saranno inviati nella tua prossima Health Report (<em>se</em> abilitato):</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Tempo",
@@ -648,7 +648,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Mostra suggerimenti sul parametro",
     "NO_ARGUMENTS"                              : "<nessun parametro>",
     "DETECTED_EXCLUSION_TITLE"                  : "Problema Conseguente File JavaScript",
-    "DETECTED_EXCLUSION_INFO"                   : "Brackets ha dei problemi nel elaborare il processo <span class='dialog-filename'>{0}</span>.<br><br> Questo file non sarà più elaborato per i Suggerimenti sul codice, Vai a definizione o Modifica rapida. Per riattivare questo file , aprire <code>.brackets.json</code> nel progetto e modificare <code>jscodehints.detectedExclusions</code>.<br><br>Questo è probabilmente un bug di Brackets. Se è possibile fornire una copia di questo file, <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>un bug</a> con un collegamento al file denominato qui.",
+    "DETECTED_EXCLUSION_INFO"                   : "Brackets ha dei problemi nel elaborare il processo <span class='dialog-filename'>{0}</span>.<br><br> Questo file non sarà più elaborato per i Suggerimenti sul codice, Vai a definizione o Modifica rapida. Per riattivare questo file , aprire <code>.brackets.json</code> nel progetto e modificare <code>jscodehints.detectedExclusions</code>.<br><br>Questo è probabilmente un bug di Brackets. Se è possibile fornire una copia di questo file, <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>un bug</a> con un collegamento al file denominato qui.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",
@@ -773,7 +773,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "false per aprire le preferenze nel pannello di sinistra / superiore",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "true per chiudere la finestra quando l'ultimo file che contiene viene chiuso tramite il pulsante di chiusura",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "Alterna i pulsanti chiudi e flip-view nell'header",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Questo è un file non modificabile che contiene le preferenze supportate da\n * {APP_NAME}.\n * Basati su questo file per modificare le preferenze del file\n * \"brackets.json\" aperto nell'altra scheda.\n * Per ulteriori informazioni sull'utilizzo delle preferenze vedere\n * https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Questo è un file non modificabile che contiene le preferenze supportate da\n * {APP_NAME}.\n * Basati su questo file per modificare le preferenze del file\n * \"brackets.json\" aperto nell'altra scheda.\n * Per ulteriori informazioni sull'utilizzo delle preferenze vedere\n * https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "Default",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "true per abilitare il codice in modalità senza distrazioni e nascondere tutti gli altri elementi dell'interfaccia utente di {APP_NAME}"
 });

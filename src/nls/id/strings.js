@@ -92,11 +92,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Ups! {APP_NAME} Belum Dapat Dijalankan di Peramban.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} dibuat menggunakan HTML, tetapi saat ini berjalan sebagai aplikasi desktop agar Anda dapat mengedit file lokal. Gunakan shell aplikasi di repositori <b>github.com/adobe/brackets-shell</b> untuk menjalankan {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} dibuat menggunakan HTML, tetapi saat ini berjalan sebagai aplikasi desktop agar Anda dapat mengedit file lokal. Gunakan shell aplikasi di repositori <b>github.com/brackets-cont/brackets-shell</b> untuk menjalankan {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Gagal Mengindeks File",
-    "ERROR_MAX_FILES"                   : "Proyek ini mempunyai lebih dari 30,000 file. Fitur yang beroperasi di beberapa file mungkin dinonaktifkan atau bersikap seolah-olah proyek kosong. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Baca selengkapnya tentang bekerja dengan proyek besar</a>.",
+    "ERROR_MAX_FILES"                   : "Proyek ini mempunyai lebih dari 30,000 file. Fitur yang beroperasi di beberapa file mungkin dinonaktifkan atau bersikap seolah-olah proyek kosong. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Baca selengkapnya tentang bekerja dengan proyek besar</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Gagal Menjalankan Peramban",
@@ -435,7 +435,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Rilis {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "timestamp versi: ",
     "ABOUT_TEXT_LINE3"                     : "Catatan, syarat dan ketentuan mengenai perangkat lunak pihak ketiga ada di <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> dan digunakan di sini sebagai acuan.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentasi dan kode sumber di <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentasi dan kode sumber di <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Dibuat dengan \u2764 dan JavaScript oleh:",
     "ABOUT_TEXT_LINE6"                     : "Banyak sekali orang (tetapi kami tidak dapat menampilkan daftarnya saat ini).",
     "ABOUT_TEXT_MDN_DOCS"                  : "Dokumentasi dan logo grafis MDN berlisensi Creative Commons Attribution, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -611,7 +611,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Tampilkan Petunjuk Parameter",
     "NO_ARGUMENTS"                              : "<tidak ada parameter>",
     "DETECTED_EXCLUSION_TITLE"                  : "Masalah Inferensi File JavaScript",
-    "DETECTED_EXCLUSION_INFO"                   : "Brackets mengalami masalah dalam memproses <span class='dialog-filename'>{0}</span>.<br><br>File ini tidak akan lagi diproses untuk Petunjuk Kode, Lompat ke Definisi atau Edit Cepat. Untuk mengaktifkan kembali file ini, buka <code>.brackets.json</code> pada proyek Anda dan ubah <code>jscodehints.detectedExclusions</code>.<br><br>Kemungkinan ini adalah bug pada Brackets. Jika Anda dapat memberikan salinan file ini, <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>laporkan bug/a> dengan tautan ke file yang disebutkan di sini.",
+    "DETECTED_EXCLUSION_INFO"                   : "Brackets mengalami masalah dalam memproses <span class='dialog-filename'>{0}</span>.<br><br>File ini tidak akan lagi diproses untuk Petunjuk Kode, Lompat ke Definisi atau Edit Cepat. Untuk mengaktifkan kembali file ini, buka <code>.brackets.json</code> pada proyek Anda dan ubah <code>jscodehints.detectedExclusions</code>.<br><br>Kemungkinan ini adalah bug pada Brackets. Jika Anda dapat memberikan salinan file ini, <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>laporkan bug/a> dengan tautan ke file yang disebutkan di sini.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",

@@ -89,11 +89,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "不妙! {APP_NAME} 還不能在瀏覽器裡跑。",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} 是以 HTML 打造，不過要以應用程式的方式執行才能編輯電腦上的檔案。請透過 <b>github.com/adobe/brackets-shell</b> 儲存庫中的應用程式介面來執行 {APP_NAME}。",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} 是以 HTML 打造，不過要以應用程式的方式執行才能編輯電腦上的檔案。請透過 <b>github.com/brackets-cont/brackets-shell</b> 儲存庫中的應用程式介面來執行 {APP_NAME}。",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "無法建立檔案索引",
-    "ERROR_MAX_FILES"                   : "專案超過 30,000 個檔案。需要跨檔案執行的功能可能會被關閉或是變成跟專案內沒有任何檔案一樣。<a href='https://github.com/adobe/brackets/wiki/Large-Projects'>了解怎麼處理大型專案</a>。",
+    "ERROR_MAX_FILES"                   : "專案超過 30,000 個檔案。需要跨檔案執行的功能可能會被關閉或是變成跟專案內沒有任何檔案一樣。<a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>了解怎麼處理大型專案</a>。",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "無法啟動瀏覽器",
@@ -441,7 +441,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "發行 {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "建置時間: ",
     "ABOUT_TEXT_LINE3"                     : "第三方軟體的注意事項、使用條款及條件公佈在 <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a>，於此引用納入。",
-    "ABOUT_TEXT_LINE4"                     : "說明文件及原始碼都在 <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a> 上。",
+    "ABOUT_TEXT_LINE4"                     : "說明文件及原始碼都在 <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a> 上。",
     "ABOUT_TEXT_LINE5"                     : "用 \u2764 跟 JavaScript 打造。工匠名錄:",
     "ABOUT_TEXT_LINE6"                     : "一大票人馬 (只可惜我們現在沒辦法正常載入名單)。",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN 文件及 MDN 圖示皆以 Creative Commons Attribution 授權條款 <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a> 授權。",
@@ -598,13 +598,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "開啟 {APP_NAME} 原始碼",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME} 命令列捷徑",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "安裝命令列捷徑時發生錯誤。請嘗試<a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>這些疑難排解建議</a>。<br/><br/>原因: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "安裝命令列捷徑時發生錯誤。請嘗試<a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>這些疑難排解建議</a>。<br/><br/>原因: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "無法移除現有的 <code>/usr/local/bin/brackets</code> 符號連結。",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "無法建立 <code>/usr/local/bin</code> 目錄。",
     "ERROR_CLTOOLS_LNFAILED"                    : "無法建立 <code>/usr/local/bin/brackets</code> 符號連結。",
     "ERROR_CLTOOLS_SERVFAILED"                  : "內部錯誤。",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "在這個作業系統中無法使用命令列捷徑功能。",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "成功! 現在開始您可以經由下列指令啟動 {APP_NAME}: <code>brackets myFile.txt</code> 開啟檔案，或 <code>brackets myFolder</code> 切換專案。<br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>了解更多</a> {APP_NAME} 命令列的使用方法。",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "成功! 現在開始您可以經由下列指令啟動 {APP_NAME}: <code>brackets myFile.txt</code> 開啟檔案，或 <code>brackets myFolder</code> 切換專案。<br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>了解更多</a> {APP_NAME} 命令列的使用方法。",
 
     "LANGUAGE_TITLE"                            : "切換語言",
     "LANGUAGE_MESSAGE"                          : "語言:",
@@ -616,9 +616,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "狀況報告喜好設定",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} 狀況報告",
     "HEALTH_DATA_DO_TRACK"                      : "匿名分享我如何使用 {APP_NAME} 的資訊",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 Adobe，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<br><br>您可以在 <strong>說明 > 狀況報告</strong> 裡看到資料內容，或是設成不回報。<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 Adobe，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<br><br>您可以在 <strong>說明 > 狀況報告</strong> 裡看到資料內容，或是設成不回報。<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} 狀況報告",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 Adobe，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<a href='https://github.com/adobe/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>以及如何在不洩露您隱私的情況下幫助 {APP_NAME} 開發社群。</p><p><strong>在您同意的前提下</strong>，下次會送出的「狀況報告」資料內容預覽如下。</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>為了讓 {APP_NAME} 更好，我們會定期將您使用 {APP_NAME} 的統計資料傳送給 Adobe，資料內容是有限且<strong>匿名</strong>的。這些資訊能幫忙區別出各項功能的重要程度、找出程式錯誤及突顯出可用性問題。<a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>更進一步了解 {APP_NAME} 狀況報告</a>以及如何在不洩露您隱私的情況下幫助 {APP_NAME} 開發社群。</p><p><strong>在您同意的前提下</strong>，下次會送出的「狀況報告」資料內容預覽如下。</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "時間",
@@ -641,7 +641,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "顯示參數提示",
     "NO_ARGUMENTS"                              : "<沒有參數>",
     "DETECTED_EXCLUSION_TITLE"                  : "JavaScript 檔案推斷問題",
-    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} 處理 <span class='dialog-filename'>{0}</span> 時發生問題。<br><br>這個檔案在「程式提示」、「跳到定義位置」或「快速編輯」時都不會再被處理。如果想要繼續處理這個檔案，請開啟專案中的 <code>.brackets.json</code> 檔編輯 <code>jscodehints.detectedExclusions</code> 屬性。<br><br>也有可能是 {APP_NAME} 本身的 Bug 引起的。如果可以，請您將這個檔案複製一份，並<a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>開一張問題單</a>連結過去。",
+    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} 處理 <span class='dialog-filename'>{0}</span> 時發生問題。<br><br>這個檔案在「程式提示」、「跳到定義位置」或「快速編輯」時都不會再被處理。如果想要繼續處理這個檔案，請開啟專案中的 <code>.brackets.json</code> 檔編輯 <code>jscodehints.detectedExclusions</code> 屬性。<br><br>也有可能是 {APP_NAME} 本身的 Bug 引起的。如果可以，請您將這個檔案複製一份，並<a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>開一張問題單</a>連結過去。",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",
@@ -763,7 +763,7 @@ define({
     "DESCRIPTION_FONT_SMOOTHING"                     : "只適用 Mac: \"subpixel-antialiased\" 代表啟用子像素鋸齒消除模式，或是設成 \"antialiased\" 使用灰階鋸齒消除模式。",
     "DESCRIPTION_OPEN_PREFS_IN_SPLIT_VIEW"           : "false 代表不要使用分割窗格開啟喜好設定檔",
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "false 代表在左窗格或上窗格開啟使用者喜好設定檔",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * 這是 {APP_NAME} 支援的喜好設定值，內容是唯讀的，請勿直接修改。\n * 供您參考並請修改開在另一個窗格的 \"brackets.json\" 個人喜好設定檔。\n * 如果想更了解 {APP_NAME} 喜好設定，請參考網頁 https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * 這是 {APP_NAME} 支援的喜好設定值，內容是唯讀的，請勿直接修改。\n * 供您參考並請修改開在另一個窗格的 \"brackets.json\" 個人喜好設定檔。\n * 如果想更了解 {APP_NAME} 喜好設定，請參考網頁 https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "預設"
 });
 

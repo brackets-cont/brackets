@@ -10,11 +10,11 @@
 3. Edit the root `strings-app.js` file and add a new `LOCALE_`* entry for your language, as seen in
    the Debug > Switch Language UI.
 4. Copy the root `strings.js` file into your subfolder and start translating!
-5. Use the [UI walkthrough steps](https://github.com/adobe/brackets/wiki/Localization-Tests) to
+5. Use the [UI walkthrough steps](https://github.com/brackets-cont/brackets/wiki/Localization-Tests) to
    see strings in context.
 6. Add this comment ``/* Last translated for commit_SHA_of_root_strings.js */`` at the end 
    of your `strings.js` and replace `commit_SHA_of_root_strings.js` with the actual SHA.
-   You can copy the actual SHA in this [history page](https://github.com/adobe/brackets/commits/master/src/nls/root/strings.js)
+   You can copy the actual SHA in this [history page](https://github.com/brackets-cont/brackets/commits/master/src/nls/root/strings.js)
    by hovering on the one you used for this translation and click on Copy SHA button.
 7. Edit this file and update the list of languages below!
 
@@ -45,7 +45,7 @@ Adobe provides translations for the following languages:
 * Japanese (ja)
 
 These translations cannot be modified through our normal pull request
-process. Please contribute changes by filing an issue in our GitHub repository https://github.com/adobe/brackets/issues
+process. Please contribute changes by filing an issue in our GitHub repository https://github.com/brackets-cont/brackets/issues
 
 ### Community-maintained translations
 
@@ -99,9 +99,9 @@ You must be logged in to your github.com id (e.g. `user1`).
 ### Adding a New Translation
 To add a new translation, you need to start with a copy of the
 root `strings.js` file which is located at
-[https://github.com/adobe/brackets/blob/master/src/nls/root/strings.js](https://github.com/adobe/brackets/blob/master/src/nls/root/strings.js).
+[https://github.com/brackets-cont/brackets/blob/master/src/nls/root/strings.js](https://github.com/brackets-cont/brackets/blob/master/src/nls/root/strings.js).
 New translations can be added by navigating to the
-[nls folder on github](https://github.com/adobe/brackets/tree/master/src/nls)
+[nls folder on github](https://github.com/brackets-cont/brackets/tree/master/src/nls)
 and then clicking on the [+] button to add a new file.
 You will be taken to a New File page where you:
 
@@ -111,14 +111,14 @@ You will be taken to a New File page where you:
 at the end of your strings.js and replace `commit_SHA_of_root_strings.js` with the
 actual SHA.
 You can copy the actual SHA in this
-[history page](https://github.com/adobe/brackets/commits/master/src/nls/root/strings.js)
+[history page](https://github.com/brackets-cont/brackets/commits/master/src/nls/root/strings.js)
 by hovering on the one you used for this translation and click on Copy SHA button.
 4. Add short and (optional) long description of new file
 5. Click "Propose New File" button
 
 ### Editing an Existing Translation
 Existing files can be edited directly in
-[brackets repo on github](https://github.com/adobe/brackets).
+[brackets repo on github](https://github.com/brackets-cont/brackets).
 
 Navigate to the file to edit and click "Edit" button above file.
 You will be taken to an Edit File page where you:
@@ -181,4 +181,4 @@ Some strings cannot be localized yet:
 * [Some native menus on Mac](https://trello.com/c/0IsE7q02) (hardcoded support only for English, French, Japanese)
 * Windows installer UI (hardcoded support only for English, Japanese - with some limitations)
 * Localized folder name of "Getting Started" has to be made of up basic English characters only, as described
-[here](https://github.com/adobe/brackets/pull/8332#issuecomment-48767847).
+[here](https://github.com/brackets-cont/brackets/pull/8332#issuecomment-48767847).

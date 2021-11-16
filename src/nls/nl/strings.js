@@ -89,7 +89,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Oeps! {APP_NAME} werkt nog niet in browsers.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} is gebouwd in HTML, maar op dit moment werkt het als desktop applicatie zodat je het kan gebruiken om lokale bestanden te bewerken. Gebruik graag de applicatie-omgeving op <b>github.com/adobe/brackets-shell</b> om {APP_NAME} te starten.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} is gebouwd in HTML, maar op dit moment werkt het als desktop applicatie zodat je het kan gebruiken om lokale bestanden te bewerken. Gebruik graag de applicatie-omgeving op <b>github.com/brackets-cont/brackets-shell</b> om {APP_NAME} te starten.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Probleem bij het indexeren van bestanden",
@@ -433,7 +433,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "build timestamp: ",
     "ABOUT_TEXT_LINE3"                     : "Kennisgevingen, voorwaarden en bepalingen met betrekking tot software van derden bevinden zich op <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> en op de pagina's, hierin door verwijzing opgenomen.",
-    "ABOUT_TEXT_LINE4"                     : "Documentatie en broncode op <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Documentatie en broncode op <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Gemaakt met \u2764 en JavaScript door:",
     "ABOUT_TEXT_LINE6"                     : "Veel mensen (maar we hebben problemen met het laden van die data op dit moment).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN Docs en het MDN logo zijn gelicentieerd onder een Creative Commons Attribution licentie, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -583,13 +583,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Open broncode van {APP_NAME}",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME} Command Line Shortcut",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Er is een fout opgetreden bij het installeren van de opdrachtprompt snelkoppeling. Kijk op <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>deze pagina</a> voor mogelijke foutoplossing.<br/><br/>Reden: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Er is een fout opgetreden bij het installeren van de opdrachtprompt snelkoppeling. Kijk op <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>deze pagina</a> voor mogelijke foutoplossing.<br/><br/>Reden: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "Niet mogelijk om bestaande symlink <code>/usr/local/bin/brackets</code> te verwijderen.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Niet mogelijk om map <code>/usr/local/bin</code> te maken.",
     "ERROR_CLTOOLS_LNFAILED"                    : "Niet mogelijk om symlink <code>/usr/local/bin/brackets</code> te maken.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Interne fout.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "Koppeling met opdrachtprompt is niet beschikbaar op dit OS.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Gelukt! Je kunt {APP_NAME} nu makkelijk starten vanaf de opdrachtprompt. Type <code>brackets myFile.txt</code> om een bestand te openen of <code>brackets myFolder</code> om van project te wisselen. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Klik hier</a> voor meer informatie over het gebruik van {APP_NAME} via de opdrachtprompt \u0028in het Engels\u0029.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Gelukt! Je kunt {APP_NAME} nu makkelijk starten vanaf de opdrachtprompt. Type <code>brackets myFile.txt</code> om een bestand te openen of <code>brackets myFolder</code> om van project te wisselen. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Klik hier</a> voor meer informatie over het gebruik van {APP_NAME} via de opdrachtprompt \u0028in het Engels\u0029.",
 
     "LANGUAGE_TITLE"                            : "Wijzig taal",
     "LANGUAGE_MESSAGE"                          : "Taal:",
@@ -601,9 +601,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Statusrapport instellingen",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} statusrapport",
     "HEALTH_DATA_DO_TRACK"                      : "Deel anoniem informatie over hoe je {APP_NAME} gebruikt.",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Om {APP_NAME} te verbeteren, wordt er periodiek <strong>(anoniem)</strong> beperkt aantal statistieken verzonden naar Adobe over hoe je {APP_NAME} gebruikt. Deze informatie helpt ons prioriteit te geven aan bepaalde functies, het vinden van fouten in de software en problemen in het gebruik zichtbaar te maken.<br><br>Je kan de data bekijken of ervoor kiezen om geen data te delen via <strong>Help > Statusrapport</strong>. <br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Lees meer over het {APP_NAME} statusrapport (Engels)</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Om {APP_NAME} te verbeteren, wordt er periodiek <strong>(anoniem)</strong> beperkt aantal statistieken verzonden naar Adobe over hoe je {APP_NAME} gebruikt. Deze informatie helpt ons prioriteit te geven aan bepaalde functies, het vinden van fouten in de software en problemen in het gebruik zichtbaar te maken.<br><br>Je kan de data bekijken of ervoor kiezen om geen data te delen via <strong>Help > Statusrapport</strong>. <br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Lees meer over het {APP_NAME} statusrapport (Engels)</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} statusrapport",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Om {APP_NAME} te verbeteren, wordt er periodiek <strong>(anoniem)</strong> beperkt aantal statistieken verzonden naar Adobe over hoe je {APP_NAME} gebruikt. Deze informatie helpt ons prioriteit te geven aan bepaalde functies, het vinden van fouten in de software en problemen in het gebruik zichtbaar te maken. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Lees meer over het {APP_NAME} statusrapport (Engels)</a> en hoe het bijdraagt aan de {APP_NAME} gemeenschap terwijl je privacy beschermd blijft.</p><p>Onder zie je een voorbeeld van de data die wordt verzonden bij het volgende statusrapport, <em>als</em> het is ingeschakeld.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Om {APP_NAME} te verbeteren, wordt er periodiek <strong>(anoniem)</strong> beperkt aantal statistieken verzonden naar Adobe over hoe je {APP_NAME} gebruikt. Deze informatie helpt ons prioriteit te geven aan bepaalde functies, het vinden van fouten in de software en problemen in het gebruik zichtbaar te maken. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Lees meer over het {APP_NAME} statusrapport (Engels)</a> en hoe het bijdraagt aan de {APP_NAME} gemeenschap terwijl je privacy beschermd blijft.</p><p>Onder zie je een voorbeeld van de data die wordt verzonden bij het volgende statusrapport, <em>als</em> het is ingeschakeld.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Tijd",
@@ -626,7 +626,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Toon parameter hint",
     "NO_ARGUMENTS"                              : "<geen parameters>",
     "DETECTED_EXCLUSION_TITLE"                  : "JavaScript File Inference Problem",
-    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} kwam in de problemen met het verwerken van <span class='dialog-filename'>{0}</span>.<br><br>Dit bestand wordt niet verder verwerkt voor \"code hints\", \"Jump to Definition\" of \"Quick Edit\". Om het bestand weer te activeren, open <code>brackets.json</code> in je project en bewerkt <code>jscodehints.detectedExclusions</code>.<br><br>Dit is vermoedelijk een bug in {APP_NAME}. Indien mogelijk kun je een kopie van het bestand sturen naar <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>\"rapporteer een bug\"</a> met een link naar het bestand.",
+    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} kwam in de problemen met het verwerken van <span class='dialog-filename'>{0}</span>.<br><br>Dit bestand wordt niet verder verwerkt voor \"code hints\", \"Jump to Definition\" of \"Quick Edit\". Om het bestand weer te activeren, open <code>brackets.json</code> in je project en bewerkt <code>jscodehints.detectedExclusions</code>.<br><br>Dit is vermoedelijk een bug in {APP_NAME}. Indien mogelijk kun je een kopie van het bestand sturen naar <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>\"rapporteer een bug\"</a> met een link naar het bestand.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",

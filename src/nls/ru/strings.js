@@ -73,7 +73,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "К сожалению, запуск {APP_NAME} в браузере пока что не поддерживается.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} разработан на HTML, но пока что может работать только как настольное приложение, чтобы вы могли редактировать локальные файлы. Пожалуйста, используйте специальную оболочку (проект <b>github.com/adobe/brackets-shell</b>) для запуска {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} разработан на HTML, но пока что может работать только как настольное приложение, чтобы вы могли редактировать локальные файлы. Пожалуйста, используйте специальную оболочку (проект <b>github.com/brackets-cont/brackets-shell</b>) для запуска {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Ошибка индексирования файлов",
@@ -387,7 +387,7 @@ define({
     "CLOSE"                                : "Закрыть",
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_LINE3"                     : "Внимание, правила и условия, относящиеся к стороннему программному обеспечению находятся на <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> и включены здесь в качестве ссылки.",
-    "ABOUT_TEXT_LINE4"                     : "Документация и исходный код находятся на <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Документация и исходный код находятся на <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Сделано с \u2764 и на JavaScript:",
     "ABOUT_TEXT_LINE6"                     : "Длинный список инженеров, но, к сожалению, в данный момент мы не можем его показать.",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN Docs and the MDN graphical logo are licensed under a Creative Commons Attribution license, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
