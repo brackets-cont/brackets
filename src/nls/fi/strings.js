@@ -93,11 +93,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Hups! {APP_NAME} ei toimi vielä selaimessa.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} on tehty HTML:llä, mutta juuri nyt se toimii työpöytäsovelluksena, joten voit muokata sillä paikallisia tiedostoja. Käytä ohjelmistolähteen <b>github.com/adobe/brackets-shell</b> sovellusliittymää, niin voit suorittaa {APP_NAME}in.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} on tehty HTML:llä, mutta juuri nyt se toimii työpöytäsovelluksena, joten voit muokata sillä paikallisia tiedostoja. Käytä ohjelmistolähteen <b>github.com/brackets-cont/brackets-shell</b> sovellusliittymää, niin voit suorittaa {APP_NAME}in.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Virhe tiedostojen indeksoinnissa",
-    "ERROR_MAX_FILES"                   : "Tässä projektissa on yli 30&nbsp;000 tiedostoa. Useiden tiedostojen väliset ominaisuudet poistetaan käytöstä, tai ne toimivat niin kuin projekti olisi tyhjä. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Lue lisää suurten projektien parissa työskentelystä</a>.",
+    "ERROR_MAX_FILES"                   : "Tässä projektissa on yli 30&nbsp;000 tiedostoa. Useiden tiedostojen väliset ominaisuudet poistetaan käytöstä, tai ne toimivat niin kuin projekti olisi tyhjä. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Lue lisää suurten projektien parissa työskentelystä</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Virhe selaimen avaamisessa",
@@ -458,7 +458,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Julkaisu {VERSION_MAJOR}.{VERSION_MINOR}, {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "koontiversion aikaleima: ",
     "ABOUT_TEXT_LINE3"                     : "Kolmannen osapuolen ohjelmistoja koskevat ilmoitukset ja ehdot sijaitsevat osoitteessa <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a>, ja tässä ne esitetään viittauksena.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentaatio ja lähdekoodi osoitteessa <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentaatio ja lähdekoodi osoitteessa <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "He tekivät tämän \u2764:lla ja JavaScriptillä:",
     "ABOUT_TEXT_LINE6"                     : "Monet ihmiset (mutta meillä on juuri nyt vaikeuksia ladata näitä tietoja).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN-dokumentit ja graafinen MDN-logo on lisensoitu Creative Commons Attribution \u2011lisenssillä, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -623,13 +623,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Avaa {APP_NAME}in lähdekoodi",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME}in komentorivin oikotie",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Tapahtui virhe asennettaessa komentorivin oikotietä. Kokeile <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>näitä vianmääritysohjeita</a>.<br/><br/>Syy: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Tapahtui virhe asennettaessa komentorivin oikotietä. Kokeile <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>näitä vianmääritysohjeita</a>.<br/><br/>Syy: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "Olemassa olevaa symbolista linkkiä <code>/usr/local/bin/brackets</code> ei voitu poistaa.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Hakemistoa <code>/usr/local/bin</code> ei voitu luoda.",
     "ERROR_CLTOOLS_LNFAILED"                    : "Symbolista linkkiä <code>/usr/local/bin/brackets</code> ei voitu luoda.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Sisäinen virhe.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "Komentorivin oikotie ei ole tuettu tässä käyttöjärjestelmässä.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Onnistui! Voit nyt avata {APP_NAME}in helposti komentoriviltä: avaa tiedosto komennolla <code>brackets tiedosto.txt</code> tai vaihda projektia komennolla <code>brackets kansio</code>. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Lue lisää</a> {APP_NAME}in käyttämisestä komentoriviltä.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Onnistui! Voit nyt avata {APP_NAME}in helposti komentoriviltä: avaa tiedosto komennolla <code>brackets tiedosto.txt</code> tai vaihda projektia komennolla <code>brackets kansio</code>. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Lue lisää</a> {APP_NAME}in käyttämisestä komentoriviltä.",
 
     "LANGUAGE_TITLE"                            : "Vaihda kieltä",
     "LANGUAGE_MESSAGE"                          : "Kieli:",
@@ -641,9 +641,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Terveydentilaraportin asetukset",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME}in terveydentilaraportti",
     "HEALTH_DATA_DO_TRACK"                      : "Jaa nimettömiä tietoja {APP_NAME}in käytöstäni",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Jotta voit parantaa {APP_NAME}ia, lähetämme säännöllisesti Adobelle rajattuja, <strong>nimettömiä</strong> tilastotietoja siitä, kuinka käytät tuotetta. Nämä tiedot auttavat priorisoimaan ominaisuuksia, löytämään bugeja ja huomaamaan käytettävyysongelmia.<br><br>Voit nähdä tietosi tai valita, ettei tietoja jaeta, valitsemalla <strong>Ohje > Terveydentilaraportti</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Lue lisää {APP_NAME}in terveydentilaraportista</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Jotta voit parantaa {APP_NAME}ia, lähetämme säännöllisesti Adobelle rajattuja, <strong>nimettömiä</strong> tilastotietoja siitä, kuinka käytät tuotetta. Nämä tiedot auttavat priorisoimaan ominaisuuksia, löytämään bugeja ja huomaamaan käytettävyysongelmia.<br><br>Voit nähdä tietosi tai valita, ettei tietoja jaeta, valitsemalla <strong>Ohje > Terveydentilaraportti</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Lue lisää {APP_NAME}in terveydentilaraportista</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME}in terveydentilaraportti",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Jotta voimme parantaa {APP_NAME}ia, lähetämme säännöllisesti Adobelle rajattuja, <strong>nimettömiä</strong> tilastotietoja siitä, kuinka käytät tuotetta. Nämä tiedot auttavat priorisoimaan ominaisuuksia, löytämään bugeja ja huomaamaan käytettävyysongelmia. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Lue lisää {APP_NAME}in terveydentilaraportista</a> ja siitä, kuinka se hyödyttää {APP_NAME}-yhteisöä samalla, kun suojelemme yksityisyyttäsi.</p><p>Alla on esikatselu tiedoista, jotka lähetetään seuraavassa terveydentilaraportissasi <em>jos</em> se on otettu käyttöön.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Jotta voimme parantaa {APP_NAME}ia, lähetämme säännöllisesti Adobelle rajattuja, <strong>nimettömiä</strong> tilastotietoja siitä, kuinka käytät tuotetta. Nämä tiedot auttavat priorisoimaan ominaisuuksia, löytämään bugeja ja huomaamaan käytettävyysongelmia. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Lue lisää {APP_NAME}in terveydentilaraportista</a> ja siitä, kuinka se hyödyttää {APP_NAME}-yhteisöä samalla, kun suojelemme yksityisyyttäsi.</p><p>Alla on esikatselu tiedoista, jotka lähetetään seuraavassa terveydentilaraportissasi <em>jos</em> se on otettu käyttöön.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Aika",
@@ -667,7 +667,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Näytä parametrivihje",
     "NO_ARGUMENTS"                              : "<ei parametreja>",
     "DETECTED_EXCLUSION_TITLE"                  : "JavaScript-tiedoston päättelyongelma",
-    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} kohtasi vaikeuksia tiedoston <span class='dialog-filename'>{0}</span> käsittelyssä.<br><br>Tätä tiedostoa ei enää käsitellä koodivihjeitä, määrittelyyn siirtymistä tai pikamuokkausta varten. Avaa projektin tiedosto <code>.brackets.json</code> ja muokkaa kohtaa <code>jscodehints.detectedExclusions</code>, niin saat tiedoston takaisin käyttöön.<br><br>Tämä on todennäköisesti {APP_NAME}in bugi. Jos voit luovuttaa kopion tästä tiedostosta, <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>ilmoita virheestä</a> ja laita mukaan linkki kyseiseen tiedostoon, kiitos!",
+    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} kohtasi vaikeuksia tiedoston <span class='dialog-filename'>{0}</span> käsittelyssä.<br><br>Tätä tiedostoa ei enää käsitellä koodivihjeitä, määrittelyyn siirtymistä tai pikamuokkausta varten. Avaa projektin tiedosto <code>.brackets.json</code> ja muokkaa kohtaa <code>jscodehints.detectedExclusions</code>, niin saat tiedoston takaisin käyttöön.<br><br>Tämä on todennäköisesti {APP_NAME}in bugi. Jos voit luovuttaa kopion tästä tiedostosta, <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>ilmoita virheestä</a> ja laita mukaan linkki kyseiseen tiedostoon, kiitos!",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",
@@ -799,7 +799,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "false: avaa käyttäjän asetustiedosto vasemmassa tai ylemmässä ruudussa",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "true: yhdistä ruudut sen jälkeen, kun ruudun viimeinen tiedosto on suljettu ruudun yläosassa olevalla sulkupaikkeella",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "Valitse, milloin sulku- ja flip view -painikkeet näkyvät ruudun yläosassa",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Tämä on vain luku -tiedosto {APP_NAME}in tukemista\n * asetuksista.\n * Käytä tätä apuna, kun muutat asetustiedostoasi\n * ”brackets.json”, joka on avattu toiseen ruutuun.\n * Lisätietoa siitä, kuinka käyttää asetuksia {APP_NAME}issa,\n * löydät verkkosivulta osoitteessa https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Tämä on vain luku -tiedosto {APP_NAME}in tukemista\n * asetuksista.\n * Käytä tätä apuna, kun muutat asetustiedostoasi\n * ”brackets.json”, joka on avattu toiseen ruutuun.\n * Lisätietoa siitä, kuinka käyttää asetuksia {APP_NAME}issa,\n * löydät verkkosivulta osoitteessa https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "Oletus",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "true: ota vain koodi -näkymä käyttöön ja piilota muut {APP_NAME}in käyttöliittymäelementit",
     "DESCRIPTION_INDENT_LINE_COMMENT"                : "true: ota rivikommenttien sisennys käyttöön",

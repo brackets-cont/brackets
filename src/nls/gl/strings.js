@@ -77,11 +77,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Vaia... parece que {APP_NAME} aínda non funciona en navegadores.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} está desenvolvido en HTML, pero por agora funciona como unha aplicación de escritorio para que poidas editar arquivos en local. Por favor, utiliza a aplicación do repositorio <b>github.com/adobe/brackets-shell</b> para executar {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} está desenvolvido en HTML, pero por agora funciona como unha aplicación de escritorio para que poidas editar arquivos en local. Por favor, utiliza a aplicación do repositorio <b>github.com/brackets-cont/brackets-shell</b> para executar {APP_NAME}.",
 
     // FileIndexManager error string
     "ERROR_MAX_FILES_TITLE"             : "Erro indexando arquivos",
-    "ERROR_MAX_FILES"                   : "Este proxecto contén máis de 30.000 arquivos. Funcións que operan sobre múltiples arquivos poden estar deshabilitadas ou funcionar igual que si o proxecto estivese baleiro. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Ler máis acerca de cómo traballar con proxectos grandes</a>.",
+    "ERROR_MAX_FILES"                   : "Este proxecto contén máis de 30.000 arquivos. Funcións que operan sobre múltiples arquivos poden estar deshabilitadas ou funcionar igual que si o proxecto estivese baleiro. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Ler máis acerca de cómo traballar con proxectos grandes</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Erro iniciando navegador",
@@ -419,7 +419,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Versión {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "construír marca de tempo: ",
     "ABOUT_TEXT_LINE3"                     : "Os avisos, termos e condicións pertencentes a software de terceiros atópanse en <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> e inclúense aquí como referencia.",
-    "ABOUT_TEXT_LINE4"                     : "Podes atopar a documentación e código fonte en <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Podes atopar a documentación e código fonte en <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Feito con \u2764 e JavaScript por:",
     "ABOUT_TEXT_LINE6"                     : "Moita xente (pero agora mesmo estamos tendo problemas para cargar eses datos).",
     "ABOUT_TEXT_MDN_DOCS"                  : "O contido de MDN Docs e o logo de MDN están dispoñibles baixo unha Licencia de Recoñecemento de Creative Commons, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",

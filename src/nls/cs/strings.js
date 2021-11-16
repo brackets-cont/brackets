@@ -89,11 +89,11 @@ define({
 
     // Řetězce chyb aplikace
     "ERROR_IN_BROWSER_TITLE"            : "Ouha! {APP_NAME} ještě neběží v prohlížeči.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} je vytvořen v HTML, ale nyní pracuje jako desktopová aplikace, takže ji můžete použít pro úpravu lokálních souborů. Prosím, použijte shell aplikace v repozitáři <b>github.com/adobe/brackets-shell</b> pro spuštění {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} je vytvořen v HTML, ale nyní pracuje jako desktopová aplikace, takže ji můžete použít pro úpravu lokálních souborů. Prosím, použijte shell aplikace v repozitáři <b>github.com/brackets-cont/brackets-shell</b> pro spuštění {APP_NAME}.",
 
     // Řetězce chyb indexování souboru
     "ERROR_MAX_FILES_TITLE"             : "Chyba při indexování souborů",
-    "ERROR_MAX_FILES"                   : "Tento projekt obsahuje více než 30.000 souborů. Funkce zpracovávající více souborů mohou být zablokované nebo se mohou chovat jako kdyby byl projekt prázdný. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Čtěte více o práci s obřími projekty</a>.",
+    "ERROR_MAX_FILES"                   : "Tento projekt obsahuje více než 30.000 souborů. Funkce zpracovávající více souborů mohou být zablokované nebo se mohou chovat jako kdyby byl projekt prázdný. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Čtěte více o práci s obřími projekty</a>.",
 
     // Řetězce chyb živého náhledu
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Chyba při spouštění prohlížeče",
@@ -445,7 +445,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Vydání {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "vytvořeno: ",
     "ABOUT_TEXT_LINE3"                     : "Oznámení, podmínky týkající se software třetích stran jsou umístěny na stránce <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> a začleněny prostřednictvím odkazu zde.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentace a zdrojový kód na stránce <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>.",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentace a zdrojový kód na stránce <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>.",
     "ABOUT_TEXT_LINE5"                     : "Vytvořeno s \u2764 a pomocí JavaScriptu těmito lidmi:",
     "ABOUT_TEXT_LINE6"                     : "Mnoho lidí (ale momentálně máme problém s načítáním dat).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN Docs a MDN logo využívají licenci Creative Commons Attribution, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -605,13 +605,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Otevřít zdroj {APP_NAME}",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "Zástupce {APP_NAME} v příkazové řádce",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Při instalaci zástupce do příkazové řádky se vyskytla chyba. Prosím vyzkoušejte řešení <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>na této stránce</a>.<br/><br/>Důvod: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Při instalaci zástupce do příkazové řádky se vyskytla chyba. Prosím vyzkoušejte řešení <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>na této stránce</a>.<br/><br/>Důvod: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "Nelze odstranit existující symbolický odkaz na <code>/usr/local/bin/brackets</code>.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Nelze vytvořit složku <code>/usr/local/bin</code>.",
     "ERROR_CLTOOLS_LNFAILED"                    : "Nelze vytvořit symbolický odkaz na <code>/usr/local/bin/brackets</code>.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Vnitřní chyba.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "V tomto operačním systému nelze vytvořit zástupce do příkazové řádky.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Hotovo! Nyní můžete jednoduše spustit {APP_NAME} z příkazové řádky: příkazem <code>brackets myFile.txt</code> otevřete soubor a příkazem <code>brackets myFolder</code> změníte projekt. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Na této stránce zjistíte více</a> o používání {APP_NAME} z příkazové řádky.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Hotovo! Nyní můžete jednoduše spustit {APP_NAME} z příkazové řádky: příkazem <code>brackets myFile.txt</code> otevřete soubor a příkazem <code>brackets myFolder</code> změníte projekt. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Na této stránce zjistíte více</a> o používání {APP_NAME} z příkazové řádky.",
 
     "LANGUAGE_TITLE"                            : "Změnit jazyk",
     "LANGUAGE_MESSAGE"                          : "Prosím, vyberte jazyk ze seznamu:",
@@ -623,9 +623,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Nastavení hlášení o zdraví",
     "HEALTH_FIRST_POPUP_TITLE"                  : "Hlášení o zdraví {APP_NAME}",
     "HEALTH_DATA_DO_TRACK"                      : "Sdílejte anonymní informace o používání {APP_NAME}",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Kvůli vylepšování {APP_NAME} odesíláme společnosti Adobe pravidelně omezené <strong>anonymní</strong> statistiky o používání {APP_NAME}. Tyto informace pomáhají upřednostnit některé funkce, předcházet chybám a všimnout si nedostatků v použitelnosti.<br><br>Vaše data si můžete prohlédnout nebo zakázat jejich sdílení výběrem <strong>Nápověda > Hlášení o zdraví</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Zjistěte více ke hlášení o zdraví {APP_NAME}</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Kvůli vylepšování {APP_NAME} odesíláme společnosti Adobe pravidelně omezené <strong>anonymní</strong> statistiky o používání {APP_NAME}. Tyto informace pomáhají upřednostnit některé funkce, předcházet chybám a všimnout si nedostatků v použitelnosti.<br><br>Vaše data si můžete prohlédnout nebo zakázat jejich sdílení výběrem <strong>Nápověda > Hlášení o zdraví</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Zjistěte více ke hlášení o zdraví {APP_NAME}</a>",
     "HEALTH_DATA_PREVIEW"                       : "Hlášení o zdraví {APP_NAME}",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Kvůli vylepšování {APP_NAME} odesíláme společnosti Adobe pravidelně omezené <strong>anonymní</strong> statistiky o používání {APP_NAME}. Tyto informace pomáhají upřednostnit některé funkce, předcházet chybám a všimnout si nedostatků v použitelnosti. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Zjistěte více ke hlášení o zdraví {APP_NAME}</a> a jak je pro komunitu {APP_NAME} prospěšné, zatímco je chráněno vaše soukromí.</p><p>Níže je náhled dat, která budou odeslána v příštím hlášení o zdraví, <em>pokud</em> je odesílání povoleno.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Kvůli vylepšování {APP_NAME} odesíláme společnosti Adobe pravidelně omezené <strong>anonymní</strong> statistiky o používání {APP_NAME}. Tyto informace pomáhají upřednostnit některé funkce, předcházet chybám a všimnout si nedostatků v použitelnosti. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Zjistěte více ke hlášení o zdraví {APP_NAME}</a> a jak je pro komunitu {APP_NAME} prospěšné, zatímco je chráněno vaše soukromí.</p><p>Níže je náhled dat, která budou odeslána v příštím hlášení o zdraví, <em>pokud</em> je odesílání povoleno.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Doba",
@@ -648,7 +648,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Zobrazit nápovědu parametru",
     "NO_ARGUMENTS"                              : "<žádné parametry>",
     "DETECTED_EXCLUSION_TITLE"                  : "Inferenční problém JavaScript souboru",
-    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} narazil na problémy při zpracování <span class='dialog-filename'>{0}</span>.<br><br>Tento soubor nebude nadále používat nápovědy kódu, přechod na definici nebo rychlou úpravu. Pro opětovné zapnutí těchto funkcí, otevřete <code>.brackets.json</code> ve vašem projektu a upravte <code>jscodehints.detectedExclusions</code>.<br><br>Pravděpodobně je to chyba {APP_NAME}. Pokud můžete poskytnout kopii tohoto souboru, prosíme <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>nahlaste tuto chybu</a> s odkazem na daný soubor.",
+    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} narazil na problémy při zpracování <span class='dialog-filename'>{0}</span>.<br><br>Tento soubor nebude nadále používat nápovědy kódu, přechod na definici nebo rychlou úpravu. Pro opětovné zapnutí těchto funkcí, otevřete <code>.brackets.json</code> ve vašem projektu a upravte <code>jscodehints.detectedExclusions</code>.<br><br>Pravděpodobně je to chyba {APP_NAME}. Pokud můžete poskytnout kopii tohoto souboru, prosíme <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>nahlaste tuto chybu</a> s odkazem na daný soubor.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",
@@ -773,7 +773,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "false k otevření souboru s preferencemi v levém/horním panelu",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "true ke skrytí panelů po zavření posledního souboru z panelu pomocí tlačítka na hlavičce panelu",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "Změňte ke zobrazení tlačítek zavřít a rozdělit ve hlavičce.",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Toto je soubor pouze ke čtení s preferencemi podporovanými\n * v {APP_NAME}.\n * Použijte tento soubor jako doporučení pro úpravu vašeho souboru s preferencemi\n * \"brackets.json\" otevřeném ve druhém panelu.\n * Pro více informací o úpravě preferencí\n * v {APP_NAME} se podívejte na webovou stránku https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Toto je soubor pouze ke čtení s preferencemi podporovanými\n * v {APP_NAME}.\n * Použijte tento soubor jako doporučení pro úpravu vašeho souboru s preferencemi\n * \"brackets.json\" otevřeném ve druhém panelu.\n * Pro více informací o úpravě preferencí\n * v {APP_NAME} se podívejte na webovou stránku https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "Výchozí",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "true k povolení módu pouze s kódem a ke skrytí Všech dalších UI prvků v {APP_NAME}"
 });

@@ -69,7 +69,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Ουπς! Το {APP_NAME} δεν τρέχει ακόμα σε browsers.",
-    "ERROR_IN_BROWSER"                  : "To {APP_NAME} είναι γραμμένο σε HTML, αλλά αυτή τη στιγμή τρέχει σαν native εφαρμογή έτσι ώστε να μπορείτε να επεξεργαστείτε τοπικά αρχεία. Παρακαλούμε να χρησιμοποιήσετε το application shell στο <b>github.com/adobe/brackets-shell</b> repo για να τρέξετε το {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "To {APP_NAME} είναι γραμμένο σε HTML, αλλά αυτή τη στιγμή τρέχει σαν native εφαρμογή έτσι ώστε να μπορείτε να επεξεργαστείτε τοπικά αρχεία. Παρακαλούμε να χρησιμοποιήσετε το application shell στο <b>github.com/brackets-cont/brackets-shell</b> repo για να τρέξετε το {APP_NAME}.",
 
     // FileIndexManager error string
     "ERROR_MAX_FILES_TITLE"             : "Σφάλμα κατά τη διαδικασία indexing των αρχείων",
@@ -137,7 +137,7 @@ define({
     "RELEASE_NOTES"                     : "Release Notes",
     "NO_UPDATE_TITLE"                   : "Έχετε την τελευταία έκδοση!",
     "NO_UPDATE_MESSAGE"                 : "Τρέχετε την τελευταία έκδοση του {APP_NAME}.",
-    
+
     //Find and replace
     "FIND_REPLACE_TITLE_LABEL"          : "Αντικατάσταση",
     "FIND_REPLACE_TITLE_WITH"           : "με",
@@ -162,7 +162,7 @@ define({
     "UNTITLED"          : "Άτιτλο",
     "WORKING_FILES"     : "Αρχεία Εργασίας",
 
-   
+
     /**
      * Keyboard modifier names
      */
@@ -329,7 +329,7 @@ define({
     "CLOSE"                                : "Κλείσιμο",
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_LINE3"                     : "Πληροφορίες, όροι και οι προϋποθέσεις που αφορούν λογισμικό τρίτων κατασκευαστών βρίσκονται στο <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> και ενσωματώνονται εδώ με αναφορά.",
-    "ABOUT_TEXT_LINE4"                     : "Documentation και πηγαίος κώδικας στο <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Documentation και πηγαίος κώδικας στο <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Φτιαγμένο με \u2764 και JavaScript από:",
     "ABOUT_TEXT_LINE6"                     : "Πολλούς ανθρώπους (απλά αντιμετωπίζουμε ένα πρόβλημα με την φόρτωση των δεδομένων αυτήν την στιγμή).",
     "ABOUT_TEXT_MDN_DOCS"                  : "Τα MDN Docs και το MDN γραφικό logo είναι αδειοδοτημένα κάτω από την άδεια Creative Commons Attribution, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -450,13 +450,13 @@ define({
     "CMD_LOG_NODE_STATE"                        : "Καταγραφή Node State στη Console",
     "CMD_RESTART_NODE"                          : "Επανεκκίνηση του Node",
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Άνοιξε τον κώδικα του {APP_NAME}",
-    
+
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME} Συντόμευση γραμμής εντολών",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Ένα σφάλμα προέκυψε κατά την εγκατάσταση της συντόμευσης για την γραμμή εντολών. Παρακαλώ δοκίμασε <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>αυτές τις προτείνομενες λύσεις</a>.<br/><br/>Αιτιολογία: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Ένα σφάλμα προέκυψε κατά την εγκατάσταση της συντόμευσης για την γραμμή εντολών. Παρακαλώ δοκίμασε <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>αυτές τις προτείνομενες λύσεις</a>.<br/><br/>Αιτιολογία: {0}",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Αποτυχία δημιουργίας φακέλου του <code>/usr/local/bin</code>.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Εσωτερικό σφάλμα.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "Η συντόμευση για την γραμμή εντολών δεν υποστηρίζεται στο συγκεκριμένο λειτουργικό σύστημα.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Επιτυχία! Τώρα μπορείς εύκολα να τρέξεις το {APP_NAME} από την γραμμή εντολών: <code>brackets myFile.txt</code> για να ανοίξεις ένα αρχείο ή <code>brackets myFolder</code> για να αλλάξεις project. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Μάθε περισσότερα</a>για το πώς να χρησιμοποιήσεις το {APP_NAME} από την γραμμή εντολών.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Επιτυχία! Τώρα μπορείς εύκολα να τρέξεις το {APP_NAME} από την γραμμή εντολών: <code>brackets myFile.txt</code> για να ανοίξεις ένα αρχείο ή <code>brackets myFolder</code> για να αλλάξεις project. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Μάθε περισσότερα</a>για το πώς να χρησιμοποιήσεις το {APP_NAME} από την γραμμή εντολών.",
 
     "LANGUAGE_TITLE"                            : "Αλλαγή Γλώσσας",
     "LANGUAGE_MESSAGE"                          : "Γλώσσες:",
@@ -464,16 +464,16 @@ define({
     "LANGUAGE_CANCEL"                           : "Ακύρωση",
     "LANGUAGE_SYSTEM_DEFAULT"                   : "Προεπιλογή Συστήματος",
 
-    
+
     // extensions/default/HealthData
     "HEALTH_DATA_NOTIFICATION"                  : "Προτιμήσεις Health Report",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} Health Report",
     "HEALTH_DATA_DO_TRACK"                      : "Κοινοποίηση ανώνυμων πληροφοριών σχετικά με το πώς χρησιμοποιώ το {APP_NAME}",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Προκειμένου να βελτιώσουμε το {APP_NAME}, στέλνουμε περιοδικά περιορισμένα, <strong>ανώνυμα</strong> στατιστικά στοιχεία στην Adobe σχετικά με το πώς χρησιμοποιείς το {APP_NAME}. Αυτές οι πληροφορίες βοηθάνε στην καταχώρηση προτεραιοτήτων στα χαρακτηριστικά,στην εύρεση σφαλμάτων και στον εντοπισμό προβλημάτων χρηστικότητας.<br><br>Μπορείς να δεις τα δεδομένα σου ή να επιλέξεις να μην μοιραστείς κάποια επιλέγοντας <strong>Help > Health Report</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Μάθε περισσότερα για το {APP_NAME} Health Report</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Προκειμένου να βελτιώσουμε το {APP_NAME}, στέλνουμε περιοδικά περιορισμένα, <strong>ανώνυμα</strong> στατιστικά στοιχεία στην Adobe σχετικά με το πώς χρησιμοποιείς το {APP_NAME}. Αυτές οι πληροφορίες βοηθάνε στην καταχώρηση προτεραιοτήτων στα χαρακτηριστικά,στην εύρεση σφαλμάτων και στον εντοπισμό προβλημάτων χρηστικότητας.<br><br>Μπορείς να δεις τα δεδομένα σου ή να επιλέξεις να μην μοιραστείς κάποια επιλέγοντας <strong>Help > Health Report</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Μάθε περισσότερα για το {APP_NAME} Health Report</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} Health Report",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Προκειμένου να βελτιώσουμε το {APP_NAME}, στέλνουμε περιοδικά περιορισμένα, <strong>ανώνυμα</strong> στατιστικά στοιχεία στην Adobe σχετικά με το πώς χρησιμοποιείς το {APP_NAME}. Αυτές οι πληροφορίες βοηθάνε στην καταχώρηση προτεραιοτήτων στα χαρακτηριστικά,στην εύρεση σφαλμάτων και στον εντοπισμό προβλημάτων χρηστικότητας. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Μάθε περισσότερα για το {APP_NAME} Health Report</a> και πόσο ωφελεί την κοινότητα του {APP_NAME} προστατεύοντας παράλληλα την ιδιωτικότητα σου..</p><p>Παρακάτω βλέπεις μια προεπισκόπηση των δεδομένων που θα σταλούν στο επόμενο Health Report <em>εφόσον</em> είναι ενεργοποιημένο.</p>",
-    
-    
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Προκειμένου να βελτιώσουμε το {APP_NAME}, στέλνουμε περιοδικά περιορισμένα, <strong>ανώνυμα</strong> στατιστικά στοιχεία στην Adobe σχετικά με το πώς χρησιμοποιείς το {APP_NAME}. Αυτές οι πληροφορίες βοηθάνε στην καταχώρηση προτεραιοτήτων στα χαρακτηριστικά,στην εύρεση σφαλμάτων και στον εντοπισμό προβλημάτων χρηστικότητας. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Μάθε περισσότερα για το {APP_NAME} Health Report</a> και πόσο ωφελεί την κοινότητα του {APP_NAME} προστατεύοντας παράλληλα την ιδιωτικότητα σου..</p><p>Παρακάτω βλέπεις μια προεπισκόπηση των δεδομένων που θα σταλούν στο επόμενο Health Report <em>εφόσον</em> είναι ενεργοποιημένο.</p>",
+
+
      // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Χρόνος",
     "INLINE_TIMING_EDITOR_PROGRESSION"          : "Πρόοδος",

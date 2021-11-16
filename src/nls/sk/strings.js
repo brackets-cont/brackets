@@ -62,7 +62,7 @@ define({
 
     // Reťazce chýb aplikácie
     "ERROR_IN_BROWSER_TITLE"            : "Hopa! {APP_NAME} zatiaľ nejde spustiť v prehliadači.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} je vytvorený HTML, ale teraz pracuje ako desktopová aplikácia, takže ho môžete využiť na úpravu lokálnych súborov. Prosím, používajte shell aplikácie v <b>github.com/adobe/brackets-shell</b> repozitári pre spustenie {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} je vytvorený HTML, ale teraz pracuje ako desktopová aplikácia, takže ho môžete využiť na úpravu lokálnych súborov. Prosím, používajte shell aplikácie v <b>github.com/brackets-cont/brackets-shell</b> repozitári pre spustenie {APP_NAME}.",
 
     // Reťazce chýb indexovaní súboru
     "ERROR_MAX_FILES_TITLE"             : "Chyba pri indexovaní súborov",
@@ -275,7 +275,7 @@ define({
     "CLOSE"                                : "Zatvoriť",
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_LINE3"                     : "Oznámenia, podmienky týkajúce sa software tretích strán sú umiestnené na <a class=\"clickable-link\" data-href=\"{ADOBE_THIRD_PARTY}\">{ADOBE_THIRD_PARTY}</a> za začlenené prostredníctvom odkazu tu.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentácia a zdrojový kód na <a class=\"clickable-link\" data-href=\"https://github.com/adobe/brackets/\">https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentácia a zdrojový kód na <a class=\"clickable-link\" data-href=\"https://github.com/brackets-cont/brackets/\">https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Vytvorené s \u2764 a JavaScript týmito ľuďmi:",
     "ABOUT_TEXT_LINE6"                     : "Veľa ľudí (ale práve máme problém s načítaním údajov).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN Docs a the MDN grafické logo sú licencované pod Creative Commons Attribution license, <a class=\"clickable-link\" data-href=\"{MDN_DOCS_LICENSE}\">CC-BY-SA 2.5 Unported</a>.",
