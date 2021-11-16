@@ -88,11 +88,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : " متاسفم! {APP_NAME}اکنون در این مرورگر اجرا نمیشود .",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} در اچ تی ام ال ساخته شده است, اما در حال حاضر آن به عنوان یک نرم افزار در دسکتاپ اجرا میشود بنابراین شما میتوانید جهت ویرایش فایل ها از آن استفاده کنید. لطفا از اپلیکیشن shell در <b>github.com/adobe/brackets-shell</b> جهت اجرای مخازن  {APP_NAME} استفاده کنید.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} در اچ تی ام ال ساخته شده است, اما در حال حاضر آن به عنوان یک نرم افزار در دسکتاپ اجرا میشود بنابراین شما میتوانید جهت ویرایش فایل ها از آن استفاده کنید. لطفا از اپلیکیشن shell در <b>github.com/brackets-cont/brackets-shell</b> جهت اجرای مخازن  {APP_NAME} استفاده کنید.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "خطا در فهرست بندی پرونده ها",
-    "ERROR_MAX_FILES"                   : "این پروژه شامل بیش از 30000 فایل است. امکانات که در فایل های چندگانه کار می کنند ممکن است غیرفعال و یا به عنوان پروژه خالی در نظر گرفته شوند. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>اطلاعات بیشتر در مورد کار با پروژه های بزرگ</a>.",
+    "ERROR_MAX_FILES"                   : "این پروژه شامل بیش از 200000 فایل است. امکانات که در فایل های چندگانه کار می کنند ممکن است غیرفعال و یا به عنوان پروژه خالی در نظر گرفته شوند. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>اطلاعات بیشتر در مورد کار با پروژه های بزرگ</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "خطا در اجرای مرورگر",
@@ -431,7 +431,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "انتشار {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "ایجاد برچسب زمان: ",
     "ABOUT_TEXT_LINE3"                     : "<div style='direction:rtl;margin-right:3px;'>یادداشت ها، شرایط و ضوابط مربوط به نرم افزار و حقوق شخص ثالث در آدرس<a href='#' class='clickable-link' data-href='http://www.adobe.com/go/thirdparty/'>http://www.adobe.com/go/thirdparty/</a> جهت تلفیق و بعنوان مرجع قرار داده شده.",
-    "ABOUT_TEXT_LINE4"                     : "اسناد و منابع در <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "اسناد و منابع در <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "ساخته شده با \u2764 و جاوا اسکریپت توسط:",
     "ABOUT_TEXT_LINE6"                     : "بسیاری از مردم (اما اکنون در بارگذاری داده ها ما مشکل داریم ).",
     "ABOUT_TEXT_MDN_DOCS"                  : "اسناد و مدارک صفحات وب و آرم اصلی گرافیکی تحت مجوز , <a href='#' class='clickable-link' data-href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 .پایه ریزی شده است</a>.",
@@ -609,7 +609,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "نمایش نکات پارامتر",
     "NO_ARGUMENTS"                              : "<بدون پارامترها>",
     "DETECTED_EXCLUSION_TITLE"                  : "خطای منطقی در پرونده جاوا اسکریپت",
-    "DETECTED_EXCLUSION_INFO"                   : "براکتس در حال انجام یک پردازش مشکل دار با پرونده <span class='dialog-filename'>{0}</span> است.<br><br>این پرونده اشاره گرهای کدها را بطور کامل نشان نخواهد داد, برای این منظور میتوانید از حالت تعریف یا ویرایش سریع استفاده نمایید. جهت فعال سازی دوباره این پرونده, <code>.brackets.json</code> را در پروژه خود باز کنید و <code>jscodehints.detectedExclusions</code> را ویرایش نمایید.<br><br>این مشکل میتواند یک Bug در براکتس باشد. اگر مشکلی در ارائه این پرونده به ما ندارید, لطفا گزارش <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>پرونده دارای اشکال</a> را با یک لینک به پرونده جهت بررسی ثبت نمایید.",
+    "DETECTED_EXCLUSION_INFO"                   : "براکتس در حال انجام یک پردازش مشکل دار با پرونده <span class='dialog-filename'>{0}</span> است.<br><br>این پرونده اشاره گرهای کدها را بطور کامل نشان نخواهد داد, برای این منظور میتوانید از حالت تعریف یا ویرایش سریع استفاده نمایید. جهت فعال سازی دوباره این پرونده, <code>.brackets.json</code> را در پروژه خود باز کنید و <code>jscodehints.detectedExclusions</code> را ویرایش نمایید.<br><br>این مشکل میتواند یک Bug در براکتس باشد. اگر مشکلی در ارائه این پرونده به ما ندارید, لطفا گزارش <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>پرونده دارای اشکال</a> را با یک لینک به پرونده جهت بررسی ثبت نمایید.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",

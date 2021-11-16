@@ -11,7 +11,15 @@ name: Checking CLA Signature
 on: 
   pull_request:
     branches:
+<<<<<<< HEAD
+<<<<<<< HEAD
       - master
+=======
+      - gh-pages
+>>>>>>> c9dddb28d (Add CLA checks)
+=======
+      - master
+>>>>>>> 5e4e79103 (Modify branch names for workflow)
 
 jobs:
   one:

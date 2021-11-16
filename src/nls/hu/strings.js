@@ -59,7 +59,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Oops! A {APP_NAME} még nem fut böngészőben.",
-    "ERROR_IN_BROWSER"                  : "A {APP_NAME} HTML-ben épült, de jelenleg asztali alkalmazásként fut, ezért helyi fájlokat is tudsz vele szerkeszteni. Kérlek használd az alkalmazás \"burkot\" a {APP_NAME} futtatásához: <b>github.com/adobe/brackets-shell</b>.",
+    "ERROR_IN_BROWSER"                  : "A {APP_NAME} HTML-ben épült, de jelenleg asztali alkalmazásként fut, ezért helyi fájlokat is tudsz vele szerkeszteni. Kérlek használd az alkalmazás \"burkot\" a {APP_NAME} futtatásához: <b>github.com/brackets-cont/brackets-shell</b>.",
 
     // FileIndexManager error string
     "ERROR_MAX_FILES_TITLE"             : "Hiba a fájlok Indexszelése közben",
@@ -262,7 +262,7 @@ define({
     "CLOSE"                                : "Bezárás",
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_LINE3"                     : "Harmadik féltől származó szoftverekre vonatkozó közlemények, felhasználási feltételek megtalálhatók a következő linken <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a>.",
-    "ABOUT_TEXT_LINE4"                     : "Documentation and source at <a 'https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Documentation and source at <a 'https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Készítve \u2764 és JavaScript-el a következők által:",
     "ABOUT_TEXT_LINE6"                     : "Sok ember (de ezt az adatot nem tudjuk megjeleníteni jelenleg).",
     "ABOUT_TEXT_MDN_DOCS"                  : "A MDN Dokumentáció és a  MDN grafikai logó a Creative Commons Attribution license alatt vannak licencelve, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",

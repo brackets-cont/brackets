@@ -10,11 +10,11 @@
 3. Edit the root `strings-app.js` file and add a new `LOCALE_`* entry for your language, as seen in
    the Debug > Switch Language UI.
 4. Copy the root `strings.js` file into your subfolder and start translating!
-5. Use the [UI walkthrough steps](https://github.com/adobe/brackets/wiki/Localization-Tests) to
+5. Use the [UI walkthrough steps](https://github.com/brackets-cont/brackets/wiki/Localization-Tests) to
    see strings in context.
 6. Add this comment ``/* Last translated for commit_SHA_of_root_strings.js */`` at the end 
    of your `strings.js` and replace `commit_SHA_of_root_strings.js` with the actual SHA.
-   You can copy the actual SHA in this [history page](https://github.com/adobe/brackets/commits/master/src/nls/root/strings.js)
+   You can copy the actual SHA in this [history page](https://github.com/brackets-cont/brackets/commits/master/src/nls/root/strings.js)
    by hovering on the one you used for this translation and click on Copy SHA button.
 7. Edit this file and update the list of languages below!
 
@@ -37,21 +37,13 @@ at the end of your `index.html` and replace `commit_SHA_of_root_index.html` with
 
 # How to modify *existing* translations
 
-### Adobe-maintained translations
-
-Adobe provides translations for the following languages:
-
-* French (fr)
-* Japanese (ja)
-
-These translations cannot be modified through our normal pull request
-process. Please contribute changes by filing an issue in our GitHub repository https://github.com/adobe/brackets/issues
-
 ### Community-maintained translations
 
 The following languages have been contributed by the Brackets community:
 
 * Bulgarian (bg)
+* French (fr)
+* Japanese (ja)
 * Czech (cs)
 * Danish (da)
 * German (de)
@@ -99,9 +91,9 @@ You must be logged in to your github.com id (e.g. `user1`).
 ### Adding a New Translation
 To add a new translation, you need to start with a copy of the
 root `strings.js` file which is located at
-[https://github.com/adobe/brackets/blob/master/src/nls/root/strings.js](https://github.com/adobe/brackets/blob/master/src/nls/root/strings.js).
+[https://github.com/brackets-cont/brackets/blob/master/src/nls/root/strings.js](https://github.com/brackets-cont/brackets/blob/master/src/nls/root/strings.js).
 New translations can be added by navigating to the
-[nls folder on github](https://github.com/adobe/brackets/tree/master/src/nls)
+[nls folder on GitHub](https://github.com/brackets-cont/brackets/tree/master/src/nls)
 and then clicking on the [+] button to add a new file.
 You will be taken to a New File page where you:
 
@@ -111,14 +103,14 @@ You will be taken to a New File page where you:
 at the end of your strings.js and replace `commit_SHA_of_root_strings.js` with the
 actual SHA.
 You can copy the actual SHA in this
-[history page](https://github.com/adobe/brackets/commits/master/src/nls/root/strings.js)
+[history page](https://github.com/brackets-cont/brackets/commits/master/src/nls/root/strings.js)
 by hovering on the one you used for this translation and click on Copy SHA button.
 4. Add short and (optional) long description of new file
 5. Click "Propose New File" button
 
 ### Editing an Existing Translation
 Existing files can be edited directly in
-[brackets repo on github](https://github.com/adobe/brackets).
+[brackets repo on GitHub](https://github.com/brackets-cont/brackets).
 
 Navigate to the file to edit and click "Edit" button above file.
 You will be taken to an Edit File page where you:
@@ -133,7 +125,7 @@ for a new locale section for adding a new one.
 
 ### Branch and Pull Request
 For either case, if you have not yet forked the brackets repository in your
-github account (`https://github.com/user1/brackets`), it's done automatically.
+GitHub account (`https://github.com/user1/brackets`), it's done automatically.
 A new branch will be created in your Brackets fork with a unique name
 which is something like `patch-1` that contains your changes.
 
@@ -152,7 +144,7 @@ pull request which will send you an e-mail notification.
 ### Updating Existing Branch and Pull Request
 
 If you need to make changes to an existing branch, 
-you should make updates in the `patch-1` branch in your Github fork of Brackets
+you should make updates in the `patch-1` branch in your GitHub fork of Brackets
 so all of your changes for this update are in a single branch.
 Creating a new branch for every update makes it difficult for core team
 to see all changes at once, and can even create conflicts that are
@@ -162,7 +154,7 @@ very difficult to resolve. For example:
 
     `user1` wants to merge 1 commit into `adobe:master` from `user1:patch-1`
     
-2. Go to your github fork of brackets page: `github.com/user1/brackets`
+2. Go to your GitHub fork of brackets page: `github.com/user1/brackets`
 3. Click on the Branches Tab: `github.com/user1/brackets/branches`
 4. Click on the link to the branch: `github.com/user1/brackets/tree/patch-1`
 5. This is where you make changes to your `patch-1` branch.
@@ -181,4 +173,4 @@ Some strings cannot be localized yet:
 * [Some native menus on Mac](https://trello.com/c/0IsE7q02) (hardcoded support only for English, French, Japanese)
 * Windows installer UI (hardcoded support only for English, Japanese - with some limitations)
 * Localized folder name of "Getting Started" has to be made of up basic English characters only, as described
-[here](https://github.com/adobe/brackets/pull/8332#issuecomment-48767847).
+[here](https://github.com/brackets-cont/brackets/pull/8332#issuecomment-48767847).

@@ -74,7 +74,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Ups! {APP_NAME} virker ikke i browsere endnu.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} er lavet i HTML, men lige nu fungerer det som et almindeligt computerprogram, så du kan bruge det til at redigere lokale filer. Brug venligst programskallen fra <b>github.com/adobe/brackets-shell</b> til at køre {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} er lavet i HTML, men lige nu fungerer det som et almindeligt computerprogram, så du kan bruge det til at redigere lokale filer. Brug venligst programskallen fra <b>github.com/brackets-cont/brackets-shell</b> til at køre {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Fejl ved indeksering af filer",
@@ -390,7 +390,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "fabrikationstidspunkt: ",
     "ABOUT_TEXT_LINE3"                     : "Bemærkninger om og/eller yderligere betingelser og vilkår for tredjeparts software kan findes på <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> og medtaget heri som reference.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentation og kildekode på <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentation og kildekode på <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Skabt med \u2764 og JavaScript af:",
     "ABOUT_TEXT_LINE6"                     : "En masse mennesker (men vi har problemer med at hente det data i øjeblikket).",
     "ABOUT_TEXT_MDN_DOCS"                  : "Dokumentationen og det grafiske logo fra MDN er udgivet under en Creative Commons Attribution licens, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
