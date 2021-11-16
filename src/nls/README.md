@@ -37,21 +37,13 @@ at the end of your `index.html` and replace `commit_SHA_of_root_index.html` with
 
 # How to modify *existing* translations
 
-### Adobe-maintained translations
-
-Adobe provides translations for the following languages:
-
-* French (fr)
-* Japanese (ja)
-
-These translations cannot be modified through our normal pull request
-process. Please contribute changes by filing an issue in our GitHub repository https://github.com/brackets-cont/brackets/issues
-
 ### Community-maintained translations
 
 The following languages have been contributed by the Brackets community:
 
 * Bulgarian (bg)
+* French (fr)
+* Japanese (ja)
 * Czech (cs)
 * Danish (da)
 * German (de)
