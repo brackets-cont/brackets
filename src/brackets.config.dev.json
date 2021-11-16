@@ -1,7 +1,7 @@
 {
     "googleAnalyticsID"          : "UA-212757129-1",
     "environment"                : "stage",
-    "update_info_url"            : "https://s3.amazonaws.com/files.brackets.io/updates/prerelease/<locale>.json",
-    "notification_info_url"      : "https://s3.amazonaws.com/files.brackets.io/notifications/prerelease/<locale>.json",
+    "update_info_url"         : "https://getupdates.brackets.io/dev/updates/<locale>.json",
+    "notification_info_url"   : "https://getupdates.brackets.io/dev/notifications/<locale>.json",
     "buildtype"                  : "dev"
 }
