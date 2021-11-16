@@ -21,7 +21,8 @@
         "build_timestamp": "",
         "googleAnalyticsID"     : "UA-212757129-1",
         "environment": "stage",
-        "update_info_url": "https://s3.amazonaws.com/files.brackets.io/updates/prerelease/<locale>.json"
+        "update_info_url"         : "https://getupdates.brackets.io/dev/updates/<locale>.json",
+        "notification_info_url"   : "https://getupdates.brackets.io/dev/notifications/<locale>.json"
     },
     "name": "Brackets",
     "version": "2.0.0-0",
