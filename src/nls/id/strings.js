@@ -96,7 +96,7 @@ define({
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Gagal Mengindeks File",
-    "ERROR_MAX_FILES"                   : "Proyek ini mempunyai lebih dari 30,000 file. Fitur yang beroperasi di beberapa file mungkin dinonaktifkan atau bersikap seolah-olah proyek kosong. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Baca selengkapnya tentang bekerja dengan proyek besar</a>.",
+    "ERROR_MAX_FILES"                   : "Proyek ini mempunyai lebih dari 200,000 file. Fitur yang beroperasi di beberapa file mungkin dinonaktifkan atau bersikap seolah-olah proyek kosong. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Baca selengkapnya tentang bekerja dengan proyek besar</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Gagal Menjalankan Peramban",

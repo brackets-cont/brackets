@@ -92,7 +92,7 @@ define({
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "خطا در فهرست بندی پرونده ها",
-    "ERROR_MAX_FILES"                   : "این پروژه شامل بیش از 30000 فایل است. امکانات که در فایل های چندگانه کار می کنند ممکن است غیرفعال و یا به عنوان پروژه خالی در نظر گرفته شوند. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>اطلاعات بیشتر در مورد کار با پروژه های بزرگ</a>.",
+    "ERROR_MAX_FILES"                   : "این پروژه شامل بیش از 200000 فایل است. امکانات که در فایل های چندگانه کار می کنند ممکن است غیرفعال و یا به عنوان پروژه خالی در نظر گرفته شوند. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>اطلاعات بیشتر در مورد کار با پروژه های بزرگ</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "خطا در اجرای مرورگر",

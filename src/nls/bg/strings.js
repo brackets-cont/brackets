@@ -94,7 +94,7 @@ define({
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Грешка при обработката на файловете",
-    "ERROR_MAX_FILES"                   : "Този проект има над 30 000 файла. Функционалностите, които работят с множество файлове може да бъдат изключени или да работят така, сякаш проектът е празен. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Прочете повече относно работата с големи проекти</a>.",
+    "ERROR_MAX_FILES"                   : "Този проект има над 20s0 000 файла. Функционалностите, които работят с множество файлове може да бъдат изключени или да работят така, сякаш проектът е празен. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Прочете повече относно работата с големи проекти</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Грешка при пускането на браузъра",
