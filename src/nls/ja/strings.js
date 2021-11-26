@@ -100,7 +100,7 @@ define({
 
     // ProjectManager max files error string
 	"ERROR_MAX_FILES_TITLE": "ファイルのインデックス時にエラーが発生しました。",
-	"ERROR_MAX_FILES": "このプロジェクトには 30,000 個以上のファイルが含まれています。複数のファイルを操作する機能が無効になるか、プロジェクトが空であるかのように動作します。<a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>大きいプロジェクトの操作方法の詳細を表示</a>。",
+	"ERROR_MAX_FILES": "このプロジェクトには 200,000 個以上のファイルが含まれています。複数のファイルを操作する機能が無効になるか、プロジェクトが空であるかのように動作します。<a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>大きいプロジェクトの操作方法の詳細を表示</a>。",
 
     // Live Preview error strings
 	"ERROR_LAUNCHING_BROWSER_TITLE": "ブラウザーの起動時にエラーが発生しました。",

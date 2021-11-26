@@ -94,7 +94,7 @@ define({
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Kļūda, indeksējot datnes",
-    "ERROR_MAX_FILES"                   : "Šis projekts ietver vairāk nekā 30000 datņu. Funkcijas, kas darbojas vairākās datnēs, var tikt atspējotas vai darboties tā, it kā projekts būtu tukšs. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'> Lasīt vairāk par strādāšanu ar lieliem projektiem</a>.",
+    "ERROR_MAX_FILES"                   : "Šis projekts ietver vairāk nekā 200000 datņu. Funkcijas, kas darbojas vairākās datnēs, var tikt atspējotas vai darboties tā, it kā projekts būtu tukšs. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'> Lasīt vairāk par strādāšanu ar lieliem projektiem</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Kļūda, palaižot pārlūku",

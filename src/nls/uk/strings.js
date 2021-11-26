@@ -92,7 +92,7 @@ define({
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"                     : "Помилка індексації файлів",
-    "ERROR_MAX_FILES"                           : "Цей проект містить більше 30 000 файлів. Функції, що оперують кількома файлам можуть не працювати правильно або вимкнутись. <a href=\'https://github.com/brackets-cont/brackets/wiki/Large-Projects\'>Дізнайтесь більше про роботу програми під час відкриття великих проектів</a>.",
+    "ERROR_MAX_FILES"                           : "Цей проект містить більше 200 000 файлів. Функції, що оперують кількома файлам можуть не працювати правильно або вимкнутись. <a href=\'https://github.com/brackets-cont/brackets/wiki/Large-Projects\'>Дізнайтесь більше про роботу програми під час відкриття великих проектів</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"             : "Помилка запуску браузера",

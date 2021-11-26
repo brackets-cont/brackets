@@ -66,7 +66,7 @@ define(function (require, exports, module) {
         WatchedRoot     = require("filesystem/WatchedRoot");
 
     var VISIT_DEFAULT_MAX_DEPTH = 100,
-        VISIT_DEFAULT_MAX_ENTRIES = 30000;
+        VISIT_DEFAULT_MAX_ENTRIES = 200000;
 
     /* Counter to give every entry a unique id */
     var nextId = 0;

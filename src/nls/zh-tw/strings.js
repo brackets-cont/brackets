@@ -93,7 +93,7 @@ define({
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "無法建立檔案索引",
-    "ERROR_MAX_FILES"                   : "專案超過 30,000 個檔案。需要跨檔案執行的功能可能會被關閉或是變成跟專案內沒有任何檔案一樣。<a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>了解怎麼處理大型專案</a>。",
+    "ERROR_MAX_FILES"                   : "專案超過 200,000 個檔案。需要跨檔案執行的功能可能會被關閉或是變成跟專案內沒有任何檔案一樣。<a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>了解怎麼處理大型專案</a>。",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "無法啟動瀏覽器",
