@@ -90,11 +90,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Oops! {APP_NAME} nie działa jeszcze w przeglądarkach.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} został zbudowany w HTML, jednak na razie działa jako samodzielna aplikacja. Możesz użyć jej do edycji plików na dysku. Aby uruchomić {APP_NAME} użyj aplikacji dostępnej pod adresem <b>github.com/adobe/brackets-shell</b>.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} został zbudowany w HTML, jednak na razie działa jako samodzielna aplikacja. Możesz użyć jej do edycji plików na dysku. Aby uruchomić {APP_NAME} użyj aplikacji dostępnej pod adresem <b>github.com/brackets-cont/brackets-shell</b>.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Błąd podczas indeksowania plików",
-    "ERROR_MAX_FILES"                   : "Ten projekt zawiera więcej niż 30.000 plików. Funkcje, które pracują na wielu plikach mogą być wyłączone lub zachowywać się tak, jakby projekt był pusty. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Przeczytaj więcej nt. pracy z dużymi projektami</a>.",
+    "ERROR_MAX_FILES"                   : "Ten projekt zawiera więcej niż 30.000 plików. Funkcje, które pracują na wielu plikach mogą być wyłączone lub zachowywać się tak, jakby projekt był pusty. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Przeczytaj więcej nt. pracy z dużymi projektami</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Błąd podczas uruchamiania przeglądarki",
@@ -452,7 +452,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Wydanie {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "Czas kompilacji: ",
     "ABOUT_TEXT_LINE3"                     : "Uwagi i warunki odnoszące się do oprogramowania firm trzecich znajdują się na: <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> i zostały dołączone jako odnośnik.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentacja i pliki źródłowe dostępne są pod adresem <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentacja i pliki źródłowe dostępne są pod adresem <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Stworzony z \u2764 oraz w JavaScript przez:",
     "ABOUT_TEXT_LINE6"                     : "Mnóstwo ludzi (mamy problemy, by załadować teraz te wszystkie dane).",
     "ABOUT_TEXT_MDN_DOCS"                  : "Dokumentacja MDN oraz logo MDN są objęte licencją Creative Commons Attribution, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -468,7 +468,7 @@ define({
     "BASEURL_ERROR_HASH_DISALLOWED"        : "Adres URL nie może zawierać znaku hash: \"{0}\".",
     "BASEURL_ERROR_INVALID_CHAR"           : "Znaki specjalne takie, jak '{0}' muszą być zakodowane.",
     "BASEURL_ERROR_UNKNOWN_ERROR"          : "Nieznany błąd podczas parsowania adresu URL",
-    
+
     // Strings for Pane.js
     "EMPTY_VIEW_HEADER"                    : "<em>Kliknij w to okno, a następnie otwórz plik</em>",
     "FLIPVIEW_BTN_TOOLTIP"                 : "Przenieś ten widok do: {0}",
@@ -479,7 +479,7 @@ define({
     "FONT_SIZE"                            : "Rozmiar czcionki",
     "FONT_FAMILY"                          : "Rodzina czcionek",
     "THEMES_SETTINGS"                      : "Ustawienia motywów",
-    
+
     // CSS Quick Edit
     "BUTTON_NEW_RULE"                      : "Nowa reguła",
 
@@ -618,13 +618,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Otwórz kod źródłowy {APP_NAME}",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "Skrót do wiersza poleceń {APP_NAME}",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Błąd podczas instalacji skrótu wiersza poleceń. Przeczytaj artykuł <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>z propozycjami rozwiązania tego problemu.</a>.<br/><br/>Powód: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Błąd podczas instalacji skrótu wiersza poleceń. Przeczytaj artykuł <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>z propozycjami rozwiązania tego problemu.</a>.<br/><br/>Powód: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "Nie można usunąć istniejącego dowiązania <code>/usr/local/bin/brackets</code>.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Nie można utworzyć katalogu <code>/usr/local/bin</code>.",
     "ERROR_CLTOOLS_LNFAILED"                    : "Nie można utworzyć dowiązania <code>/usr/local/bin/brackets</code>.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Błąd wewnętrzny.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "Skrót do wiersza poleceń nie jest dostępny w tym systemie.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Udało się! Teraz możesz uruchamiać {APP_NAME} z wiersza poleceń: <code>brackets plik.txt</code> aby otworzyć plik lub <code>brackets folder</code> aby zmienić projekt. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Przeczytaj więcej</a> na temat używania {APP_NAME} w wierszu poleceń.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Udało się! Teraz możesz uruchamiać {APP_NAME} z wiersza poleceń: <code>brackets plik.txt</code> aby otworzyć plik lub <code>brackets folder</code> aby zmienić projekt. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Przeczytaj więcej</a> na temat używania {APP_NAME} w wierszu poleceń.",
 
     "LANGUAGE_TITLE"                            : "Zmień język",
     "LANGUAGE_MESSAGE"                          : "Język:",
@@ -636,9 +636,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Ustawienia raportowania",
     "HEALTH_FIRST_POPUP_TITLE"                  : "Raporty {APP_NAME}",
     "HEALTH_DATA_DO_TRACK"                      : "Wysyłaj anonimowe informacje o tym, jak używam {APP_NAME}",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Aby ciągle udoskonalać {APP_NAME}, co pewien czas wysyłamy <strong>anonimowe</strong> statystyki do Adobe na temat tego, jak korzystasz z edytora. Informacje te pomagają nam tworzyć lepsze funkcjonalności, wyszukiwać problemy czy poprawiać wygodę w korzystaniu z programu. <br><br>Możesz zobaczyć co przesyłamy lub wyłączyć przesyłanie danych w menu <strong>Pomoc > Raportowanie</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Przeczytaj więcej o raportach w {APP_NAME}</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Aby ciągle udoskonalać {APP_NAME}, co pewien czas wysyłamy <strong>anonimowe</strong> statystyki do brackets.io na temat tego, jak korzystasz z edytora. Informacje te pomagają nam tworzyć lepsze funkcjonalności, wyszukiwać problemy czy poprawiać wygodę w korzystaniu z programu. <br><br>Możesz zobaczyć co przesyłamy lub wyłączyć przesyłanie danych w menu <strong>Pomoc > Raportowanie</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Przeczytaj więcej o raportach w {APP_NAME}</a>",
     "HEALTH_DATA_PREVIEW"                       : "Raporty {APP_NAME}",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Aby ciągle udoskonalać {APP_NAME}, co pewien czas wysyłamy <strong>anonimowe</strong> statystyki do Adobe na temat tego, jak wykorzystujesz {APP_NAME}. Informacje te pomagają nam tworzyć lepsze funkcjonalności, znajdować problemy czy poprawiać wygodę w korzystaniu z programu. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Przeczytaj więcej o raportach w {APP_NAME}</a> oraz w jaki sposób pomaga to całej społeczności {APP_NAME}, jednocześnie dbając o twoją prywatność.</p><p>Poniżej możesz podejrzeć jakie dane zostaną przesłane w twoim następnym raporcie <em>jeżeli</em> jest u uaktywniony.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>Aby ciągle udoskonalać {APP_NAME}, co pewien czas wysyłamy <strong>anonimowe</strong> statystyki do brackets.io na temat tego, jak wykorzystujesz {APP_NAME}. Informacje te pomagają nam tworzyć lepsze funkcjonalności, znajdować problemy czy poprawiać wygodę w korzystaniu z programu. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Przeczytaj więcej o raportach w {APP_NAME}</a> oraz w jaki sposób pomaga to całej społeczności {APP_NAME}, jednocześnie dbając o twoją prywatność.</p><p>Poniżej możesz podejrzeć jakie dane zostaną przesłane w twoim następnym raporcie <em>jeżeli</em> jest u uaktywniony.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Czas",
@@ -662,7 +662,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Pokaż podpowiedź (parametr)",
     "NO_ARGUMENTS"                              : "<brak parametrów>",
     "DETECTED_EXCLUSION_TITLE"                  : "Błąd podczas sprawdzania poprawności kodu JavaScript",
-    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} napotkał problemy podczas przetwarzania pliku <span class='dialog-filename'>{0}</span>.<br><br>Plik nie będzie już przetwarzany w celu pokazywania podpowiedzi w kodzie, wykorzystywaniu Przejdź do definicji lub do Szybkiej Edycji. Aby przywrócić dla pliku te funkcjonalności, otwórz <code>.brackets.json</code> w swoim projekcie i edytuj plik <code>jscodehints.detectedExclusions</code>.<br><br>Jest to prawdopodobnie błąd {APP_NAME}. Jeżeli chcesz dostarczyć kopię tego pliku, prosimy <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>prześlij plik z błędem</a>.",
+    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} napotkał problemy podczas przetwarzania pliku <span class='dialog-filename'>{0}</span>.<br><br>Plik nie będzie już przetwarzany w celu pokazywania podpowiedzi w kodzie, wykorzystywaniu Przejdź do definicji lub do Szybkiej Edycji. Aby przywrócić dla pliku te funkcjonalności, otwórz <code>.brackets.json</code> w swoim projekcie i edytuj plik <code>jscodehints.detectedExclusions</code>.<br><br>Jest to prawdopodobnie błąd {APP_NAME}. Jeżeli chcesz dostarczyć kopię tego pliku, prosimy <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>prześlij plik z błędem</a>.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",
@@ -675,7 +675,7 @@ define({
 
     // extensions/default/MDNDocs
     "DOCS_MORE_LINK"                            : "Czytaj więcej",
-    
+
     // extensions/default/CodeFolding
     "COLLAPSE_ALL"                  : "Zwiń wszystko",
     "EXPAND_ALL"                    : "Rozwiń wszystko",
@@ -795,7 +795,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "false, by wyłączyć otwieranie pliku z ustawieniami użytkownika w lewym/górnym panelu",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "true, by automatycznie włączyć tryb \"bez podziału\", gdy ostatni plik w panelu zostanie zamknięty (za pomocą przyciku w nagłówku panelu)",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "Określ, kiedy powinny być wyświetlane przyciski zamknięcia i odwrócenia widoku w nagłówku panelu",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * This is a read-only file with the preferences supported\n * by {APP_NAME}.\n * Use this file as a reference to modify your preferences\n * file \"brackets.json\" opened in the other pane.\n * For more information on how to use preferences inside\n * {APP_NAME}, refer to the web page at https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * This is a read-only file with the preferences supported\n * by {APP_NAME}.\n * Use this file as a reference to modify your preferences\n * file \"brackets.json\" opened in the other pane.\n * For more information on how to use preferences inside\n * {APP_NAME}, refer to the web page at https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "Domyślnie",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "true, by włączyć tryb \"bez przeszkadzania\" i ukryć wszystkie inne elementy UI w {APP_NAME}",
     "DESCRIPTION_INDENT_LINE_COMMENT"                : "true, by włączyć wcięcia w komentarzach",

@@ -90,7 +90,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "囧! {APP_NAME} 暂无法在浏览器中运行。",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} 是建立在 HTML 上的一个桌面程序, 你可以用它修改本地文件. 可以前往此处下载系统对应的版本<b>github.com/adobe/brackets-shell</b>, 然后重新运行 {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} 是建立在 HTML 上的一个桌面程序, 你可以用它修改本地文件. 可以前往此处下载系统对应的版本<b>github.com/brackets-cont/brackets-shell</b>, 然后重新运行 {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "索引文件错误",
@@ -447,7 +447,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "构建时间：",
     "ABOUT_TEXT_LINE3"                     : "关于第三方软件的条款、条例和声明 <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> 以此作为参考。",
-    "ABOUT_TEXT_LINE4"                     : "文档与源码在 <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "文档与源码在 <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "基于 \u2764 和 JavaScript 由以下用户参与贡献设计:",
     "ABOUT_TEXT_LINE6"                     : "有相当多的人参与其中, 但现在有一些问题导致加载不出, 你可以到GitHub上去看。",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN 文档和图形 logo 遵循<a href='{MDN_DOCS_LICENSE}'>署名-相同方式共享 3.0 未本地化</a>协议。",
@@ -607,13 +607,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "打开 Brackets 源码",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME} 命令行快捷方式",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "安装命令行快捷方式时发生错误。 请尝试<a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>这些故障排除建议</a>.<br/><br/>原因: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "安装命令行快捷方式时发生错误。 请尝试<a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>这些故障排除建议</a>.<br/><br/>原因: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "无法移除已存在的 <code>/usr/local/bin/brackets</code> 符号链接.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "无法创建 <code>/usr/local/bin</code> 目录.",
     "ERROR_CLTOOLS_LNFAILED"                    : "无法创建 <code>/usr/local/bin/brackets</code> 符号链接.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "内部错误.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "该系统不支持命令行快捷方式.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "成功! 现在你可以通过这样的命令简单地启动 {APP_NAME} 了: <code>brackets myFile.txt</code> 打开文件, <code>brackets myFolder</code> 切换项目, <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>点击此处</a>了解更多 {APP_NAME} 命令行的使用方法.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "成功! 现在你可以通过这样的命令简单地启动 {APP_NAME} 了: <code>brackets myFile.txt</code> 打开文件, <code>brackets myFolder</code> 切换项目, <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>点击此处</a>了解更多 {APP_NAME} 命令行的使用方法.",
 
     "LANGUAGE_TITLE"                            : "切换语言",
     "LANGUAGE_MESSAGE"                          : "请从列表中选择所需的语言:",
@@ -625,9 +625,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "健康报告首选项",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} 健康报告",
     "HEALTH_DATA_DO_TRACK"                      : "共享关于我如何使用 {APP_NAME} 的匿名信息",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "为了改进 {APP_NAME}, 我们会周期性地向 Adobe 发送有限的 <strong>匿名的</strong> 关于你如何使用 {APP_NAME} 的统计信息. 这些信息有助于调整特性的优先顺序, 寻找错误和定位可用性问题. <br><br>你可以通过 <strong>帮助 > 健康报告</strong> 查看你的数据或者选择不共享数据. <br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>了解 {APP_NAME} 健康报告详情</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "为了改进 {APP_NAME}, 我们会周期性地向 brackets.io 发送有限的 <strong>匿名的</strong> 关于你如何使用 {APP_NAME} 的统计信息. 这些信息有助于调整特性的优先顺序, 寻找错误和定位可用性问题. <br><br>你可以通过 <strong>帮助 > 健康报告</strong> 查看你的数据或者选择不共享数据. <br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>了解 {APP_NAME} 健康报告详情</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} 健康报告",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>为了改进 {APP_NAME}, 我们会周期性地向 Adobe 发送有限的 <strong>匿名的</strong> 关于你如何使用 {APP_NAME} 的统计信息. 这些信息有助于调整特性的优先顺序, 寻找错误和定位可用性问题. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>了解更多 {APP_NAME} 健康报告</a>, 以及它是怎样在保护你的隐私的情况下帮助 {APP_NAME} 社区. </p><p><em>如果</em>你打开它, 下面的数据将被用于下次健康报告的发送. </p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>为了改进 {APP_NAME}, 我们会周期性地向 brackets.io 发送有限的 <strong>匿名的</strong> 关于你如何使用 {APP_NAME} 的统计信息. 这些信息有助于调整特性的优先顺序, 寻找错误和定位可用性问题. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>了解更多 {APP_NAME} 健康报告</a>, 以及它是怎样在保护你的隐私的情况下帮助 {APP_NAME} 社区. </p><p><em>如果</em>你打开它, 下面的数据将被用于下次健康报告的发送. </p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "时间",
@@ -780,7 +780,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "值为假时，在左边/顶部窗格中打开用户设置",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "值为真时，折叠面板头部关闭后最后一个文件之后的面板",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "切换头部显示关闭或者翻转视图的按钮。",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * This is a read-only file with the preferences supported\n * by {APP_NAME}.\n * Use this file as a reference to modify your preferences\n * file \"brackets.json\" opened in the other pane.\n * For more information on how to use preferences inside\n * {APP_NAME}, refer to the web page at https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * This is a read-only file with the preferences supported\n * by {APP_NAME}.\n * Use this file as a reference to modify your preferences\n * file \"brackets.json\" opened in the other pane.\n * For more information on how to use preferences inside\n * {APP_NAME}, refer to the web page at https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "默认",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "值为真时，开启纯代码模式，隐藏 {APP_NAME} 的其他 UI 元素",
     "DESCRIPTION_INDENT_LINE_COMMENT"                : "值为真时，开启行注释缩进",

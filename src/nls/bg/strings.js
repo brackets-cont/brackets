@@ -90,11 +90,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Опа! {APP_NAME} все още не може да работи в браузър.",
-    "ERROR_IN_BROWSER"                  : "Приложението {APP_NAME} е изградено чрез HTML, но в момента работи като настолно приложение, така че да може да го използвате за редактиране на местни файлове. Моля, използвайте приложната обвивка от хранилището <b>github.com/adobe/brackets-shell</b>, за да пуснете {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "Приложението {APP_NAME} е изградено чрез HTML, но в момента работи като настолно приложение, така че да може да го използвате за редактиране на местни файлове. Моля, използвайте приложната обвивка от хранилището <b>github.com/brackets-cont/brackets-shell</b>, за да пуснете {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Грешка при обработката на файловете",
-    "ERROR_MAX_FILES"                   : "Този проект има над 30 000 файла. Функционалностите, които работят с множество файлове може да бъдат изключени или да работят така, сякаш проектът е празен. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Прочете повече относно работата с големи проекти</a>.",
+    "ERROR_MAX_FILES"                   : "Този проект има над 200 000 файла. Функционалностите, които работят с множество файлове може да бъдат изключени или да работят така, сякаш проектът е празен. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Прочете повече относно работата с големи проекти</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Грешка при пускането на браузъра",
@@ -446,7 +446,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Издание {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "дата на компилиране: ",
     "ABOUT_TEXT_LINE3"                     : "Бележките, правата и условията, свързани с използването на софтуер от трети страни, могат да бъдат открити на <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> и смятани за включени тук.",
-    "ABOUT_TEXT_LINE4"                     : "Документацията и изходният код могат да бъдат открити тук: <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Документацията и изходният код могат да бъдат открити тук: <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Създадено с \u2764 и JavaScript от:",
     "ABOUT_TEXT_LINE6"                     : "Много хора (но в момента не може да заредим данните за тях).",
     "ABOUT_TEXT_MDN_DOCS"                  : "Документацията и логото на MDN са лицензирани под лиценз за признание от вида „Криейтив Комънс“: <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Нелокализиран</a>.",
@@ -606,13 +606,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Отваряне на изходния код на {APP_NAME}",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "Пряк път към {APP_NAME} за командния ред",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Възникна грешка при инсталирането на прекия път за командния ред. Моля, прегледайте <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>тези съвети за отстраняване на проблемите</a>.<br/><br/>Причина: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Възникна грешка при инсталирането на прекия път за командния ред. Моля, прегледайте <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>тези съвети за отстраняване на проблемите</a>.<br/><br/>Причина: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "Неуспешно премахване на съществуващата символна връзка <code>/usr/local/bin/brackets</code> .",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Неуспешно създаване на папката <code>/usr/local/bin</code> .",
     "ERROR_CLTOOLS_LNFAILED"                    : "Неуспешно създаване на символната връзка <code>/usr/local/bin/brackets</code> .",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Вътрешна грешка.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "Тази ОС не поддържа преки пътища за команден ред.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Готово! Вече можете да пускате {APP_NAME} лесно от командния ред чрез: <code>brackets файл.txt</code> за отваряне на файл или <code>brackets папка</code> за промяна на проекта. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Научете повече</a> относно използването на {APP_NAME} от командния ред.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Готово! Вече можете да пускате {APP_NAME} лесно от командния ред чрез: <code>brackets файл.txt</code> за отваряне на файл или <code>brackets папка</code> за промяна на проекта. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Научете повече</a> относно използването на {APP_NAME} от командния ред.",
 
     "LANGUAGE_TITLE"                            : "Смяна на езика",
     "LANGUAGE_MESSAGE"                          : "Език:",
@@ -624,9 +624,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Предпочитания за здравния доклад",
     "HEALTH_FIRST_POPUP_TITLE"                  : "Здравен доклад на {APP_NAME}",
     "HEALTH_DATA_DO_TRACK"                      : "Искам да споделям информация за това как използвам {APP_NAME}",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "С цел подобряване на {APP_NAME}, ни периодично изпращаме ограничено количество, <strong>анонимни</strong> данни до Adobe относно това как използвате {APP_NAME}. Тази информация ни помога да преценим кои функционалности са най-важни, да откриваме проблеми и забелязваме неудобства при ползването.<br><br>Можете да видите своите данни или да изберете да не ги споделяте с нас, като изберете <strong>Помощ > Здравен доклад</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Нучете повече относно здравния доклад на {APP_NAME}</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "С цел подобряване на {APP_NAME}, ни периодично изпращаме ограничено количество, <strong>анонимни</strong> данни до brackets.io относно това как използвате {APP_NAME}. Тази информация ни помога да преценим кои функционалности са най-важни, да откриваме проблеми и забелязваме неудобства при ползването.<br><br>Можете да видите своите данни или да изберете да не ги споделяте с нас, като изберете <strong>Помощ > Здравен доклад</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Нучете повече относно здравния доклад на {APP_NAME}</a>",
     "HEALTH_DATA_PREVIEW"                       : "Здравен доклад на {APP_NAME}",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>С цел подобряване на {APP_NAME}, ни периодично изпращаме ограничено количество, <strong>анонимни</strong> данни до Adobe относно това как използвате {APP_NAME}. Тази информация ни помога да преценим кои функционалности са най-важни, да откриваме проблеми и забелязваме неудобства при ползването. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Нучете повече относно здравния доклад на {APP_NAME}</a> и как той е в полза на общността на {APP_NAME}, както и защитава личните Ви данни.</p><p>По-долу виждате преглед на данните, които ще бъдат изпратени в следващия Ви здравен доклад, <em>ако</em> той е включен.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>С цел подобряване на {APP_NAME}, ни периодично изпращаме ограничено количество, <strong>анонимни</strong> данни до brackets.io относно това как използвате {APP_NAME}. Тази информация ни помога да преценим кои функционалности са най-важни, да откриваме проблеми и забелязваме неудобства при ползването. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Нучете повече относно здравния доклад на {APP_NAME}</a> и как той е в полза на общността на {APP_NAME}, както и защитава личните Ви данни.</p><p>По-долу виждате преглед на данните, които ще бъдат изпратени в следващия Ви здравен доклад, <em>ако</em> той е включен.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Време",
@@ -649,7 +649,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Показване на подсказката за параметрите",
     "NO_ARGUMENTS"                              : "<няма параметри>",
     "DETECTED_EXCLUSION_TITLE"                  : "Проблем с файл с код на JavaScript",
-    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} имаше проблем при обработката на <span class='dialog-filename'>{0}</span>.<br><br>Този файл няма повече да бъде проучван за подсказки за кода, преминаване към определения или бързо редактиране. За да включите този файл отново, отворете файла <code>.brackets.json</code> в проекта си и редактирайте секцията <code>jscodehints.detectedExclusions</code>.<br><br>Най-вероятно проблемът е в {APP_NAME}. Ако можете да изпратите този файл, моля <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>докладвайте проблема</a> с връзка към файла.",
+    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} имаше проблем при обработката на <span class='dialog-filename'>{0}</span>.<br><br>Този файл няма повече да бъде проучван за подсказки за кода, преминаване към определения или бързо редактиране. За да включите този файл отново, отворете файла <code>.brackets.json</code> в проекта си и редактирайте секцията <code>jscodehints.detectedExclusions</code>.<br><br>Най-вероятно проблемът е в {APP_NAME}. Ако можете да изпратите този файл, моля <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>докладвайте проблема</a> с връзка към файла.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",
@@ -774,7 +774,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "Задайте false за отваряне на файла с потребителските настройки в левия/горния раздел",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "Задайте true за скриване на разделите след като последният файл от раздела бъде затворен чрез бутона за затваряне в заглавната лента на раздела",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "Превключване на това кога да бъдат показвани бутоните за затваряне и прехвърляне в друг раздел в заглавната лента на раздела",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Този файл е само за четене и съдържа настройките,\n * поддържани от {APP_NAME}.\n * Използвайте го за справка, когато променяте своите настройки в\n * файла „brackets.json“, отворен в другия рездел.\n * За повече информация относно използването на настройките в\n * {APP_NAME}, прегледайте страницата https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Този файл е само за четене и съдържа настройките,\n * поддържани от {APP_NAME}.\n * Използвайте го за справка, когато променяте своите настройки в\n * файла „brackets.json“, отворен в другия рездел.\n * За повече информация относно използването на настройките в\n * {APP_NAME}, прегледайте страницата https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "По подразбиране",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "Задайте true за включване на режима, в който се вижда само кода, а всички останали части на потребителския интерфейс на {APP_NAME} са скрити",
     "DESCRIPTION_INDENT_LINE_COMMENT"                : "Задайте true за включване на отстъпа на коментарите за ред"

@@ -88,11 +88,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"                    : "Ой! {APP_NAME} ще не працює у браузерах.",
-    "ERROR_IN_BROWSER"                          : "{APP_NAME} створено на базі веб-технологій, але наразі працює як звичайна програма аби мати змогу редагувати локальні файли. Будь ласка, скористайтесь спеціальною оболонкою на <b>github.com/adobe/brackets-shell</b> для запуску {APP_NAME}.",
+    "ERROR_IN_BROWSER"                          : "{APP_NAME} створено на базі веб-технологій, але наразі працює як звичайна програма аби мати змогу редагувати локальні файли. Будь ласка, скористайтесь спеціальною оболонкою на <b>github.com/brackets-cont/brackets-shell</b> для запуску {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"                     : "Помилка індексації файлів",
-    "ERROR_MAX_FILES"                           : "Цей проект містить більше 30 000 файлів. Функції, що оперують кількома файлам можуть не працювати правильно або вимкнутись. <a href=\'https://github.com/adobe/brackets/wiki/Large-Projects\'>Дізнайтесь більше про роботу програми під час відкриття великих проектів</a>.",
+    "ERROR_MAX_FILES"                           : "Цей проект містить більше 200 000 файлів. Функції, що оперують кількома файлам можуть не працювати правильно або вимкнутись. <a href=\'https://github.com/brackets-cont/brackets/wiki/Large-Projects\'>Дізнайтесь більше про роботу програми під час відкриття великих проектів</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"             : "Помилка запуску браузера",
@@ -430,7 +430,7 @@ define({
     "ABOUT_TEXT_LINE1"                          : "Версія {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"                : "часова мітка збирання:",
     "ABOUT_TEXT_LINE3"                          : "Зауважте, що правила та умови використання комерційного програмного забезпечення розміщенні на <a href=\'{ADOBE_THIRD_PARTY}\'>{ADOBE_THIRD_PARTY}</a> і наводяться тут в якості посилання.",
-    "ABOUT_TEXT_LINE4"                          : "Документація та сирці доступні на <a href=\'https://github.com/adobe/brackets/\'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                          : "Документація та сирці доступні на <a href=\'https://github.com/brackets-cont/brackets/\'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                          : "Створено з \u2764 та JavaScript авторами:",
     "ABOUT_TEXT_LINE6"                          : "Значна кількість людей (але наразі існують проблеми із завантаженням даних про них).",
     "ABOUT_TEXT_MDN_DOCS"                       : "Документація та логотип MDN Docs поширюється на умовах ліцензії Creative Commons Attribution, <a href=\'{MDN_DOCS_LICENSE}\'>CC-BY-SA 2.5 Unported</a>.",
@@ -606,7 +606,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Показувати підсвічування параметрів функції",
     "NO_ARGUMENTS"                              : "<параметри відсутні>",
     "DETECTED_EXCLUSION_TITLE"                  : "Помилка виведення файлу JavaScript",
-    "DETECTED_EXCLUSION_INFO"                   : "Brackets зіткнувся з проблемою під час обробки <span class=\'dialog-filename\'>{0}</span>.<br><br>Для цього файлу більше не працюватиме аналіз, перехід до оголошень та швидке редагування. Аби повернути їх, відкрийте <code>.brackets.json</code> у теці свого проекту та відредагуйте параметр <code>jscodehints.detectedExclusions</code>. <br><br> Це схоже на ваду у Brackets. Якщо ви можете надати копію цього файлу, будь ласка, <a href=\'https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue\'>сповістіть про ваду</a> та вкажіть посилання на нього.",
+    "DETECTED_EXCLUSION_INFO"                   : "Brackets зіткнувся з проблемою під час обробки <span class=\'dialog-filename\'>{0}</span>.<br><br>Для цього файлу більше не працюватиме аналіз, перехід до оголошень та швидке редагування. Аби повернути їх, відкрийте <code>.brackets.json</code> у теці свого проекту та відредагуйте параметр <code>jscodehints.detectedExclusions</code>. <br><br> Це схоже на ваду у Brackets. Якщо ви можете надати копію цього файлу, будь ласка, <a href=\'https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue\'>сповістіть про ваду</a> та вкажіть посилання на нього.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",

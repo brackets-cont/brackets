@@ -90,11 +90,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Ups! {APP_NAME} vēl nedarbojas pārlūkā.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} ir būvēta HTML, bet šobrīd strādā kā darbvirsmas lietotne, tāpēc to var izmantot, lai rediģētu lokālās datnes. Lūdzu, izmantojiet lietotnes čaulu <b>github.com/adobe/brackets-shell</b> repozitorijā, lai palaistu {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} ir būvēta HTML, bet šobrīd strādā kā darbvirsmas lietotne, tāpēc to var izmantot, lai rediģētu lokālās datnes. Lūdzu, izmantojiet lietotnes čaulu <b>github.com/brackets-cont/brackets-shell</b> repozitorijā, lai palaistu {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Kļūda, indeksējot datnes",
-    "ERROR_MAX_FILES"                   : "Šis projekts ietver vairāk nekā 30000 datņu. Funkcijas, kas darbojas vairākās datnēs, var tikt atspējotas vai darboties tā, it kā projekts būtu tukšs. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'> Lasīt vairāk par strādāšanu ar lieliem projektiem</a>.",
+    "ERROR_MAX_FILES"                   : "Šis projekts ietver vairāk nekā 200000 datņu. Funkcijas, kas darbojas vairākās datnēs, var tikt atspējotas vai darboties tā, it kā projekts būtu tukšs. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'> Lasīt vairāk par strādāšanu ar lieliem projektiem</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Kļūda, palaižot pārlūku",
@@ -446,7 +446,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Laidiena versija {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "būvējuma laikspiedols:",
     "ABOUT_TEXT_LINE3"                     : "Paziņojumi, noteikumi un nosacījumi, kas attiecas uz trešo pušu programmatūru, atrodas <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> un šeit iekļauti ar atsauci.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentācija un avots <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentācija un avots <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Izveidots ar \u2764 un JavaScript, autors:",
     "ABOUT_TEXT_LINE6"                     : "Daudz cilvēku (bet mums šobrīd ir grūtības ielādēt šos datus).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN dokumenti un MDN grafiskais logo ir licencēti saskaņā ar \"Creative Commons\" licenci <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -606,13 +606,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Atvērt {APP_NAME} avotu",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME} komandrindas saīsne",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Radās kļūda, instalējot komandrindas saīsni. Lūdzu, mēģiniet <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>šīs problēmu noteikšanas ieteikumi</a>.<br/><br/>Iemesls: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Radās kļūda, instalējot komandrindas saīsni. Lūdzu, mēģiniet <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>šīs problēmu noteikšanas ieteikumi</a>.<br/><br/>Iemesls: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "Neizdevās noņemt esošo <code>/usr/local/bin/brackets</code> simbolisko saiti.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Neizdevās izveidot <code>/usr/local/bin</code> katalogu.",
     "ERROR_CLTOOLS_LNFAILED"                    : "Neizdevās izveidot <code>/usr/local/bin/brackets</code> simbolisko saiti.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Iekšēja kļūda.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "Šī operētājsistēma neatbalsta komandrindas saīsni.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Veiksmīgi! Nu varat vienkārši palaist {APP_NAME} no komandrindas: <code>brackets myFile.txt</code>, lai atvērtu datni vai <code>brackets myFolder</code>, lai pārslēgtu projektus. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Uzzināt vairāk</a>  par {APP_NAME} komandrindas izmantošanu.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Veiksmīgi! Nu varat vienkārši palaist {APP_NAME} no komandrindas: <code>brackets myFile.txt</code>, lai atvērtu datni vai <code>brackets myFolder</code>, lai pārslēgtu projektus. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Uzzināt vairāk</a>  par {APP_NAME} komandrindas izmantošanu.",
 
     "LANGUAGE_TITLE"                            : "Pārslēgt valodu",
     "LANGUAGE_MESSAGE"                          : "Valoda:",
@@ -624,9 +624,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Veselības atskaites iestatījumi",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} veselības atskaite",
     "HEALTH_DATA_DO_TRACK"                      : "Dalīties ar anonīmu informāciju, kā es izmantoju {APP_NAME}",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Lai uzlabotu {APP_NAME}, mēs periodiski nosūtām ierobežotu, <strong>anonīmu</strong> statistiku uzņēmumam Adobe, kā Jūs izmantojat {APP_NAME}. Šī informācija palīdz noteikt funkciju prioritāti, atrast kļūdas un noteikt lietojamības problēmas.<br><br>Jūs varat redzēt savus datus vai izvēlēties nedalīties ar informāciju, izvēloties <strong>Palīdzība > Veselības atskaite</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Uzzināt vairāk par {APP_NAME} veselības atskaiti</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "Lai uzlabotu {APP_NAME}, mēs periodiski nosūtām ierobežotu, <strong>anonīmu</strong> statistiku uzņēmumam brackets.io, kā Jūs izmantojat {APP_NAME}. Šī informācija palīdz noteikt funkciju prioritāti, atrast kļūdas un noteikt lietojamības problēmas.<br><br>Jūs varat redzēt savus datus vai izvēlēties nedalīties ar informāciju, izvēloties <strong>Palīdzība > Veselības atskaite</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Uzzināt vairāk par {APP_NAME} veselības atskaiti</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} veselības atskaite",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p> Lai uzlabotu {APP_NAME}, mēs periodiski nosūtām ierobežotu, <strong>anonīmu</strong> statistiku uzņēmumam Adobe, kā Jūs izmantojat {APP_NAME}. Šī informācija palīdz noteikt funkciju prioritāti, atrast kļūdas un noteikt lietojamības problēmas. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Uzzināt vairāk par {APP_NAME} veselības atskaiti</a> un kādu labumu tā dod {APP_NAME} kopienai, pasargājot jūsu privātumu.</p><p>Zemāk varat redzēt datu priekšskatījumu, kas tiks nosūtīti nākamajā veselības atskaitē<em>ja</em> tā ir iespējota.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p> Lai uzlabotu {APP_NAME}, mēs periodiski nosūtām ierobežotu, <strong>anonīmu</strong> statistiku uzņēmumam brackets.io, kā Jūs izmantojat {APP_NAME}. Šī informācija palīdz noteikt funkciju prioritāti, atrast kļūdas un noteikt lietojamības problēmas. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Uzzināt vairāk par {APP_NAME} veselības atskaiti</a> un kādu labumu tā dod {APP_NAME} kopienai, pasargājot jūsu privātumu.</p><p>Zemāk varat redzēt datu priekšskatījumu, kas tiks nosūtīti nākamajā veselības atskaitē<em>ja</em> tā ir iespējota.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Laiks",
@@ -649,7 +649,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Rādīt parametru ieteikumus",
     "NO_ARGUMENTS"                              : "<nav argumentu>",
     "DETECTED_EXCLUSION_TITLE"                  : "JavaScript datnes izveduma problēma",
-    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} saskārās ar grūtībām apstrādāt <span class='dialog-filename'>{0}</span>.<br><br> Šo datni vairs nevarēs apstrādāt ar funkcijām: koda ieteikumi, pārlēkt uz definīciju un ātrā rediģēšana. Lai no jauna iespējotu šo datni, atveriet <code>.brackets.json</code> projektā un rediģējiet <code>jscodehints.detectedExclusions</code>.<br><br> Šī ir iespējama {APP_NAME} kļūda. Ja varat nodrošināt šīs datnes kopiju, <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>reģistrējiet kļūdu</a> ar saiti uz šeit norādīto datni.",
+    "DETECTED_EXCLUSION_INFO"                   : "{APP_NAME} saskārās ar grūtībām apstrādāt <span class='dialog-filename'>{0}</span>.<br><br> Šo datni vairs nevarēs apstrādāt ar funkcijām: koda ieteikumi, pārlēkt uz definīciju un ātrā rediģēšana. Lai no jauna iespējotu šo datni, atveriet <code>.brackets.json</code> projektā un rediģējiet <code>jscodehints.detectedExclusions</code>.<br><br> Šī ir iespējama {APP_NAME} kļūda. Ja varat nodrošināt šīs datnes kopiju, <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>reģistrējiet kļūdu</a> ar saiti uz šeit norādīto datni.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",
@@ -774,7 +774,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "vērtība false, lai atvērtu iestatījumu datni kreisajā/augšējā rūtī",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "vērtība true, lai sakļautu rūtis, kad tiek aizvērta pēdējā rūts ar aizvēršanas pogu rūts galvenē",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "Rādīt/nerādīt aizvēršanas un pārnešanas pogas galvenē.",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Šī datne ir tikai lasāma, iestatījumus atbalsta\n * {APP_NAME}.\n * Izmantojiet šo datni kā norādījumus, lai mainītu iestatījumus \n * datnē \"brackets.json\", kas ir atvērta citā rūtī.\n * Sīkākai informācija par iestatījumu izmantošanu\n * {APP_NAME} apmeklējiet tīmekļa vietni https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * Šī datne ir tikai lasāma, iestatījumus atbalsta\n * {APP_NAME}.\n * Izmantojiet šo datni kā norādījumus, lai mainītu iestatījumus \n * datnē \"brackets.json\", kas ir atvērta citā rūtī.\n * Sīkākai informācija par iestatījumu izmantošanu\n * {APP_NAME} apmeklējiet tīmekļa vietni https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "Noklusējums",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "vērtība true, lai iespējotu tikai koda režīmu un paslēptu visus citus UI elementus {APP_NAME}",
     "DESCRIPTION_INDENT_LINE_COMMENT"                : "vērtība true, lai iespējotu rindas komentāru atkāpi"

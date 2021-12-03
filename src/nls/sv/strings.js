@@ -90,7 +90,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Ajdå! {APP_NAME} körs inte i webbläsaren ännu.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} är byggd i HTML, men körs just nu som en skrivbordsapplikation så att du kan använda den för att redigera lokala filer. Vänligen använd skalapplikationen <b>github.com/adobe/brackets-shell</b> för att köra {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} är byggd i HTML, men körs just nu som en skrivbordsapplikation så att du kan använda den för att redigera lokala filer. Vänligen använd skalapplikationen <b>github.com/brackets-cont/brackets-shell</b> för att köra {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Fel vid indexering av filer",
@@ -442,7 +442,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "tidsstämpel för build: ",
     "ABOUT_TEXT_LINE3"                     : "Meddelanden och villkor gällande program från tredje part finns på <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> och inkluderas här som referens.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentation och källkod återfinns på <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentation och källkod återfinns på <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Skapat med \u2764 och JavaScript av:",
     "ABOUT_TEXT_LINE6"                     : "Massor av människor (men vi har lite problem att visa dessa data just nu).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN Docs och dess logotyp är licenserad under en Creative Commons Attribution-licens, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -605,13 +605,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "Öppna Brackets källkod",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME} kommandotolk-genväg",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Ett fel inträffade under installationen av kommandotolk-genvägen. Vänligen prova <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>dessa felsökningsförslag</a>.<br/><br/>Anledning: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "Ett fel inträffade under installationen av kommandotolk-genvägen. Vänligen prova <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>dessa felsökningsförslag</a>.<br/><br/>Anledning: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "Kunde inte ta bort existerande symlink <code>/usr/local/bin/brackets</code>.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "Kunde inte skapa mappen <code>/usr/local/bin</code>.",
     "ERROR_CLTOOLS_LNFAILED"                    : "Kunde inte skapa symlink <code>/usr/local/bin/brackets</code>.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "Internt fel.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "Kommandotolk-genväg stöds inte för det här operativsystemet.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Lyckades! Nu kan du lätt starta {APP_NAME} från kommandotolken: <code>brackets myFile.txt</code> för att öppna en fil eller <code>brackets myFolder</code> för att växla projekt. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>Läs mer</a> om att använda {APP_NAME} från kommandotolken.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "Lyckades! Nu kan du lätt starta {APP_NAME} från kommandotolken: <code>brackets myFile.txt</code> för att öppna en fil eller <code>brackets myFolder</code> för att växla projekt. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>Läs mer</a> om att använda {APP_NAME} från kommandotolken.",
 
     "LANGUAGE_TITLE"                            : "Byt språk",
     "LANGUAGE_MESSAGE"                          : "Språk:",
@@ -623,9 +623,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Hälsorapport inställningar",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} Hälsorapport",
     "HEALTH_DATA_DO_TRACK"                      : "Dela anonym information om hur jag använder {APP_NAME}",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "För att förbättra {APP_NAME} skickar vi regelbundet begränsad, <strong>anonym</strong> statistik till Adobe om hur du använder {APP_NAME}. Denna information hjälper att prioritera funktioner, hitta buggar och upptäcka användbarhetsproblem.<br><br>Du kan se din data eller välja att inte dela din data genom <strong>Hjälp > Hälsorapport</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Health-Data'>Läs mer om {APP_NAME} Hälsorapport</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "För att förbättra {APP_NAME} skickar vi regelbundet begränsad, <strong>anonym</strong> statistik till brackets.io om hur du använder {APP_NAME}. Denna information hjälper att prioritera funktioner, hitta buggar och upptäcka användbarhetsproblem.<br><br>Du kan se din data eller välja att inte dela din data genom <strong>Hjälp > Hälsorapport</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Läs mer om {APP_NAME} Hälsorapport</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} Hälsorapport",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>För att förbättra {APP_NAME} skickar vi regelbundet begränsad, <strong>anonym</strong> statistik till Adobe om hur du använder {APP_NAME}. Denna information hjälper att prioritera funktioner, hitta buggar och upptäcka användbarhetsproblem. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>Läs mer om {APP_NAME} Hälsorapport</a> och hur det gagnar {APP_NAME}-gemenskapen samtidigt som din integritet skyddas.</p><p>Nedan är en förhandsvisning av datan som skickas i nästa Hälsorapport <em>om</em> det är aktiverat.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>För att förbättra {APP_NAME} skickar vi regelbundet begränsad, <strong>anonym</strong> statistik till brackets.io om hur du använder {APP_NAME}. Denna information hjälper att prioritera funktioner, hitta buggar och upptäcka användbarhetsproblem. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>Läs mer om {APP_NAME} Hälsorapport</a> och hur det gagnar {APP_NAME}-gemenskapen samtidigt som din integritet skyddas.</p><p>Nedan är en förhandsvisning av datan som skickas i nästa Hälsorapport <em>om</em> det är aktiverat.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Tid",

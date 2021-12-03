@@ -88,11 +88,11 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Упс! {APP_NAME} још увек не ради у веб претраживачу.",
-    "ERROR_IN_BROWSER"                  : "Апликација {APP_NAME} је направљена помоћу HTML-а, али тренутно ради као \"desktop\" апликација па је можете користити за измену локалних датотека. Молимо Вас користите \"application shell\" на <b>github.com/adobe/brackets-shell</b> репозиторијуму за покретање {APP_NAME}-а.",
+    "ERROR_IN_BROWSER"                  : "Апликација {APP_NAME} је направљена помоћу HTML-а, али тренутно ради као \"desktop\" апликација па је можете користити за измену локалних датотека. Молимо Вас користите \"application shell\" на <b>github.com/brackets-cont/brackets-shell</b> репозиторијуму за покретање {APP_NAME}-а.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Грешка приликом индексирања датотека",
-    "ERROR_MAX_FILES"                   : "Пројекат садржи више од 30.000 датотека. Делови апликације који врше обраду над више датотека могу постати неактивни или се понашати као да је пројекат празан. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>Прочитајте више о раду са великим пројектима</a>.",
+    "ERROR_MAX_FILES"                   : "Пројекат садржи више од 30.000 датотека. Делови апликације који врше обраду над више датотека могу постати неактивни или се понашати као да је пројекат празан. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Прочитајте више о раду са великим пројектима</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Грешка при покретању претраживача",
@@ -430,7 +430,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "Итерација {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "временска ознака билда: ",
     "ABOUT_TEXT_LINE3"                     : "Обавештења, обавезе и услови коришћења који се односе на \"third party\" софтвер су лоцирани на <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> и укључени су овде путем референце.",
-    "ABOUT_TEXT_LINE4"                     : "Документација и изворни кôд на <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Документација и изворни кôд на <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Направили са \u2764 и JavaScript-ом:",
     "ABOUT_TEXT_LINE6"                     : "Много људи (али тренутно имамо потешкоћа да учитамо те податке).",
     "ABOUT_TEXT_MDN_DOCS"                  : "\"MDN Docs\" и \"MDN\" логотип су заштићени \"Creative Commons Attribution\" лиценцом, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -606,7 +606,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT"                   : "Пружи малу помоћ око параметра",
     "NO_ARGUMENTS"                              : "<без параметара>",
     "DETECTED_EXCLUSION_TITLE"                  : "Проблем у обради JavaScript датотеке",
-    "DETECTED_EXCLUSION_INFO"                   : "Brackets није успео да процесуира <span class='dialog-filename'>{0}</span>.<br><br>Ова датотека више неће бити процесуирана за приказивање малих помоћи у кôду, Скочи на дефиницију или Брза измена. Како бисте активирали ову датотеку, отворите <code>.brackets.json</code> у Вашем пројекту и измените <code>jscodehints.detectedExclusions</code>.<br><br>Ово је вероватно баг у апликацији Brackets. Ако можете приложити копију ове датотеке, молимо Вас <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>пријавите баг</a> који садржи линк до овде наведене датотеке.",
+    "DETECTED_EXCLUSION_INFO"                   : "Brackets није успео да процесуира <span class='dialog-filename'>{0}</span>.<br><br>Ова датотека више неће бити процесуирана за приказивање малих помоћи у кôду, Скочи на дефиницију или Брза измена. Како бисте активирали ову датотеку, отворите <code>.brackets.json</code> у Вашем пројекту и измените <code>jscodehints.detectedExclusions</code>.<br><br>Ово је вероватно баг у апликацији Brackets. Ако можете приложити копију ове датотеке, молимо Вас <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>пријавите баг</a> који садржи линк до овде наведене датотеке.",
 
     // extensions/default/JSLint
     "JSLINT_NAME"                               : "JSLint",

@@ -1,7 +1,7 @@
 {
     "googleAnalyticsID"       : "UA-212757129-2",
     "environment"             : "production",
-    "update_info_url"         : "https://getupdates.brackets.io/getupdates?locale=<locale>",
-    "notification_info_url"   : "https://getupdates.brackets.io/getnotifications?locale=<locale>",
+    "update_info_url"         : "https://getupdates.brackets.io/prod/updates/<locale>.json",
+    "notification_info_url"   : "https://getupdates.brackets.io/prod/notifications/<locale>.json",
     "buildtype"               : "production"
 }
