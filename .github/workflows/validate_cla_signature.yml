@@ -4,7 +4,7 @@ name: Enforce CLA Signature
 on: 
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   validate-cla-signature:
