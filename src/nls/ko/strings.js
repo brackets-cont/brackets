@@ -89,7 +89,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE": "{APP_NAME}는 아직 브라우저에서 실행되지 않습니다.",
-    "ERROR_IN_BROWSER": "{APP_NAME}는 HTML로 구축되어 있지만 데스크톱 응용 프로그램으로 실행하여 로컬 파일을 편집 할 수 있습니다. {APP_NAME}를 실행하기 위해 <b>github.com / adobe / brackets-shell</b> 저장소 응용 프로그램 셸을 사용하십시오.",
+    "ERROR_IN_BROWSER": "{APP_NAME}는 HTML로 구축되어 있지만 데스크톱 응용 프로그램으로 실행하여 로컬 파일을 편집 할 수 있습니다. {APP_NAME}를 실행하기 위해 <b>github.com / brackets-cont / brackets-shell</b> 저장소 응용 프로그램 셸을 사용하십시오.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE": "파일을 인덱스 하던 중에 에러가 발생했습니다.",
@@ -445,7 +445,7 @@ define({
     "ABOUT_TEXT_LINE1": "스프린트 {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "빌드 시각: ",
     "ABOUT_TEXT_LINE3": "제3자 소프트웨어의 사용에 관한 공지, 이용 약관은 <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a>에 있으며 기록으로써 이곳에 존재합니다.",
-    "ABOUT_TEXT_LINE4": "문서와 소스 코드는 <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>에서 구할 수 있습니다.",
+    "ABOUT_TEXT_LINE4": "문서와 소스 코드는 <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>에서 구할 수 있습니다.",
     "ABOUT_TEXT_LINE5": "\u2764 및 JavaScript를 사용하여 다음의 사람에 의해 작성되었습니다 :",
     "ABOUT_TEXT_LINE6": "많은 사람들 (단, 인물 데이터 로딩에 문제가 발생하고 있습니다).",
     "ABOUT_TEXT_MDN_DOCS": "MDN 문서와 MDN 로고는 크리에이티브 커먼즈 저작자표시 라이선스, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a> 로 배포됩니다.",
@@ -605,13 +605,13 @@ define({
     "CMD_OPEN_BRACKETS_SOURCE"                  : "{APP_NAME} 소스 열기",
 
     "CREATING_LAUNCH_SCRIPT_TITLE"              : "{APP_NAME} 명령 줄 바로가기",
-    "ERROR_CREATING_LAUNCH_SCRIPT"              : "명령 줄 바로가기를 설치하는 동안 오류가 발생했습니다. <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>이런 문제를 해결하기 위한 제안</a>을 시도해 보세요.<br/><br/>원인: {0}",
+    "ERROR_CREATING_LAUNCH_SCRIPT"              : "명령 줄 바로가기를 설치하는 동안 오류가 발생했습니다. <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>이런 문제를 해결하기 위한 제안</a>을 시도해 보세요.<br/><br/>원인: {0}",
     "ERROR_CLTOOLS_RMFAILED"                    : "기존의 <code>/usr/local/bin/brackets</code> 심볼릭 링크를 제거할 수 없습니다.",
     "ERROR_CLTOOLS_MKDIRFAILED"                 : "<code>/usr/local/bin</code> 디렉토리를 만들 수 없습니다.",
     "ERROR_CLTOOLS_LNFAILED"                    : "<code>/usr/local/bin/brackets</code> 심볼릭 링크를 만들 수 없습니다.",
     "ERROR_CLTOOLS_SERVFAILED"                  : "내부 오류입니다.",
     "ERROR_CLTOOLS_NOTSUPPORTED"                : "현재 운영체제(OS)가 명령줄 바로가기를 지원하지 않습니다.",
-    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "성공! 이제부터 명령 줄에서 쉽게 {APP_NAME}를 시작할 수 있습니다: 파일을 열기 위해 <code>brackets myFile.txt</code> 또는 프로젝트를 전환하기 위해 <code>brackets myFolder</code>. <br/><br/>명령 줄에서 {APP_NAME}를 사용하기 위한 <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>더 자세한 정보</a>.",
+    "LAUNCH_SCRIPT_CREATE_SUCCESS"              : "성공! 이제부터 명령 줄에서 쉽게 {APP_NAME}를 시작할 수 있습니다: 파일을 열기 위해 <code>brackets myFile.txt</code> 또는 프로젝트를 전환하기 위해 <code>brackets myFolder</code>. <br/><br/>명령 줄에서 {APP_NAME}를 사용하기 위한 <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>더 자세한 정보</a>.",
 
     "LANGUAGE_TITLE": "언어 변경",
     "LANGUAGE_MESSAGE": "언어:",
@@ -623,9 +623,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "상태 보고서 환경설정",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} 상태 보고서",
     "HEALTH_DATA_DO_TRACK"                      : "{APP_NAME} 사용 행태 정보를 익명으로 공유",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 Adobe에 주기적으로 전송합니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다.<br><br>고객의 데이터를 보거나 또는 데이터를 공유하지 않도록 하려면 <strong>도움말 > 상태 보고서</strong>를 선택하세요. <a href='https://github.com/adobe/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관한 자세한 정보.</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 brackets.io에 주기적으로 전송합니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다.<br><br>고객의 데이터를 보거나 또는 데이터를 공유하지 않도록 하려면 <strong>도움말 > 상태 보고서</strong>를 선택하세요. <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관한 자세한 정보.</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} 상태 보고서",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 Adobe에 주기적으로 전송하고 있습니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다. 고객의 개인정보를 보호하면서 {APP_NAME} 커뮤니티에 어떤 이득을 주는지 <a href='https://github.com/adobe/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관해 자세히 알아보세요</a>.</p><p><em>만약</em> 상태 보고서 전송이 가능한 상태라면 아래 미리보기 데이터는 고객의 다음 번 상태 보고서로 전송할 것입니다.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>{APP_NAME} 개선을 위해 고객이 {APP_NAME}를 어떻게 사용하는지에 관한 제한된 <strong>익명</strong> 통계를 brackets.io에 주기적으로 전송하고 있습니다. 이 정보는 기능의 우선 순위를 정하고, 버그를 찾고, 사용성 문제를 해결하는데 도움을 줍니다. 고객의 개인정보를 보호하면서 {APP_NAME} 커뮤니티에 어떤 이득을 주는지 <a href='https://github.com/brackets-cont/brackets/wiki/Health-Data'>{APP_NAME} 상태 보고서에 관해 자세히 알아보세요</a>.</p><p><em>만약</em> 상태 보고서 전송이 가능한 상태라면 아래 미리보기 데이터는 고객의 다음 번 상태 보고서로 전송할 것입니다.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME": "시간",
@@ -648,7 +648,7 @@ define({
     "CMD_SHOW_PARAMETER_HINT": "파라메터 정보를 표시",
     "NO_ARGUMENTS": "<매개변수가 없습니다>",
     "DETECTED_EXCLUSION_TITLE"                  : "자바스크립트 파일 추론 문제",
-    "DETECTED_EXCLUSION_INFO"                   : "Brackets에서 <span class='dialog-filename'>{0}</span> 파일을 처리하던 중 문제가 발생했습니다.<br><br>이 파일은 코드 힌트, 정의 이동, 빠른 편집 등에서 사용되지 않을 것입니다. 이 파일을 다시 사용하려면 프로젝트 폴더에 있는 <code>.brackets.json</code> 파일을 열고 <code>jscodehints.detectedExclusions</code> 항목을 수정하세요.<br><br>Backets의 버그일 수 있습니다. 이 파일의 사본을 제출할 수 있다면 여기서 말한 파일과 함께<a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>버그 보고</a>에 등록해주세요.",
+    "DETECTED_EXCLUSION_INFO"                   : "Brackets에서 <span class='dialog-filename'>{0}</span> 파일을 처리하던 중 문제가 발생했습니다.<br><br>이 파일은 코드 힌트, 정의 이동, 빠른 편집 등에서 사용되지 않을 것입니다. 이 파일을 다시 사용하려면 프로젝트 폴더에 있는 <code>.brackets.json</code> 파일을 열고 <code>jscodehints.detectedExclusions</code> 항목을 수정하세요.<br><br>Backets의 버그일 수 있습니다. 이 파일의 사본을 제출할 수 있다면 여기서 말한 파일과 함께<a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>버그 보고</a>에 등록해주세요.",
 
     // extensions/default/JSLint
     "JSLINT_NAME": "JSLint",
@@ -773,7 +773,7 @@ define({
     "DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE"     : "사용자 환경 설정 파일을 좌측/상단 창에서 열려면 false",
     "DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED"  : "창 헤더의 닫기 버튼을 통해 마지막으로 닫힌 창을 접으려면 true",
     "DESCRIPTION_SHOW_PANE_HEADER_BUTTONS"           : "헤더에 닫기 버튼과 반전 보기 버튼 표시 전환.",
-    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * 이것은 {APP_NAME}에 의해 환경 설정이 지원된 읽기 전용 파일입니다.\n * 이 파일은 다른 창에서 열린 \"brackets.json\" 환경 설정 파일을 수정하기 위한 참조로 사용합니다.\n * {APP_NAME} 환경 설정을 어떻게 하는지에 관한 더 많은 정보는 웹 페이지를 참고하세요.\n * https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n */",
+    "DEFAULT_PREFERENCES_JSON_HEADER_COMMENT"        : "/*\n * 이것은 {APP_NAME}에 의해 환경 설정이 지원된 읽기 전용 파일입니다.\n * 이 파일은 다른 창에서 열린 \"brackets.json\" 환경 설정 파일을 수정하기 위한 참조로 사용합니다.\n * {APP_NAME} 환경 설정을 어떻게 하는지에 관한 더 많은 정보는 웹 페이지를 참고하세요.\n * https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n */",
     "DEFAULT_PREFERENCES_JSON_DEFAULT"               : "기본",
     "DESCRIPTION_PURE_CODING_SURFACE"                : "{APP_NAME}에서 코드 전용 모드를 실행하고 다른 모든 UI 요소 숨기기를 활성화 하려면 true"
 });

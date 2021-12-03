@@ -96,11 +96,11 @@ define({
 
     // Application error strings
 	"ERROR_IN_BROWSER_TITLE": "{APP_NAME} は、まだブラウザー上で実行されていません。",
-	"ERROR_IN_BROWSER": "{APP_NAME} は HTML で構築されていますが、デスクトップアプリとして実行することで、ローカルファイルを編集することができます。{APP_NAME} を実行するために、<b>github.com/adobe/brackets-shell</b> リポジトリのアプリケーションシェルを使用してください。",
+	"ERROR_IN_BROWSER": "{APP_NAME} は HTML で構築されていますが、デスクトップアプリとして実行することで、ローカルファイルを編集することができます。{APP_NAME} を実行するために、<b>github.com/brackets-cont/brackets-shell</b> リポジトリのアプリケーションシェルを使用してください。",
 
     // ProjectManager max files error string
 	"ERROR_MAX_FILES_TITLE": "ファイルのインデックス時にエラーが発生しました。",
-	"ERROR_MAX_FILES": "このプロジェクトには 30,000 個以上のファイルが含まれています。複数のファイルを操作する機能が無効になるか、プロジェクトが空であるかのように動作します。<a href='https://github.com/adobe/brackets/wiki/Large-Projects'>大きいプロジェクトの操作方法の詳細を表示</a>。",
+	"ERROR_MAX_FILES": "このプロジェクトには 200,000 個以上のファイルが含まれています。複数のファイルを操作する機能が無効になるか、プロジェクトが空であるかのように動作します。<a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>大きいプロジェクトの操作方法の詳細を表示</a>。",
 
     // Live Preview error strings
 	"ERROR_LAUNCHING_BROWSER_TITLE": "ブラウザーの起動時にエラーが発生しました。",
@@ -141,7 +141,7 @@ define({
 	"EXT_MODIFIED_WARNING": "<span class='dialog-filename'>{0}</span> は {APP_NAME} 外のディスク上で変更されています。<br /><br />ファイルを保存し、これらの変更を上書きしますか？",
 	"EXT_MODIFIED_MESSAGE": "<span class='dialog-filename'>{0}</span> は {APP_NAME} 外のディスク上で変更されていますが、{APP_NAME} 内にも保存されていない変更があります。<br /><br />どちらのバージョンを保持しますか？",
 	"EXT_DELETED_MESSAGE": "<span class='dialog-filename'>{0}</span> は {APP_NAME} 外のディスク上で削除されていますが、{APP_NAME} 内に保存されていない変更があります。<br /><br />変更を保持しますか？",
-    
+
     // Window unload warning messages
 	"WINDOW_UNLOAD_WARNING": "Are you sure you want to navigate to a different URL and leave Brackets?",
 	"WINDOW_UNLOAD_WARNING_WITH_UNSAVED_CHANGES": "You have unsaved changes! Are you sure you want to navigate to a different URL and leave Brackets?",
@@ -468,7 +468,7 @@ define({
 	"ABOUT_TEXT_LINE1": "リリース {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
 	"ABOUT_TEXT_BUILD_TIMESTAMP": "ビルドのタイムスタンプ : ",
 	"ABOUT_TEXT_LINE3": "Notices, terms and conditions pertaining to third party software are located at <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> and incorporated by reference herein.",
-	"ABOUT_TEXT_LINE4": "ドキュメントとソースコードは <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a> から入手できます。",
+	"ABOUT_TEXT_LINE4": "ドキュメントとソースコードは <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a> から入手できます。",
 	"ABOUT_TEXT_LINE5": "\u2764 および JavaScript を使用して次の人によって作成されました :",
 	"ABOUT_TEXT_LINE6": "多くの人々 (ただし、人物データの読み込みに問題が発生しています)。",
 	"ABOUT_TEXT_MDN_DOCS": "MDN Docs および MDN グラフィックロゴは Creative Commons の帰属ライセンス、<a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a> によってライセンス付与されています。",
@@ -634,13 +634,13 @@ define({
 	"CMD_OPEN_BRACKETS_SOURCE": "{APP_NAME} ソースを開く",
 
 	"CREATING_LAUNCH_SCRIPT_TITLE": "{APP_NAME} コマンドラインショートカット",
-	"ERROR_CREATING_LAUNCH_SCRIPT": "コマンドラインショートカットのインストール中にエラーが発生しました。<a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>これらのトラブルシューティングの提案</a>をお試しください。<br/><br/>理由 : {0}",
+	"ERROR_CREATING_LAUNCH_SCRIPT": "コマンドラインショートカットのインストール中にエラーが発生しました。<a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>これらのトラブルシューティングの提案</a>をお試しください。<br/><br/>理由 : {0}",
 	"ERROR_CLTOOLS_RMFAILED": "既存の <code>/usr/local/bin/brackets</code> シンボリックリンクを削除できません。",
 	"ERROR_CLTOOLS_MKDIRFAILED": "<code>/usr/local/bin</code> ディレクトリを作成できません。",
 	"ERROR_CLTOOLS_LNFAILED": "<code>/usr/local/bin/brackets</code> シンボリックリンクを作成できません。",
 	"ERROR_CLTOOLS_SERVFAILED": "内部エラーです。",
 	"ERROR_CLTOOLS_NOTSUPPORTED": "この OS ではコマンドラインショートカットがサポートされていません。",
-	"LAUNCH_SCRIPT_CREATE_SUCCESS": "成功しました。{APP_NAME} をコマンドラインから簡単に起動できるようになりました (<code>brackets myFile.txt</code> でファイルを開く、<code>brackets myFolder</code> でプロジェクトを切り替えるなど)。<br/><br/>コマンドラインから {APP_NAME} を使用する方法について<a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>詳細</a>をご確認ください。",
+	"LAUNCH_SCRIPT_CREATE_SUCCESS": "成功しました。{APP_NAME} をコマンドラインから簡単に起動できるようになりました (<code>brackets myFile.txt</code> でファイルを開く、<code>brackets myFolder</code> でプロジェクトを切り替えるなど)。<br/><br/>コマンドラインから {APP_NAME} を使用する方法について<a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>詳細</a>をご確認ください。",
 
 	"LANGUAGE_TITLE": "言語を切り替える",
 	"LANGUAGE_MESSAGE": "言語 :",
@@ -652,9 +652,9 @@ define({
 	"HEALTH_DATA_NOTIFICATION": "Health Report Preferences",
 	"HEALTH_FIRST_POPUP_TITLE": "{APP_NAME} の正常性レポート",
 	"HEALTH_DATA_DO_TRACK": "{APP_NAME} の使用方法に関する偽名情報を共有します",
-	"HEALTH_DATA_NOTIFICATION_MESSAGE": "{APP_NAME} 品質向上のため、アドビでは、お客様の {APP_NAME} の使用方法に関する限られた<strong>偽名</strong>の統計をアドビに定期的に送信しています。この情報は、機能を優先順位付けし、バグを発見し、操作性の問題を検出する際に役立ちます。<br><br><strong>ヘルプ／正常性レポート</strong>から、お客様のデータの確認またはデータの非共有の選択をすることができます。<br><br><a href='https://github.com/adobe/brackets/wiki/Project-Health-Data'>{APP_NAME} の正常性レポートに関する詳細情報</a>",
+	"HEALTH_DATA_NOTIFICATION_MESSAGE": "{APP_NAME} 品質向上のため、アドビでは、お客様の {APP_NAME} の使用方法に関する限られた<strong>偽名</strong>の統計をアドビに定期的に送信しています。この情報は、機能を優先順位付けし、バグを発見し、操作性の問題を検出する際に役立ちます。<br><br><strong>ヘルプ／正常性レポート</strong>から、お客様のデータの確認またはデータの非共有の選択をすることができます。<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>{APP_NAME} の正常性レポートに関する詳細情報</a>",
 	"HEALTH_DATA_PREVIEW": "{APP_NAME} の正常性レポート",
-	"HEALTH_DATA_PREVIEW_INTRO": "<p>{APP_NAME} 品質向上のため、アドビでは、お客様の {APP_NAME} の使用方法に関する限られた<strong>偽名</strong>の統計をアドビに定期的に送信しています。この情報は、機能を優先順位付けし、バグを発見し、操作性の問題を検出する際に役立ちます。<a href='https://github.com/adobe/brackets/wiki/Project-Health-Data'>{APP_NAME} の正常性レポート</a>についての詳細およびレポートがお客様のプライバシーを保護した上でどのように {APP_NAME} コミュニティに役立つかをご確認ください。</p><p>有効にした場合に、次回のお客様の正常性レポートで送信されるデータのプレビューを以下に示します。<em></em> </p>",
+	"HEALTH_DATA_PREVIEW_INTRO": "<p>{APP_NAME} 品質向上のため、アドビでは、お客様の {APP_NAME} の使用方法に関する限られた<strong>偽名</strong>の統計をアドビに定期的に送信しています。この情報は、機能を優先順位付けし、バグを発見し、操作性の問題を検出する際に役立ちます。<a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>{APP_NAME} の正常性レポート</a>についての詳細およびレポートがお客様のプライバシーを保護した上でどのように {APP_NAME} コミュニティに役立つかをご確認ください。</p><p>有効にした場合に、次回のお客様の正常性レポートで送信されるデータのプレビューを以下に示します。<em></em> </p>",
 
     // extensions/default/InlineTimingFunctionEditor
 	"INLINE_TIMING_EDITOR_TIME": "時間",
@@ -678,7 +678,7 @@ define({
 	"CMD_SHOW_PARAMETER_HINT": "パラメーターヒントを表示",
 	"NO_ARGUMENTS": "<パラメーターがありません>",
 	"DETECTED_EXCLUSION_TITLE": "JavaScript ファイルの推論問題",
-	"DETECTED_EXCLUSION_INFO": "{APP_NAME} で <span class='dialog-filename'>{0}</span> の処理中に問題が発生しました。<br><br>このファイルはコードヒント、定義にジャンプ、またはクイック編集では処理されません。このファイルを再度有効にするには、プロジェクトで <code>.brackets.json</code> を開いて <code>jscodehints.detectedExclusions</code> を編集してください。<br><br>これは、{APP_NAME} のバグである可能性があります。このファイルのコピーをご提供いただける場合は、ここで名付けたファイルへのリンクを記載して<a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>バグを登録</a>してください。",
+	"DETECTED_EXCLUSION_INFO": "{APP_NAME} で <span class='dialog-filename'>{0}</span> の処理中に問題が発生しました。<br><br>このファイルはコードヒント、定義にジャンプ、またはクイック編集では処理されません。このファイルを再度有効にするには、プロジェクトで <code>.brackets.json</code> を開いて <code>jscodehints.detectedExclusions</code> を編集してください。<br><br>これは、{APP_NAME} のバグである可能性があります。このファイルのコピーをご提供いただける場合は、ここで名付けたファイルへのリンクを記載して<a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>バグを登録</a>してください。",
 
     // extensions/default/JavascriptRefactoring
 	"CMD_REFACTOR": "リファクタリング",
@@ -837,7 +837,7 @@ define({
 	"DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE": "左側/上部のペインでユーザーの環境設定ファイルを開くには false",
 	"DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED": "ペインからの最後のファイルがペインのヘッダーの閉じるボタンにより閉じられた後、ペインを折りたたむには true",
 	"DESCRIPTION_SHOW_PANE_HEADER_BUTTONS": "ヘッダーの閉じるボタンと反転表示ボタンを表示するタイミングを切り替えます。",
-	"DEFAULT_PREFERENCES_JSON_HEADER_COMMENT": "/*\n * これは、{APP_NAME} がサポートしている環境設定が 記録された読み取り\n * 専用ファイルです。\n * もう片方のペインで開かれた環境設定ファイル brackets.json を変更\n * する際の参考としてお使いください。\n * {APP_NAME} 内で環境設定を使用する方法について は、Web ページ\n * https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences\n * を参照してください。\n*/",
+	"DEFAULT_PREFERENCES_JSON_HEADER_COMMENT": "/*\n * これは、{APP_NAME} がサポートしている環境設定が 記録された読み取り\n * 専用ファイルです。\n * もう片方のペインで開かれた環境設定ファイル brackets.json を変更\n * する際の参考としてお使いください。\n * {APP_NAME} 内で環境設定を使用する方法について は、Web ページ\n * https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences\n * を参照してください。\n*/",
 	"DEFAULT_PREFERENCES_JSON_DEFAULT": "デフォルト",
 	"DESCRIPTION_PURE_CODING_SURFACE": "{APP_NAME} でコードのみモードを有効にし、その他すべての UI エレメントを非表示にするには true",
 	"DESCRIPTION_INDENT_LINE_COMMENT": "行コメントのインデントを有効にするには true",
@@ -845,7 +845,7 @@ define({
 	"DESCRIPTION_LIVEDEV_WEBSOCKET_PORT": "ライブプレビューで WebSocket サーバーが実行されるポート",
 	"DESCRIPTION_LIVE_DEV_HIGHLIGHT_SETTINGS": "ライブプレビューハイライト設定",
 	"DESCRIPTION_LIVEDEV_ENABLE_REVERSE_INSPECT": "false にすると、ライブプレビューでのリバースインスペクトが無効になります",
-    
+
     // Strings for Auto Update
 	"DOWNLOAD_FAILED": "ダウンロードに失敗しました。",
 	"DOWNLOAD_COMPLETE": "ダウンロードが完了しました。",
@@ -904,7 +904,7 @@ define({
 
    // Remote debugging port argument is invalid
 	"REMOTE_DEBUGGING_PORT_INVALID": "ポート {0} でリモートデバッグを有効にできません。ポート番号は、{1} から {2} の間で指定してください。",
-    
+
     //Associate File Type to External App
 	"DESCRIPTION_EXTERNAL_APPLICATION_ASSOCIATE": "ファイル拡張子の外部アプリケーションへのマッピング。構文: \"<file_type>\": \"<default|applicationName|ApplicationPath>\"。「default」を指定すると、そのファイルタイプに対してシステムでデフォルトに設定されているアプリケーションを使用してファイルが開きます。",
 

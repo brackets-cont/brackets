@@ -56,7 +56,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Oops! {APP_NAME} não funciona em navegadores ainda.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} é feito em HTML, e é executado como uma aplicação de desktop para que possa usá-lo para editar ficheiros locais. Por favor, use o shell da aplicação no <b>github.com/adobe/brackets-shell</b> repo para executar {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} é feito em HTML, e é executado como uma aplicação de desktop para que possa usá-lo para editar ficheiros locais. Por favor, use o shell da aplicação no <b>github.com/brackets-cont/brackets-shell</b> repo para executar {APP_NAME}.",
 
     // FileIndexManager error string
     "ERROR_MAX_FILES_TITLE"             : "Erro a indexar Ficheiros",
@@ -218,7 +218,7 @@ define({
     "CLOSE"                                : "Fechar",
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} versão experimental {VERSION}",
     "ABOUT_TEXT_LINE3"                     : "Avisos, termos e condições de softwares de terceiros estão localizados em <span class=\"non-clickble-link\">http://www.adobe.com/go/thirdparty/</span> e aqui incorporados por referência.",
-    "ABOUT_TEXT_LINE4"                     : "Documentação e fontes <span class=\"non-clickble-link\">https://github.com/adobe/brackets/</span>",
+    "ABOUT_TEXT_LINE4"                     : "Documentação e fontes <span class=\"non-clickble-link\">https://github.com/brackets-cont/brackets/</span>",
     "UPDATE_NOTIFICATION_TOOLTIP"          : "Nova versão de {APP_NAME} disponível! Clique aqui para mais detalhes.",
     "UPDATE_AVAILABLE_TITLE"               : "Atualização disponível",
     "UPDATE_MESSAGE"                       : "Hey, {APP_NAME} {VERSION} disponível. Aqui estão alguns dos novos recursos:",

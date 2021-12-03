@@ -124,23 +124,22 @@ if github_details["event_name"] != "pull_request":
     print("Error! This operation is valid on github pull requests. Exiting")
     sys.exit(1)
 
-print("Pull request submitted by github login: ",
-      github_details['event']['pull_request']['user']['login'])
+print("Pull request submitted by github login: ", github_details['event']['pull_request']['user']['login'])
 print("Number of commits in the pull request: ", len(commit_details))
 
 # Check if current dir is git dir
 is_git_dir = subprocess.check_output(
-    ['/usr/bin/git', 'rev-parse', '--is-inside-work-tree']).decode('utf-8')
+        ['/usr/bin/git', 'rev-parse', '--is-inside-work-tree']).decode('utf-8')
 print("Is git dir: ", is_git_dir)
 
 # git status
 git_status = subprocess.check_output(
-    ['/usr/bin/git', 'status']).decode('utf-8')
+        ['/usr/bin/git', 'status']).decode('utf-8')
 print("Git status: ", git_status)
 
 # last n commits
 last_n_commit_list = subprocess.check_output(
-    ['/usr/bin/git', 'rev-list', '--max-count=10', 'HEAD']).decode('utf-8')
+        ['/usr/bin/git', 'rev-list', '--max-count=10', 'HEAD']).decode('utf-8')
 print("last 10 commit ids are: ", last_n_commit_list)
 
 # github logins of all committers
@@ -150,7 +149,7 @@ for commit in commit_details:
     commiter_github_login = commit['committer']['login']
     if commiter_github_login not in commit_logins:
         commit_logins.append(commiter_github_login)
-
+	
 print("All github users who made changes to the pull request: ", commit_logins)
 
 # github login of all contributers who has signed personal CLA
@@ -162,3 +161,5 @@ for user in commit_logins:
     if user != 'web-flow' and user not in personal_contributers and user not in employer_contributers:
         print("Error!" + user + "has not signed the contributer licence agreement.")
         sys.exit(1)
+
+

@@ -67,7 +67,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Ups! {APP_NAME} još uvijek ne radi u pregledniku.",
-    "ERROR_IN_BROWSER"                  : "Aplikacija \"{APP_NAME}\" je napravljena pomoću HTML-a, ali trenutno radi kao \"desktop\" aplikacija pa je možete koristiti za izmjenu lokalnih datoteka. Molimo Vas koristite \"application shell\" na <b>github.com/adobe/brackets-shell</b> repozitorij za pokretanje \"{APP_NAME}\" aplikacije.",
+    "ERROR_IN_BROWSER"                  : "Aplikacija \"{APP_NAME}\" je napravljena pomoću HTML-a, ali trenutno radi kao \"desktop\" aplikacija pa je možete koristiti za izmjenu lokalnih datoteka. Molimo Vas koristite \"application shell\" na <b>github.com/brackets-cont/brackets-shell</b> repozitorij za pokretanje \"{APP_NAME}\" aplikacije.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Greška prilikom indeksiranja datoteka",
@@ -383,7 +383,7 @@ define({
     "CLOSE"                                : "Zatvori",
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_LINE3"                     : "Obavijesti, obaveze i uvjeti korištenja koji se odnose na third party softver su locirani na <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> i uključeni su ovdje putem linka.",
-    "ABOUT_TEXT_LINE4"                     : "Dokumentacija i izvorni kôd na <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Dokumentacija i izvorni kôd na <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Napravili sa \u2764 i JavaScriptom:",
     "ABOUT_TEXT_LINE6"                     : "Mnogo ljudi (ali trenutno imamo poteškoća sa učitavanjem tih podataka).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN Docs i MDN graphical logo su zaštićeni pod Creative Commons Attribution licencom, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",

@@ -96,11 +96,11 @@ define({
 
     // Application error strings
 	"ERROR_IN_BROWSER_TITLE": "Malheureusement, {APP_NAME} n’est pas encore compatible avec les navigateurs.",
-	"ERROR_IN_BROWSER": "{APP_NAME} est défini en HTML, mais il s’exécute actuellement en tant qu’application de bureau, vous pouvez donc l’utiliser afin de modifier des fichiers locaux. Utilisez l’interpréteur de commandes d’application situé dans le référentiel <b>github.com/adobe/brackets-shell</b> afin d’exécuter {APP_NAME}.",
+	"ERROR_IN_BROWSER": "{APP_NAME} est défini en HTML, mais il s’exécute actuellement en tant qu’application de bureau, vous pouvez donc l’utiliser afin de modifier des fichiers locaux. Utilisez l’interpréteur de commandes d’application situé dans le référentiel <b>github.com/brackets-cont/brackets-shell</b> afin d’exécuter {APP_NAME}.",
 
     // ProjectManager max files error string
 	"ERROR_MAX_FILES_TITLE": "Erreur lors de l’indexation des fichiers",
-	"ERROR_MAX_FILES": "Ce projet contient plus de 30 000 fichiers. Les fonctionnalités qui s’appliquent de manière globale à plusieurs fichiers peuvent être désactivées ou se comporter comme si le projet était vide. <a href='https://github.com/adobe/brackets/wiki/Large-Projects'>En savoir plus sur l’utilisation de projets volumineux</a>.",
+	"ERROR_MAX_FILES": "Ce projet contient plus de 30 000 fichiers. Les fonctionnalités qui s’appliquent de manière globale à plusieurs fichiers peuvent être désactivées ou se comporter comme si le projet était vide. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>En savoir plus sur l’utilisation de projets volumineux</a>.",
 
     // Live Preview error strings
 	"ERROR_LAUNCHING_BROWSER_TITLE": "Erreur lors du lancement du navigateur",
@@ -141,7 +141,7 @@ define({
 	"EXT_MODIFIED_WARNING": "<span class='dialog-filename'>{0}</span> a été modifié sur le disque, dans une application autre que {APP_NAME}.<br /><br />Voulez-vous enregistrer le fichier et remplacer ces modifications ?",
 	"EXT_MODIFIED_MESSAGE": "Le fichier <span class='dialog-filename'>{0}</span> a été modifié sur le disque dans une autre application que {APP_NAME} mais présente également des modifications non enregistrées dans {APP_NAME}.<br /><br />Quelle version souhaitez-vous conserver ?",
 	"EXT_DELETED_MESSAGE": "Le fichier <span class='dialog-filename'>{0}</span> a été supprimé du disque dans une autre application que {APP_NAME} mais présente également des modifications non enregistrées dans {APP_NAME}.<br /><br />Souhaitez-vous conserver vos modifications ?",
-    
+
     // Window unload warning messages
 	"WINDOW_UNLOAD_WARNING": "Are you sure you want to navigate to a different URL and leave Brackets?",
 	"WINDOW_UNLOAD_WARNING_WITH_UNSAVED_CHANGES": "You have unsaved changes! Are you sure you want to navigate to a different URL and leave Brackets?",
@@ -468,7 +468,7 @@ define({
 	"ABOUT_TEXT_LINE1": "Version {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
 	"ABOUT_TEXT_BUILD_TIMESTAMP": "Horodatage de la version : ",
 	"ABOUT_TEXT_LINE3": "Les mentions légales et conditions générales relatives aux logiciels tiers sont disponibles à l’adresse <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> et sont incluses dans le présent document à titre de référence.",
-	"ABOUT_TEXT_LINE4": "La documentation et le code source sont disponibles à l’adresse <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+	"ABOUT_TEXT_LINE4": "La documentation et le code source sont disponibles à l’adresse <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
 	"ABOUT_TEXT_LINE5": "Développé avec \u2764 et JavaScript par :",
 	"ABOUT_TEXT_LINE6": "De nombreux contributeurs (information indisponible pour le moment).",
 	"ABOUT_TEXT_MDN_DOCS": "MDN Docs et le logo graphique MDN sont sous licence Creative Commons Attribution, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",
@@ -634,13 +634,13 @@ define({
 	"CMD_OPEN_BRACKETS_SOURCE": "Ouvrir la source de {APP_NAME}",
 
 	"CREATING_LAUNCH_SCRIPT_TITLE": "Raccourci de ligne de commande {APP_NAME}",
-	"ERROR_CREATING_LAUNCH_SCRIPT": "Une erreur est survenue lors de l’installation du raccourci de ligne de commande. Essayez d’appliquer <a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments#troubleshooting'>ces suggestions pour résoudre le problème</a>.<br/><br/>Motif : {0}",
+	"ERROR_CREATING_LAUNCH_SCRIPT": "Une erreur est survenue lors de l’installation du raccourci de ligne de commande. Essayez d’appliquer <a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments#troubleshooting'>ces suggestions pour résoudre le problème</a>.<br/><br/>Motif : {0}",
 	"ERROR_CLTOOLS_RMFAILED": "Impossible de supprimer le lien symbolique existant <code>/usr/local/bin/brackets</code>.",
 	"ERROR_CLTOOLS_MKDIRFAILED": "Impossible de créer le répertoire <code>/usr/local/bin</code>.",
 	"ERROR_CLTOOLS_LNFAILED": "Impossible de créer le lien symbolique <code>/usr/local/bin/brackets</code>.",
 	"ERROR_CLTOOLS_SERVFAILED": "Erreur interne.",
 	"ERROR_CLTOOLS_NOTSUPPORTED": "Le raccourci de ligne de commande n’est pas pris en charge par ce système d’exploitation.",
-	"LAUNCH_SCRIPT_CREATE_SUCCESS": "Opération réussie ! À présent, vous pouvez facilement lancer {APP_NAME} depuis la ligne de commande : utilisez <code>brackets myFile.txt</code> pour ouvrir un fichier ou <code>brackets myFolder</code> pour changer de projet. <br/><br/><a href='https://github.com/adobe/brackets/wiki/Command-Line-Arguments'>En savoir plus</a> sur l’utilisation de {APP_NAME} depuis la ligne de commande.",
+	"LAUNCH_SCRIPT_CREATE_SUCCESS": "Opération réussie ! À présent, vous pouvez facilement lancer {APP_NAME} depuis la ligne de commande : utilisez <code>brackets myFile.txt</code> pour ouvrir un fichier ou <code>brackets myFolder</code> pour changer de projet. <br/><br/><a href='https://github.com/brackets-cont/brackets/wiki/Command-Line-Arguments'>En savoir plus</a> sur l’utilisation de {APP_NAME} depuis la ligne de commande.",
 
 	"LANGUAGE_TITLE": "Changer de langue",
 	"LANGUAGE_MESSAGE": "Langue :",
@@ -652,9 +652,9 @@ define({
 	"HEALTH_DATA_NOTIFICATION": "Health Report Preferences",
 	"HEALTH_FIRST_POPUP_TITLE": "Rapport d’intégrité de {APP_NAME}",
 	"HEALTH_DATA_DO_TRACK": "Partager des informations pseudonymes sur la façon dont j’utilise {APP_NAME}",
-	"HEALTH_DATA_NOTIFICATION_MESSAGE": "Afin d’améliorer {APP_NAME}, nous transmettons régulièrement des statistiques limitées et <strong>pseudonymes</strong> à Adobe sur la manière dont vous utilisez {APP_NAME}. Ces données permettent de hiérarchiser les fonctionnalités à traiter, de détecter les bugs éventuels et d’identifier les problèmes d’utilisation.<br><br>Pour voir les renseignements collectés et choisir ceux que vous ne souhaitez pas partager, cliquez sur <strong>Aide > Rapport d’intégrité</strong>.<br><br><a href='https://github.com/adobe/brackets/wiki/Project-Health-Data'>Lisez cet article pour en savoir plus concernant le rapport d’intégrité de {APP_NAME}</a>",
+	"HEALTH_DATA_NOTIFICATION_MESSAGE": "Afin d’améliorer {APP_NAME}, nous transmettons régulièrement des statistiques limitées et <strong>pseudonymes</strong> à brackets.io sur la manière dont vous utilisez {APP_NAME}. Ces données permettent de hiérarchiser les fonctionnalités à traiter, de détecter les bugs éventuels et d’identifier les problèmes d’utilisation.<br><br>Pour voir les renseignements collectés et choisir ceux que vous ne souhaitez pas partager, cliquez sur <strong>Aide > Rapport d’intégrité</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>Lisez cet article pour en savoir plus concernant le rapport d’intégrité de {APP_NAME}</a>",
 	"HEALTH_DATA_PREVIEW": "Rapport d’intégrité de {APP_NAME}",
-	"HEALTH_DATA_PREVIEW_INTRO": "<p>Afin d’améliorer {APP_NAME}, nous transmettons régulièrement des statistiques limitées et <strong>pseudonymes</strong> à Adobe sur la manière dont vous utilisez {APP_NAME}. Ces données permettent de hiérarchiser les fonctionnalités à traiter, de détecter les bugs éventuels et d’identifier les problèmes d’utilisation. <a href='https://github.com/adobe/brackets/wiki/Project-Health-Data'>Lisez cet article concernant le rapport d’intégrité de {APP_NAME}</a> et découvrez en quoi il est utile à la communauté {APP_NAME} tout en préservant votre confidentialité.</p><p>Vous trouverez ci-dessous un résumé des données qui seront envoyées dans le cadre de votre prochain rapport d’intégrité <em>si</em> vous décidez d’activer cette option.</p>",
+	"HEALTH_DATA_PREVIEW_INTRO": "<p>Afin d’améliorer {APP_NAME}, nous transmettons régulièrement des statistiques limitées et <strong>pseudonymes</strong> à brackets.io sur la manière dont vous utilisez {APP_NAME}. Ces données permettent de hiérarchiser les fonctionnalités à traiter, de détecter les bugs éventuels et d’identifier les problèmes d’utilisation. <a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>Lisez cet article concernant le rapport d’intégrité de {APP_NAME}</a> et découvrez en quoi il est utile à la communauté {APP_NAME} tout en préservant votre confidentialité.</p><p>Vous trouverez ci-dessous un résumé des données qui seront envoyées dans le cadre de votre prochain rapport d’intégrité <em>si</em> vous décidez d’activer cette option.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
 	"INLINE_TIMING_EDITOR_TIME": "Temps",
@@ -678,7 +678,7 @@ define({
 	"CMD_SHOW_PARAMETER_HINT": "Afficher l’indicateur de paramètre",
 	"NO_ARGUMENTS": "<aucun paramètre>",
 	"DETECTED_EXCLUSION_TITLE": "Problème d’inférence de fichier Javascript",
-	"DETECTED_EXCLUSION_INFO": "{APP_NAME} a rencontré des problèmes lors du traitement du fichier <span class='dialog-filename'>{0}</span>.<br><br>La fonction d’accès aux définitions, les indicateurs de code et la fonction Edition rapide de ce fichier ne seront plus traités. Pour réactiver ce fichier, ouvrez <code>.brackets.json</code> dans votre projet et éditez la section <code>jscodehints.detectedExclusions</code>.<br><br>Il s’agit vraisemblablement d’un bug au niveau de l’application {APP_NAME}. Si vous pouvez nous transmettre une copie de ce fichier, merci de <a href='https://github.com/adobe/brackets/wiki/How-to-Report-an-Issue'>consigner un bug</a> en fournissant un lien vers le fichier en question.",
+	"DETECTED_EXCLUSION_INFO": "{APP_NAME} a rencontré des problèmes lors du traitement du fichier <span class='dialog-filename'>{0}</span>.<br><br>La fonction d’accès aux définitions, les indicateurs de code et la fonction Edition rapide de ce fichier ne seront plus traités. Pour réactiver ce fichier, ouvrez <code>.brackets.json</code> dans votre projet et éditez la section <code>jscodehints.detectedExclusions</code>.<br><br>Il s’agit vraisemblablement d’un bug au niveau de l’application {APP_NAME}. Si vous pouvez nous transmettre une copie de ce fichier, merci de <a href='https://github.com/brackets-cont/brackets/wiki/How-to-Report-an-Issue'>consigner un bug</a> en fournissant un lien vers le fichier en question.",
 
     // extensions/default/JavascriptRefactoring
 	"CMD_REFACTOR": "Remanier",
@@ -837,7 +837,7 @@ define({
 	"DESCRIPTION_OPEN_USER_PREFS_IN_SECOND_PANE": "faux pour ouvrir le fichier de préférences de l’utilisateur dans le volet gauche/supérieur",
 	"DESCRIPTION_MERGE_PANES_WHEN_LAST_FILE_CLOSED": "vrai pour réduire les volets une fois que le dernier fichier du volet est fermé à l’aide du bouton situé dans l’en-tête",
 	"DESCRIPTION_SHOW_PANE_HEADER_BUTTONS": "Permet de choisir quand afficher les boutons Fermer et Transférer la vue dans l’en-tête.",
-	"DEFAULT_PREFERENCES_JSON_HEADER_COMMENT": "/*\n * Fichier en lecture seule contenant les préférences prises\n * en charge par {APP_NAME}.\n * Utilisez ce fichier en référence pour modifier\n * votre fichier de préférences « brackets.json » ouvert dans l’autre volet.\n * Pour savoir comment utiliser les préférences dans\n * {APP_NAME}, reportez-vous à la page https://github.com/adobe/brackets/wiki/How-to-Use-Brackets#preferences.\n */",
+	"DEFAULT_PREFERENCES_JSON_HEADER_COMMENT": "/*\n * Fichier en lecture seule contenant les préférences prises\n * en charge par {APP_NAME}.\n * Utilisez ce fichier en référence pour modifier\n * votre fichier de préférences « brackets.json » ouvert dans l’autre volet.\n * Pour savoir comment utiliser les préférences dans\n * {APP_NAME}, reportez-vous à la page https://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets#preferences.\n */",
 	"DEFAULT_PREFERENCES_JSON_DEFAULT": "Par défaut",
 	"DESCRIPTION_PURE_CODING_SURFACE": "vrai pour activer le mode code seul et masquer tous les autres éléments de l’interface utilisateur dans {APP_NAME}",
 	"DESCRIPTION_INDENT_LINE_COMMENT": "vrai pour activer la mise en retrait des commentaires sur une ligne",
@@ -845,7 +845,7 @@ define({
 	"DESCRIPTION_LIVEDEV_WEBSOCKET_PORT": "Port sur lequel s’exécute le serveur WebSocket pour le mode Aperçu en direct",
 	"DESCRIPTION_LIVE_DEV_HIGHLIGHT_SETTINGS": "Paramètres de surbrillance de l'Aperçu en direct",
 	"DESCRIPTION_LIVEDEV_ENABLE_REVERSE_INSPECT": "faux pour désactiver l’inspection inverse de l’Aperçu en direct",
-    
+
     // Strings for Auto Update
 	"DOWNLOAD_FAILED": "Échec du téléchargement.",
 	"DOWNLOAD_COMPLETE": "Téléchargement terminé.",
@@ -904,7 +904,7 @@ define({
 
    // Remote debugging port argument is invalid
 	"REMOTE_DEBUGGING_PORT_INVALID": "Impossible d’activer le débogage à distance sur le port {0}. Les numéros de port doivent être compris entre {1} et {2}.",
-    
+
     //Associate File Type to External App
 	"DESCRIPTION_EXTERNAL_APPLICATION_ASSOCIATE": "Mappages d’extension de fichier avec des applications externes. Syntaxe : \"<type_fichier>\": \"<default|NomApplication|CheminApplication>\", Utiliser « default » pour ouvrir les fichiers dans l’application par défaut du système pour le type de fichier.",
 

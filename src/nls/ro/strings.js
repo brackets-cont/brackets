@@ -88,7 +88,7 @@ define({
 
     // Application error strings
     "ERROR_IN_BROWSER_TITLE"            : "Oops! {APP_NAME} nu a fost lansat pentru browser încă.",
-    "ERROR_IN_BROWSER"                  : "{APP_NAME} e construit în HTML, dar acum rulează ca o aplicație desktop și poate fi folosit pentru a edita fișierele locale. Lansați interpretatorul de comenzi al aplicației din repozitoriul <b>github.com/adobe/brackets-shell</b> pentru a rula {APP_NAME}.",
+    "ERROR_IN_BROWSER"                  : "{APP_NAME} e construit în HTML, dar acum rulează ca o aplicație desktop și poate fi folosit pentru a edita fișierele locale. Lansați interpretatorul de comenzi al aplicației din repozitoriul <b>github.com/brackets-cont/brackets-shell</b> pentru a rula {APP_NAME}.",
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Eroare la indexarea fișierelor",
@@ -430,7 +430,7 @@ define({
     "ABOUT_TEXT_LINE1"                     : "sprint {VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "amprenta de timp a versiunii: ",
     "ABOUT_TEXT_LINE3"                     : "Notițele, termenii și condițiile ce țin de părțile software terțe sunt localizate la <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> și sunt adăugate aici ca referință.",
-    "ABOUT_TEXT_LINE4"                     : "Documentația și sursa se găsesc la <a href='https://github.com/adobe/brackets/'>https://github.com/adobe/brackets/</a>",
+    "ABOUT_TEXT_LINE4"                     : "Documentația și sursa se găsesc la <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Creat cu \u2764 și JavaScript de:",
     "ABOUT_TEXT_LINE6"                     : "O mulțime de oameni (dar avem dificultăți la încărcarea datelor despre ei acum).",
     "ABOUT_TEXT_MDN_DOCS"                  : "MDN Docs și logotipul MDN sunt licențiați sub licența Creative Commons Attribution, <a href='{MDN_DOCS_LICENSE}'>CC-BY-SA 2.5 Unported</a>.",

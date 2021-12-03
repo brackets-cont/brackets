@@ -100,7 +100,7 @@ define({
 
     // ProjectManager max files error string
     "ERROR_MAX_FILES_TITLE"             : "Error Indexing Files",
-    "ERROR_MAX_FILES"                   : "This project contains more than 30,000 files. Features that operate across multiple files may be disabled or behave as if the project is empty. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Read more about working with large projects</a>.",
+    "ERROR_MAX_FILES"                   : "This project contains more than 200,000 files. Features that operate across multiple files may be disabled or behave as if the project is empty. <a href='https://github.com/brackets-cont/brackets/wiki/Large-Projects'>Read more about working with large projects</a>.",
 
     // Live Preview error strings
     "ERROR_LAUNCHING_BROWSER_TITLE"     : "Error Launching Browser",
@@ -141,7 +141,7 @@ define({
     "EXT_MODIFIED_WARNING"              : "<span class='dialog-filename'>{0}</span> has been modified on disk outside of {APP_NAME}.<br /><br />Do you want to save the file and overwrite those changes?",
     "EXT_MODIFIED_MESSAGE"              : "<span class='dialog-filename'>{0}</span> has been modified on disk outside of {APP_NAME}, but also has unsaved changes in {APP_NAME}.<br /><br />Which version do you want to keep?",
     "EXT_DELETED_MESSAGE"               : "<span class='dialog-filename'>{0}</span> has been deleted on disk outside of {APP_NAME}, but has unsaved changes in {APP_NAME}.<br /><br />Do you want to keep your changes?",
-    
+
     // Window unload warning messages
     "WINDOW_UNLOAD_WARNING"                      : "Are you sure you want to navigate to a different URL and leave Brackets?",
     "WINDOW_UNLOAD_WARNING_WITH_UNSAVED_CHANGES" : "You have unsaved changes! Are you sure you want to navigate to a different URL and leave Brackets?",
@@ -467,6 +467,7 @@ define({
     "CLOSE"                                : "Close",
     "ABOUT_TEXT_LINE1"                     : "Release {VERSION_MAJOR}.{VERSION_MINOR} {BUILD_TYPE} {VERSION}",
     "ABOUT_TEXT_BUILD_TIMESTAMP"           : "build timestamp: ",
+    "ABOUT_TEXT_RELEASE_CREDITS"           : "Release credits: ",
     "ABOUT_TEXT_LINE3"                     : "Notices, terms and conditions pertaining to third party software are located at <a href='{ADOBE_THIRD_PARTY}'>{ADOBE_THIRD_PARTY}</a> and incorporated by reference herein.",
     "ABOUT_TEXT_LINE4"                     : "Documentation and source at <a href='https://github.com/brackets-cont/brackets/'>https://github.com/brackets-cont/brackets/</a>",
     "ABOUT_TEXT_LINE5"                     : "Made with \u2764 and JavaScript by:",
@@ -652,9 +653,9 @@ define({
     "HEALTH_DATA_NOTIFICATION"                  : "Health Report Preferences",
     "HEALTH_FIRST_POPUP_TITLE"                  : "{APP_NAME} Health Report",
     "HEALTH_DATA_DO_TRACK"                      : "Share pseudonymous information on how I use {APP_NAME}",
-    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "In order to improve {APP_NAME}, we periodically send limited, <strong>pseudonymous</strong> statistics to Adobe about how you use {APP_NAME}. This information helps prioritize features, find bugs, and spot usability issues.<br><br>You can see your data or choose not to share data by selecting <strong>Help > Health Report</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>Learn more about {APP_NAME} Health Report</a>",
+    "HEALTH_DATA_NOTIFICATION_MESSAGE"          : "In order to improve {APP_NAME}, we periodically send limited, <strong>pseudonymous</strong> statistics to brackets.io about how you use {APP_NAME}. This information helps prioritize features, find bugs, and spot usability issues.<br><br>You can see your data or choose not to share data by selecting <strong>Help > Health Report</strong>.<br><br><a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>Learn more about {APP_NAME} Health Report</a>",
     "HEALTH_DATA_PREVIEW"                       : "{APP_NAME} Health Report",
-    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>In order to improve {APP_NAME}, we periodically send limited, <strong>pseudonymous</strong> statistics to Adobe about how you use {APP_NAME}. This information helps prioritize features, find bugs, and spot usability issues. <a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>Learn more about {APP_NAME} Health Report</a> and how it benefits the {APP_NAME} community while protecting your privacy.</p><p>Below is a preview of the data that will be sent in your next Health Report <em>if</em> it is enabled.</p>",
+    "HEALTH_DATA_PREVIEW_INTRO"                 : "<p>In order to improve {APP_NAME}, we periodically send limited, <strong>pseudonymous</strong> statistics to brackets.io about how you use {APP_NAME}. This information helps prioritize features, find bugs, and spot usability issues. <a href='https://github.com/brackets-cont/brackets/wiki/Project-Health-Data'>Learn more about {APP_NAME} Health Report</a> and how it benefits the {APP_NAME} community while protecting your privacy.</p><p>Below is a preview of the data that will be sent in your next Health Report <em>if</em> it is enabled.</p>",
 
     // extensions/default/InlineTimingFunctionEditor
     "INLINE_TIMING_EDITOR_TIME"                 : "Time",
@@ -845,7 +846,7 @@ define({
     "DESCRIPTION_LIVEDEV_WEBSOCKET_PORT"             : "Port on which WebSocket Server runs for Live Preview",
     "DESCRIPTION_LIVE_DEV_HIGHLIGHT_SETTINGS"        : "Live Preview Highlight settings",
     "DESCRIPTION_LIVEDEV_ENABLE_REVERSE_INSPECT"     : "false to disable live preview reverse inspect",
-    
+
     // Strings for Auto Update
     "DOWNLOAD_FAILED"                                : "Download failed.",
     "DOWNLOAD_COMPLETE"                              : "Download complete!",
@@ -904,7 +905,7 @@ define({
 
    // Remote debugging port argument is invalid
     "REMOTE_DEBUGGING_PORT_INVALID"                  : "Cannot enable remote debugging on port {0}. Port numbers should be between {1} and {2}.",
-    
+
     //Associate File Type to External App
     "DESCRIPTION_EXTERNAL_APPLICATION_ASSOCIATE"     : "Mappings for file extension to external applications. Syntax: \"<file_type>\": \"<default|applicationName|ApplicationPath>\", Use \"default\" to open files in system default application for the file type.",
 
