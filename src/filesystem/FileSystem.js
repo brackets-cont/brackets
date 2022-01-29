@@ -1,23 +1,21 @@
 /*
- * Copyright (c) 2013 - present Adobe Systems Incorporated. All rights reserved.
+ * GNU AGPL-3.0 License
  *
- * Permission is hereby granted, free of charge, to any person obtaining a
- * copy of this software and associated documentation files (the "Software"),
- * to deal in the Software without restriction, including without limitation
- * the rights to use, copy, modify, merge, publish, distribute, sublicense,
- * and/or sell copies of the Software, and to permit persons to whom the
- * Software is furnished to do so, subject to the following conditions:
+ * Modified Work Copyright (c) 2021 - present core.ai . All rights reserved.
+ * Original work Copyright (c) 2013 - 2021 Adobe Systems Incorporated. All rights reserved.
  *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
+ * This program is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- * DEALINGS IN THE SOFTWARE.
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU Affero General Public License
+ * for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with this program. If not, see https://opensource.org/licenses/AGPL-3.0.
  *
  */
 
@@ -87,12 +85,13 @@
  * worry about the underlying storage, which could be a local filesystem or a remote server.
  */
 define(function (require, exports, module) {
-    "use strict";
+
 
     var Directory       = require("filesystem/Directory"),
         File            = require("filesystem/File"),
         FileIndex       = require("filesystem/FileIndex"),
         FileSystemError = require("filesystem/FileSystemError"),
+        RemoteFile      = require("filesystem/RemoteFile"),
         WatchedRoot     = require("filesystem/WatchedRoot"),
         EventDispatcher = require("utils/EventDispatcher"),
         PathUtils       = require("thirdparty/path-utils/path-utils"),
@@ -633,9 +632,9 @@ define(function (require, exports, module) {
 
         if (protocolAdapter && protocolAdapter.fileImpl) {
             return new protocolAdapter.fileImpl(protocol, path, this);
-        } else {
-            return this._getEntryForPath(File, path);
         }
+        return this._getEntryForPath(File, path);
+
     };
 
     /**
@@ -1101,4 +1100,20 @@ define(function (require, exports, module) {
 
     // Initialize the singleton instance
     _instance.init(require("fileSystemImpl"));
+
+    // attach remote file handlers
+    var HTTP_PROTOCOL = "http:",
+        HTTPS_PROTOCOL = "https:";
+
+    var protocolAdapter = {
+        priority: 0, // Default priority
+        fileImpl: RemoteFile,
+        canRead: function (filePath) {
+            return true; // Always claim true, we are the default adpaters
+        }
+    };
+
+    // Register the custom object as HTTP and HTTPS protocol adapter
+    registerProtocolAdapter(HTTP_PROTOCOL, protocolAdapter);
+    registerProtocolAdapter(HTTPS_PROTOCOL, protocolAdapter);
 });
