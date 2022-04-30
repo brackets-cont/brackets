@@ -93,7 +93,7 @@ To add a new translation, you need to start with a copy of the
 root `strings.js` file which is located at
 [https://github.com/brackets-cont/brackets/blob/master/src/nls/root/strings.js](https://github.com/brackets-cont/brackets/blob/master/src/nls/root/strings.js).
 New translations can be added by navigating to the
-[nls folder on github](https://github.com/brackets-cont/brackets/tree/master/src/nls)
+[nls folder on GitHub](https://github.com/brackets-cont/brackets/tree/master/src/nls)
 and then clicking on the [+] button to add a new file.
 You will be taken to a New File page where you:
 
@@ -110,7 +110,7 @@ by hovering on the one you used for this translation and click on Copy SHA butto
 
 ### Editing an Existing Translation
 Existing files can be edited directly in
-[brackets repo on github](https://github.com/brackets-cont/brackets).
+[brackets repo on GitHub](https://github.com/brackets-cont/brackets).
 
 Navigate to the file to edit and click "Edit" button above file.
 You will be taken to an Edit File page where you:
@@ -125,7 +125,7 @@ for a new locale section for adding a new one.
 
 ### Branch and Pull Request
 For either case, if you have not yet forked the brackets repository in your
-github account (`https://github.com/user1/brackets`), it's done automatically.
+GitHub account (`https://github.com/user1/brackets`), it's done automatically.
 A new branch will be created in your Brackets fork with a unique name
 which is something like `patch-1` that contains your changes.
 
@@ -144,7 +144,7 @@ pull request which will send you an e-mail notification.
 ### Updating Existing Branch and Pull Request
 
 If you need to make changes to an existing branch, 
-you should make updates in the `patch-1` branch in your Github fork of Brackets
+you should make updates in the `patch-1` branch in your GitHub fork of Brackets
 so all of your changes for this update are in a single branch.
 Creating a new branch for every update makes it difficult for core team
 to see all changes at once, and can even create conflicts that are
@@ -154,7 +154,7 @@ very difficult to resolve. For example:
 
     `user1` wants to merge 1 commit into `adobe:master` from `user1:patch-1`
     
-2. Go to your github fork of brackets page: `github.com/user1/brackets`
+2. Go to your GitHub fork of brackets page: `github.com/user1/brackets`
 3. Click on the Branches Tab: `github.com/user1/brackets/branches`
 4. Click on the link to the branch: `github.com/user1/brackets/tree/patch-1`
 5. This is where you make changes to your `patch-1` branch.
