@@ -63,3 +63,6 @@ package-lock.json
 
 # Files build by scripts
 /src/thirdparty/semver.browser.js
+
+# Temporary files for testing CLA checks
+.tmp

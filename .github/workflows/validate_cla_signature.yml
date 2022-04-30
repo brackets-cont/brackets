@@ -24,6 +24,7 @@ jobs:
       - name: Setting temp directory
         run: | 
           mkdir ./.tmp
+          pip3 install requests
       - name: Getting commit details
         uses: wei/wget@v1
         with:
