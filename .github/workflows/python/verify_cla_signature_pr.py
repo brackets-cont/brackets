@@ -110,15 +110,52 @@ def validate_is_pull_request(pr_details):
         sys.exit(1)
 
 
-def validate_cla_signature(pr_raiser_login):
+def validate_pr_raiser_cla(pr_raiser_login, employer_contributors, personal_contributors):
     print('PR raiser login: ' + pr_raiser_login)
-    employer_contributers = extract_employer_contributer_details()
-    personal_contributers = extract_personal_contributer_details()
+    if pr_raiser_login not in employer_contributors and pr_raiser_login not in personal_contributors:
+        return task_failed('### Error: Contributor Licence Agreement Signature Missing\n' +
+                            'Please sign the Contributor Licence Agreement by clicking the following link.\n' +
+                            '<p align="center"> <a href="https://brackets.io/contributor-license-agreement/">Click here to sign the CLA</a></p>'
+                           )
+    print('Pass: Pull request raiser has signed the Contributor Licence Agreement')
+    return SUCCESS_MESSAGE
 
-    if pr_raiser_login not in employer_contributers and pr_raiser_login not in personal_contributers:
-        return task_failed('### Error: Contributor Licence Agreement Signature Missing \n Please sign the Contributor Licence Agreement by clicking the following link. \n <p align="center"> <a href="https://brackets.io/contributor-license-agreement/">Click here to sign the CLA</a></p>')
-    
-    print('Pass: User has signed the Contributor Licence Agreement')
+
+def validate_commiters_cla(commits, employer_contributors, personal_contributors):
+    # github logins of all committers
+    commit_logins = []
+    for commit in commits:
+        commiter_github_login = commit['author']['login']
+        if commiter_github_login not in commit_logins:
+            commit_logins.append(commiter_github_login)
+    print("All github users who made changes to the pull request: ", commit_logins)
+
+    unauthorized_commiters = []
+    for user in commit_logins:
+        if user not in personal_contributors and user not in employer_contributors:
+            unauthorized_commiters.append(user)
+    if len(unauthorized_commiters) != 0:
+        return task_failed('### Error: Contributor Licence Agreement Signature Missing\n' +
+                            'The following commiter(s) has not signed the Contributor Licence Agreement:\n' + 
+                            ', '.join(unauthorized_commiters) + '\n' +
+                            'Please sign the Contributor Licence Agreement by clicking the following link. \n' +
+                            '<p align="center"> <a href="https://brackets.io/contributor-license-agreement/">Click here to sign the CLA</a></p>'
+                           )
+
+    print('Pass: All the commiters have signed the Contributor Licence Agreement')
+    return SUCCESS_MESSAGE
+   
+
+def validate_cla_signature(pr_raiser_login, commits):
+    employer_contributors = extract_employer_contributer_details()
+    personal_contributors = extract_personal_contributer_details()
+
+    PR_RAISER_CLA_VALIDATION = validate_pr_raiser_cla(pr_raiser_login, employer_contributors, personal_contributors)
+    COMMITERS_CLA_VALIDATION = validate_commiters_cla(commits, employer_contributors, personal_contributors)
+
+    if PR_RAISER_CLA_VALIDATION == STATUS_FAILED or COMMITERS_CLA_VALIDATION == STATUS_FAILED:
+        return STATUS_FAILED
+
     return SUCCESS_MESSAGE
 
 
@@ -126,7 +163,7 @@ def review_pr():
     print('Reviewing PR')
     pr_details = collect_pr_details()
     validate_is_pull_request(pr_details)
-    CLA_SIGNATURE_VALIDATION = validate_cla_signature(pr_details['pr_submitter_github_login'])
+    CLA_SIGNATURE_VALIDATION = validate_cla_signature(pr_details['pr_submitter_github_login'], pr_details['commits'])
 
     if CLA_SIGNATURE_VALIDATION == STATUS_FAILED:
         print('Validations failed. Exiting!')
@@ -138,5 +175,3 @@ def review_pr():
 review_pr()
 
 # assert validate_cla_signature('psdhanesh7') == SUCCESS_MESSAGE
-
-
