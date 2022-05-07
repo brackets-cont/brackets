@@ -45,7 +45,7 @@ define(function (require, exports, module) {
             CommandManager.get(item).setEnabled(enabled);
         });
     }
-    
+
     /**
      * Checks if file saved and present on system and
      * disables menu items accordingly
@@ -57,7 +57,7 @@ define(function (require, exports, module) {
                 if (err) {
                     return err;
                 }
-                _setContextMenuItemsVisible(isPresent, [Commands.FILE_RENAME, Commands.NAVIGATE_SHOW_IN_FILE_TREE, Commands.NAVIGATE_SHOW_IN_OS]);   
+                _setContextMenuItemsVisible(isPresent, [Commands.FILE_RENAME, Commands.NAVIGATE_SHOW_IN_FILE_TREE, Commands.NAVIGATE_SHOW_IN_OS]);
             });
         }
     }
@@ -256,17 +256,17 @@ define(function (require, exports, module) {
         workingset_cmenu.addMenuDivider();
         workingset_cmenu.addMenuItem(Commands.FILE_CLOSE);
 
-        var workingset_configuration_menu = Menus.registerContextMenu(Menus.ContextMenuIds.WORKING_SET_CONFIG_MENU);
-        workingset_configuration_menu.addMenuItem(Commands.CMD_WORKINGSET_SORT_BY_ADDED);
-        workingset_configuration_menu.addMenuItem(Commands.CMD_WORKINGSET_SORT_BY_NAME);
-        workingset_configuration_menu.addMenuItem(Commands.CMD_WORKINGSET_SORT_BY_TYPE);
-        workingset_configuration_menu.addMenuDivider();
-        workingset_configuration_menu.addMenuItem(Commands.CMD_WORKING_SORT_TOGGLE_AUTO);
-
         var splitview_menu = Menus.registerContextMenu(Menus.ContextMenuIds.SPLITVIEW_MENU);
         splitview_menu.addMenuItem(Commands.CMD_SPLITVIEW_NONE);
         splitview_menu.addMenuItem(Commands.CMD_SPLITVIEW_VERTICAL);
         splitview_menu.addMenuItem(Commands.CMD_SPLITVIEW_HORIZONTAL);
+        splitview_menu.addMenuDivider();
+        splitview_menu.addMenuItem(Commands.CMD_WORKINGSET_SORT_BY_ADDED);
+        splitview_menu.addMenuItem(Commands.CMD_WORKINGSET_SORT_BY_NAME);
+        splitview_menu.addMenuItem(Commands.CMD_WORKINGSET_SORT_BY_TYPE);
+        splitview_menu.addMenuDivider();
+        splitview_menu.addMenuItem(Commands.CMD_WORKING_SORT_TOGGLE_AUTO);
+
 
         var project_cmenu = Menus.registerContextMenu(Menus.ContextMenuIds.PROJECT_MENU);
         project_cmenu.addMenuItem(Commands.FILE_NEW);
@@ -345,9 +345,6 @@ define(function (require, exports, module) {
             project_cmenu.open(e);
         });
 
-        // Dropdown menu for workspace sorting
-        Menus.ContextMenu.assignContextMenuToSelector(".working-set-option-btn", workingset_configuration_menu);
-
         // Dropdown menu for view splitting
         Menus.ContextMenu.assignContextMenuToSelector(".working-set-splitview-btn", splitview_menu);
 
@@ -376,7 +373,7 @@ define(function (require, exports, module) {
         });
         // Check the visibility of context menu items before opening the context menu.
         // 'Rename', 'Show in file tree' and 'Show in explorer' items will be disabled for files that have not yet been saved to disk.
-        Menus.getContextMenu(Menus.ContextMenuIds.WORKING_SET_CONTEXT_MENU).on("beforeContextMenuOpen", _setMenuItemsVisible);        
+        Menus.getContextMenu(Menus.ContextMenuIds.WORKING_SET_CONTEXT_MENU).on("beforeContextMenuOpen", _setMenuItemsVisible);
         Menus.getContextMenu(Menus.ContextMenuIds.PROJECT_MENU).on("beforeContextMenuOpen", _setMenuItemsVisible);
     });
 });
