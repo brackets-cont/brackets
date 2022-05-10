@@ -15,18 +15,19 @@
         "twitter_name": "@BracketsCont",
         "contributors_url": "https://api.github.com/repos/brackets-cont/brackets/contributors?per_page={0}&page={1}",
         "extension_listing_url": "",
-        "extension_registry"         : "http://registry.brackets.s3.amazonaws.com/registry.json",
-        "extension_url"              : "http://registry.brackets.s3.amazonaws.com/{0}-{1}.zip",
+        "extension_registry": "http://registry.brackets.s3.amazonaws.com/registry.json",
+        "extension_url": "http://registry.brackets.s3.amazonaws.com/{0}-{1}.zip",
         "linting.enabled_by_default": true,
         "build_timestamp": "",
-        "googleAnalyticsID"     : "UA-212757129-1",
+        "googleAnalyticsID": "UA-212757129-1",
         "environment": "stage",
-        "update_info_url"         : "https://getupdates.brackets.io/dev/updates/<locale>.json",
-        "notification_info_url"   : "https://getupdates.brackets.io/dev/notifications/<locale>.json"
+        "update_info_url": "https://getupdates.brackets.io/dev/updates/<locale>.json",
+        "notification_info_url": "https://getupdates.brackets.io/dev/notifications/<locale>.json",
+        "buildtype": "dev"
     },
     "name": "Brackets",
-    "version": "2.0.1-0",
-    "apiVersion": "2.0.1",
+    "version": "2.1.0-0",
+    "apiVersion": "2.1.0",
     "homepage": "http://brackets.io",
     "issues": {
         "url": "http://github.com/brackets-cont/brackets/issues"
@@ -90,7 +91,11 @@
         "prepush": "npm run eslint",
         "postinstall": "grunt install",
         "test": "grunt test",
-        "eslint": "grunt eslint"
+        "testJasmine": "grunt jasmine",
+        "testNode": "grunt jasmine-node",
+        "eslint": "grunt eslint",
+        "build": "grunt build",
+        "buildPreRelease": "grunt build-prerelease"
     },
     "licenses": [
         {
