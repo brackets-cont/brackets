@@ -220,7 +220,7 @@ define(function (require, exports, module) {
 
     function handleMouseDown(event) {
         // ctrl+Alt+drag on Win, cmd+Opt+drag on Mac
-        if (event.which === 1 && event.altKey && event.ctrlKey) {
+        if (event.which === 1 && ((!isMac && event.altKey && event.ctrlKey) || (isMac && event.altKey && event.metaKey)) ) {
             // Which editor did mousedown occur on (inline vs. full-size vs. no editor open)
             // (EditorManager.getActiveEditor()/getFocusedEditor() won't have updated yet, so can't just use that)
             var editor = editorFromElement(event.target);
