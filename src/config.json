@@ -20,6 +20,8 @@
         "linting.enabled_by_default": true,
         "build_timestamp": "",
         "googleAnalyticsID": "UA-212757129-1",
+        "coreAnalyticsID": "brackets",
+        "coreAnalyticsAppName": "brackets-dev",
         "environment": "stage",
         "update_info_url": "https://getupdates.brackets.io/dev/updates/<locale>.json",
         "notification_info_url": "https://getupdates.brackets.io/dev/notifications/<locale>.json",
