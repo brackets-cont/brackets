@@ -1,5 +1,7 @@
 {
     "googleAnalyticsID"       : "UA-212757129-3",
+    "coreAnalyticsID": "brackets",
+    "coreAnalyticsAppName": "brackets-prerelease",
     "environment"             : "production",
     "update_info_url"         : "https://getupdates.brackets.io/prerelease/updates/<locale>.json",
     "notification_info_url"   : "https://getupdates.brackets.io/prerelease/notifications/<locale>.json",

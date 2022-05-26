@@ -79,8 +79,38 @@ define(function (require, exports, module) {
 
     }
 
+    function _initCoreAnalytics() {
+        // Load core analytics scripts
+        if(!window.analytics){ window.analytics = {
+            _initData: [], loadStartTime: new Date().getTime(),
+            event: function (){window.analytics._initData.push(arguments);}
+        };}
+        let script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.onload = function(){
+            // replace `your_analytics_account_ID` and `appName` below with your values
+            window.initAnalyticsSession( brackets.config.coreAnalyticsID,
+                brackets.config.coreAnalyticsAppName);
+            window.analytics.event("core-analytics", "client-lib", "loadTime", 1,
+                (new Date().getTime())- window.analytics.loadStartTime);
+        };
+        script.src = 'https://unpkg.com/@aicore/core-analytics-client-lib/dist/analytics.min.js';
+        document.getElementsByTagName('head')[0].appendChild(script);
+    }
+
+    /**
+     * We are transitioning to our own analytics instead of google as we breached the free user threshold of google
+     * and paid plans for GA starts at 100,000 USD.
+     * @private
+     */
+    function _initAnalytics(){
+        _initGoogleAnalytics();
+        _initCoreAnalytics();
+    }
+
     // Dont load google analytics at startup to unblock require sync load.
-    window.setTimeout(_initGoogleAnalytics, ONE_SECOND);
+    window.setTimeout(_initAnalytics, ONE_SECOND);
 
     params.parse();
 
@@ -211,6 +241,10 @@ define(function (require, exports, module) {
         // ga('send', 'event', ![eventCategory], ![eventAction], [eventLabel], [eventValue/int], [fieldsObject]);
         // https://developers.google.com/analytics/devguides/collection/analyticsjs/events
         window.ga('send', 'event', event.eventCategory, event.eventSubCategory, event.eventType + (event.eventSubType||""));
+        if( window.analytics && window.analytics.event) {
+            window.analytics.event( event.eventCategory, event.eventSubCategory,
+                (event.eventType + (event.eventSubType||"")) || 'none', 1);
+        }
         return result.resolve();
     }
 

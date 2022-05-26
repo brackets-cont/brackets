@@ -21,7 +21,7 @@
  *
  */
 
-/*global define, ga*/
+/*global define, ga, analytics*/
 define(function (require, exports, module) {
     "use strict";
     const CATEGORY_PROJECT = "PROJECT";
@@ -40,6 +40,9 @@ define(function (require, exports, module) {
         action = action || "eventAction";
         if(!label){
             label = action;
+        }
+        if( analytics && analytics.event) {
+            analytics.event(category, action, label, value);
         }
         if(value){
             // We have to do this as ga does not allow eventValue without eventLabel

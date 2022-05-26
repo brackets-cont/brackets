@@ -33,7 +33,8 @@ define(function (require, exports, module) {
         Commands                = brackets.getModule("command/Commands"),
         Menus                   = brackets.getModule("command/Menus"),
         KeyBindingManager       = brackets.getModule("command/KeyBindingManager"),
-        FileSystem              = brackets.getModule("filesystem/FileSystem");
+        FileSystem              = brackets.getModule("filesystem/FileSystem"),
+        HealthLogger            = brackets.getModule("utils/HealthLogger");
 
     var KeyboardPrefs = JSON.parse(require("text!keyboard.json"));
 
@@ -615,6 +616,12 @@ define(function (require, exports, module) {
     }
 
     function _navigateBackClicked(evt) {
+        HealthLogger.sendAnalyticsData(
+            "ui",
+            "navbar",
+            "back",
+            "click"
+        );
         if(_hasNavBackFrames()){
             _navigateBack(evt.shiftKey || (evt.type === "contextmenu"));
         }
@@ -623,6 +630,12 @@ define(function (require, exports, module) {
     }
 
     function _navigateForwardClicked(evt) {
+        HealthLogger.sendAnalyticsData(
+            "ui",
+            "navbar",
+            "forward",
+            "click"
+        );
         if(_hasNavForwardFrames()){
             _navigateForward(evt.shiftKey || (evt.type === "contextmenu"));
         }
@@ -631,10 +644,22 @@ define(function (require, exports, module) {
     }
 
     function _showInFileTreeClicked() {
+        HealthLogger.sendAnalyticsData(
+            "ui",
+            "navbar",
+            "showInFileTree",
+            "click"
+        );
         CommandManager.execute(Commands.NAVIGATE_SHOW_IN_FILE_TREE);
     }
 
     function _findInFiles() {
+        HealthLogger.sendAnalyticsData(
+            "ui",
+            "navbar",
+            "findInFiles",
+            "click"
+        );
         CommandManager.execute(Commands.CMD_FIND_IN_FILES);
     }
 
