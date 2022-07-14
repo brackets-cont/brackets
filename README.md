@@ -34,7 +34,7 @@ How to install and run Brackets
 -------------------------------
 #### Download
 
-Installers for the latest stable build for Mac, Windows and Linux (Debian/Ubuntu) can be [downloaded here](https://brackets-cont.github.io/).
+Installers for the latest stable build for Mac and Windows can be [downloaded here](https://brackets-cont.github.io/).
 
 #### Usage
 
