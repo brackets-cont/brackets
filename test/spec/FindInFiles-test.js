@@ -276,7 +276,7 @@ define(function (require, exports, module) {
 
             afterEach(closeSearchBar);
 
-            it("should find all occurences in project", function () {
+            it("should find all occurrences in project", function () {
                 openSearchBar();
                 executeSearch("foo");
 
@@ -369,7 +369,7 @@ define(function (require, exports, module) {
                 });
             });
 
-            it("should find all occurences in folder", function () {
+            it("should find all occurrences in folder", function () {
                 var dirEntry = FileSystem.getDirectoryForPath(testPath + "/css/");
                 openSearchBar(dirEntry);
                 executeSearch("foo");
@@ -390,7 +390,7 @@ define(function (require, exports, module) {
                 });
             });
 
-            it("should find all occurences in single file", function () {
+            it("should find all occurrences in single file", function () {
                 var fileEntry = FileSystem.getFileForPath(testPath + "/foo.js");
                 openSearchBar(fileEntry);
                 executeSearch("foo");
