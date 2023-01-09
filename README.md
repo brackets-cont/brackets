@@ -1,4 +1,4 @@
-Welcome to Brackets! [![Build Status](https://travis-ci.org/adobe/brackets.svg?branch=master)](https://travis-ci.org/adobe/brackets)
+Welcome to Brackets!
 -------------------
 
 Brackets is a modern open-source code editor for HTML, CSS
@@ -28,7 +28,7 @@ So take Brackets out for a spin and let us know how we can make it your favorite
 
 You can see some 
 [screenshots of Brackets](https://github.com/brackets-cont/brackets/wiki/Brackets-Screenshots)
-on the wiki, [intro videos](http://www.youtube.com/user/CodeBrackets) on YouTube, and news on the [Brackets blog](http://blog.brackets.io/).
+on the wiki and [intro videos](http://www.youtube.com/user/CodeBrackets) on YouTube.
 
 How to install and run Brackets
 -------------------------------
@@ -43,9 +43,7 @@ You can choose a different folder to edit using *File > Open Folder*.
 
 Most of Brackets should be pretty self-explanatory, but for information on how
 to use its unique features, like Quick Edit and Live Preview, please read
-[How to Use Brackets](http://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets). 
-Also, see the [release notes](http://github.com/brackets-cont/brackets/wiki/Release-Notes)
-for a list of new features and known issues in each build.
+[How to Use Brackets](http://github.com/brackets-cont/brackets/wiki/How-to-Use-Brackets).
 
 In addition to the core features built into Brackets, there is a large and growing
 community of developers building extensions that add all sorts of useful functionality.
