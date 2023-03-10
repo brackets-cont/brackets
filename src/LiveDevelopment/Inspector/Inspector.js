@@ -330,7 +330,8 @@ define(function Inspector(require, exports, module) {
             var i, page;
             for (i in response) {
                 page = response[i];
-                if (page.webSocketDebuggerUrl && page.url.indexOf(url) === 0) {
+                if (page.webSocketDebuggerUrl &&
+                    (page.url.indexOf(url) === 0 || page.url.endsWith("/LiveDevelopment/launch.html"))) {
                     connect(page.webSocketDebuggerUrl);
                     // _connectDeferred may be resolved by onConnect or rejected by onError
                     return;
