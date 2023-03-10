@@ -25,7 +25,8 @@ define(function (require, exports, module) {
     "use strict";
 
     var Async           = require("utils/Async"),
-        FileSystemError = require("filesystem/FileSystemError");
+        FileSystemError = require("filesystem/FileSystemError"),
+        DefaultLauncher = require("LiveDevelopment/MultiBrowserImpl/launchers/Launcher");
 
     /**
      * @private
@@ -45,25 +46,10 @@ define(function (require, exports, module) {
     /** openLiveBrowser
      * Open the given URL in the user's system browser, optionally enabling debugging.
      * @param {string} url The URL to open.
-     * @param {boolean=} enableRemoteDebugging Whether to turn on remote debugging. Default false.
      * @return {$.Promise}
      */
-    function openLiveBrowser(url, enableRemoteDebugging) {
-        var result = new $.Deferred();
-
-        brackets.app.openLiveBrowser(url, !!enableRemoteDebugging, function onRun(err, pid) {
-            if (!err) {
-                // Undefined ids never get removed from list, so don't push them on
-                if (pid !== undefined) {
-                    liveBrowserOpenedPIDs.push(pid);
-                }
-                result.resolve(pid);
-            } else {
-                result.reject(_browserErrToFileError(err));
-            }
-        });
-
-        return result.promise();
+    function openLiveBrowser(url) {
+        return DefaultLauncher.launchChromeWithRDP(url);
     }
 
     /** closeLiveBrowser

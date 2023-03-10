@@ -43,7 +43,12 @@ define(function (require, exports, module) {
         _nodeDomain.exec("launch", url);
     }
 
+    function launchChromeWithRDP(url) {
+        return _nodeDomain.exec("launchChromeWithRDP", url);
+    }
+
     // Exports
     exports.launch = launch;
+    exports.launchChromeWithRDP = launchChromeWithRDP;
 
 });
