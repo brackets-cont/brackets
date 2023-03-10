@@ -43,6 +43,18 @@ function _cmdLaunch(url) {
     open(url);
 }
 
+function _launchChromeWithRDP(url, enableRemoteDebugging) {
+    open(url, {app: ['chrome',
+            "--disk-cache-size=250000000",
+            "--no-first-run",
+            "--no-default-browser-check",
+            "--disable-default-apps",
+            "--allow-file-access-from-files",
+            "--remote-debugging-port=9222",
+            "--user-data-dir=%appdata%/lp",
+            "--remote-allow-origins=*"
+        ]});
+}
 
 /**
  * Initializes the domain and registers commands.
@@ -62,6 +74,19 @@ function init(domainManager) {
         [
             { name: "url", type: "string", description: "file:// url to the HTML file" },
             { name: "browser", type: "string", description: "browser name"}
+        ],
+        []
+    );
+
+    domainManager.registerCommand(
+        "launcher",      // domain name
+        "launchChromeWithRDP",       // command name
+        _launchChromeWithRDP,     // command handler function
+        false,          // this command is synchronous in Node
+        "Launches a given HTML file in the browser for live development",
+        [
+            { name: "url", type: "string", description: "file:// url to the HTML file" },
+            { name: "enableRemoteDebugging", type: "string", description: "enable remote debugging or not"}
         ],
         []
     );

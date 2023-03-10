@@ -198,11 +198,11 @@ define(function LiveDevelopment(require, exports, module) {
      * Handles of registered servers
      */
     var _regServers = [];
-    
+
     PreferencesManager.definePreference("livedev.wsPort", "number", 8125, {
         description: Strings.DESCRIPTION_LIVEDEV_WEBSOCKET_PORT
     });
-    
+
     PreferencesManager.definePreference("livedev.enableReverseInspect", "boolean", true, {
         description: Strings.DESCRIPTION_LIVEDEV_ENABLE_REVERSE_INSPECT
     });
@@ -1136,10 +1136,9 @@ define(function LiveDevelopment(require, exports, module) {
         _openDeferred.reject();
     }
 
-    function _openInterstitialPage() {
+    function _establishConnection() {
         var browserStarted  = false,
             retryCount      = 0;
-
         // Open the live browser if the connection fails, retry 3 times
         Inspector.connectToURL(launcherUrl).fail(function onConnectFail(err) {
             if (err === "CANCEL") {
@@ -1203,39 +1202,28 @@ define(function LiveDevelopment(require, exports, module) {
             }
             retryCount++;
 
-            if (!browserStarted && exports.status !== STATUS_ERROR) {
-                NativeApp.openLiveBrowser(
-                    launcherUrl,
-                    true        // enable remote debugging
-                )
-                    .done(function () {
-                        browserStarted = true;
-                    })
-                    .fail(function (err) {
-                        var message;
-
-                        _setStatus(STATUS_ERROR);
-                        if (err === FileSystemError.NOT_FOUND) {
-                            message = Strings.ERROR_CANT_FIND_CHROME;
-                        } else {
-                            message = StringUtils.format(Strings.ERROR_LAUNCHING_BROWSER, err);
-                        }
-
-                        Dialogs.showModalDialog(
-                            DefaultDialogs.DIALOG_ID_ERROR,
-                            Strings.ERROR_LAUNCHING_BROWSER_TITLE,
-                            _makeTroubleshootingMessage(message)
-                        );
-
-                        _openDeferred.reject("OPEN_LIVE_BROWSER");
-                    });
-            }
-
             if (exports.status !== STATUS_ERROR) {
                 window.setTimeout(function retryConnect() {
                     Inspector.connectToURL(launcherUrl).fail(onConnectFail);
                 }, 3000);
             }
+        });
+    }
+
+    function _openInterstitialPage() {
+        NativeApp.openLiveBrowser(launcherUrl)
+            .done(_establishConnection)
+            .fail((err)=>{
+                var message;
+                _setStatus(STATUS_ERROR);
+                message = StringUtils.format(Strings.ERROR_LAUNCHING_BROWSER, err);
+                Dialogs.showModalDialog(
+                    DefaultDialogs.DIALOG_ID_ERROR,
+                    Strings.ERROR_LAUNCHING_BROWSER_TITLE,
+                    _makeTroubleshootingMessage(message)
+                );
+
+                _openDeferred.reject("OPEN_LIVE_BROWSER");
         });
     }
 
@@ -1383,7 +1371,7 @@ define(function LiveDevelopment(require, exports, module) {
                 .done(function () {
                     var reverseInspectPref = PreferencesManager.get("livedev.enableReverseInspect"),
                         wsPort             = PreferencesManager.get("livedev.wsPort");
-                        
+
                     if (wsPort && reverseInspectPref) {
                         WebSocketTransport.createWebSocketServer(wsPort);
                     }
