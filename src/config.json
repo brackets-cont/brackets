@@ -28,8 +28,8 @@
         "buildtype": "dev"
     },
     "name": "Brackets",
-    "version": "2.2.0-0",
-    "apiVersion": "2.2.0",
+    "version": "2.2.1-0",
+    "apiVersion": "2.2.1",
     "homepage": "http://brackets.io",
     "issues": {
         "url": "http://github.com/brackets-cont/brackets/issues"
