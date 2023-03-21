@@ -160,7 +160,7 @@ function _launchChromeWithRDP(url, enableRemoteDebugging) {
             "--disable-default-apps",
             "--allow-file-access-from-files",
             "--remote-debugging-port=9222",
-            `--user-data-dir="%appdata%/lp"`,
+            `--user-data-dir="%appdata%/BracketsChromeProfile"`,
             "--remote-allow-origins=*"
         ]});
 }
