@@ -1,7 +1,7 @@
 
 <p align="center">
   <a>
-    <img alt="Brackets" title="Petrol Tracker Backend" src="https://i.imgur.com/eZgX0NM.png" width="350">
+    <img alt="Brackets" title="Brackets Code Editor" src="https://i.imgur.com/eZgX0NM.png" width="350">
   </a>
 </p>
 
