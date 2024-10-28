@@ -4,7 +4,7 @@ Brackets is a modern open-source code editor for HTML, CSS, and JavaScript that'
 
 This is a fork of a [project](https://github.com/brackets-cont/brackets) that has been maintained by the community. We might change names in the future.
 
-A lot of work needs to be done to make this fork become independent. Feel free to open a PR! Want to help coordinate the project itself? Check the projects tab ([here](https://github.com/brackets-cont/brackets/projects/1?fullscreen=true)).
+A lot of work needs to be done to make this fork become independent. Feel free to open a PR! Want to help coordinate the project itself? Check the projects tab ([here](https://github.com/brackets-cont/brackets/projects)).
 
 ## What makes Brackets different from other web code editors?
 
