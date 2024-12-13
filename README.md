@@ -7,7 +7,7 @@ and JavaScript that's *built* in HTML, CSS and JavaScript.
 
 ## Notice: Active Development Moved to Phoenix Code
 
-Active development of **Brackets** is now maintained at the [Phoenix Code Project](https://github.com/phcode-dev/phoenix/). This repository is currently in **read-only mode** and will only accept security patches.
+Active development of **Brackets** is now maintained at the [Phoenix Code Project](https://github.com/phcode-dev/phoenix/). This repository is currently in **maintenance mode** and will only accept security patches.
 
 For new features, bug fixes, and other contributions, please visit the [Phoenix Code repository](https://github.com/phcode-dev/phoenix/). Thank you for supporting the project!
 #### Contact info
