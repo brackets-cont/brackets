@@ -5,11 +5,12 @@ Brackets is a modern open-source code editor for HTML, CSS
 and JavaScript that's *built* in HTML, CSS and JavaScript.
 
 
-## Notice: Active Development Moved to Phoenix Code
-
-Active development of **Brackets** is now maintained at the [Phoenix Code Project](https://github.com/phcode-dev/phoenix/). This repository is currently in **maintenance mode** and will only accept security patches.
-
-For new features, bug fixes, and other contributions, please visit the [Phoenix Code repository](https://github.com/phcode-dev/phoenix/). Thank you for supporting the project!
+> [!IMPORTANT]
+> **Brackets has evolved into [Phoenix Code](https://phcode.io)** — a free, open-source code editor with live preview, Git integration, and extensions. Available for Windows, macOS, Linux, and web browsers.
+>
+> **[Get started with Phoenix Code →](https://phcode.io)**
+>
+> For contributions and source code, visit the [Phoenix Code repository](https://github.com/phcode-dev/phoenix/).
 #### Contact info
 
 <!-- * **E-mail:** [admin@brackets.io](mailto:admin@brackets.io)
